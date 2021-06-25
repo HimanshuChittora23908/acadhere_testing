@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/acadhere_testing/static/css/main.893f332c.chunk.css",
+    "main.js": "/acadhere_testing/static/js/main.fe41aead.chunk.js",
+    "main.js.map": "/acadhere_testing/static/js/main.fe41aead.chunk.js.map",
+    "runtime-main.js": "/acadhere_testing/static/js/runtime-main.00fe1455.js",
+    "runtime-main.js.map": "/acadhere_testing/static/js/runtime-main.00fe1455.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/acadhere_testing/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.c267292d.chunk.js": "/acadhere_testing/static/js/2.c267292d.chunk.js",
+    "static/js/2.c267292d.chunk.js.map": "/acadhere_testing/static/js/2.c267292d.chunk.js.map",
+    "index.html": "/acadhere_testing/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/acadhere_testing/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.893f332c.chunk.css.map": "/acadhere_testing/static/css/main.893f332c.chunk.css.map",
+    "static/js/2.c267292d.chunk.js.LICENSE.txt": "/acadhere_testing/static/js/2.c267292d.chunk.js.LICENSE.txt",
+    "static/media/CST102.09bc2be8.svg": "/acadhere_testing/static/media/CST102.09bc2be8.svg",
+    "static/media/CST104.f4c4f271.svg": "/acadhere_testing/static/media/CST104.f4c4f271.svg",
+    "static/media/ECT102.76d0df9d.svg": "/acadhere_testing/static/media/ECT102.76d0df9d.svg",
+    "static/media/HST102.cd3d68b5.svg": "/acadhere_testing/static/media/HST102.cd3d68b5.svg",
+    "static/media/HST104.99b8b88c.svg": "/acadhere_testing/static/media/HST104.99b8b88c.svg",
+    "static/media/MAT102.4520932a.svg": "/acadhere_testing/static/media/MAT102.4520932a.svg",
+    "static/media/about_quote.a75f2000.svg": "/acadhere_testing/static/media/about_quote.a75f2000.svg",
+    "static/media/arrow-right.1b3dc3cc.svg": "/acadhere_testing/static/media/arrow-right.1b3dc3cc.svg",
+    "static/media/code_img.7913856f.svg": "/acadhere_testing/static/media/code_img.7913856f.svg",
+    "static/media/Home.css": "/acadhere_testing/static/media/home.21001895.svg",
+    "static/media/Navbar.css": "/acadhere_testing/static/media/navbar.91285be8.svg",
+    "static/media/notes_book.b7fe4daf.svg": "/acadhere_testing/static/media/notes_book.b7fe4daf.svg",
+    "static/media/openbook.15efe630.svg": "/acadhere_testing/static/media/openbook.15efe630.svg",
+    "static/media/person_icon.1216ee98.svg": "/acadhere_testing/static/media/person_icon.1216ee98.svg",
+    "static/media/triangle-down.30f7ab58.svg": "/acadhere_testing/static/media/triangle-down.30f7ab58.svg",
+    "static/media/triangle_right.6740f54a.svg": "/acadhere_testing/static/media/triangle_right.6740f54a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00fe1455.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.c267292d.chunk.js",
+    "static/css/main.893f332c.chunk.css",
+    "static/js/main.fe41aead.chunk.js"
+  ]
+}
