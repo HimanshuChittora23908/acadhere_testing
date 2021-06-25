@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/acadhere_testing/static/css/main.b3023904.chunk.css",
+    "main.css": "/acadhere_testing/static/css/main.2292294d.chunk.css",
     "main.js": "/acadhere_testing/static/js/main.fe41aead.chunk.js",
     "main.js.map": "/acadhere_testing/static/js/main.fe41aead.chunk.js.map",
     "runtime-main.js": "/acadhere_testing/static/js/runtime-main.00fe1455.js",
@@ -10,7 +10,7 @@
     "static/js/2.c267292d.chunk.js.map": "/acadhere_testing/static/js/2.c267292d.chunk.js.map",
     "index.html": "/acadhere_testing/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/acadhere_testing/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.b3023904.chunk.css.map": "/acadhere_testing/static/css/main.b3023904.chunk.css.map",
+    "static/css/main.2292294d.chunk.css.map": "/acadhere_testing/static/css/main.2292294d.chunk.css.map",
     "static/js/2.c267292d.chunk.js.LICENSE.txt": "/acadhere_testing/static/js/2.c267292d.chunk.js.LICENSE.txt",
     "static/media/CST102.09bc2be8.svg": "/acadhere_testing/static/media/CST102.09bc2be8.svg",
     "static/media/CST104.f4c4f271.svg": "/acadhere_testing/static/media/CST104.f4c4f271.svg",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.00fe1455.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.c267292d.chunk.js",
-    "static/css/main.b3023904.chunk.css",
+    "static/css/main.2292294d.chunk.css",
     "static/js/main.fe41aead.chunk.js"
   ]
 }
