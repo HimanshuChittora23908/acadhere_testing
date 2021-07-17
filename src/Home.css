@@ -1136,44 +1136,44 @@ margin-top: 10px;
 }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) and (max-width: 1000px){
     .Home {
         padding-left: 300px;
-        padding-top: 100px;
-        padding-bottom: 120px;
+        padding-top: 170px;
+        padding-bottom: 200px;
         padding-right: 50px;
     }
 
     .head_name{
-        font-size: 60px;
+        font-size: 72px;
         line-height: 0px;
         margin-left: 100px;
         margin-top: 20px;
         }
     
         .tagline{
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 32px;
+        line-height: 40px;
         margin-left: 100px;
         }
     
     .rectangle1{
-        top: 460px;
+        top: 670px;
         height: 30px;
         }
         
     .rectangle2{
-        top: 500px;
+        top: 710px;
         height: 20px;
         }
     
     .rectangle3{
-        top: 530px;
+        top: 740px;
         height: 15px;
         }
     
     .rectangle4{
-        top: 560px;
+        top: 770px;
         height: 10px;
         }
     
