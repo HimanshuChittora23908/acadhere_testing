@@ -3,7 +3,7 @@
 
 .navbar{
     display: flex;
-    padding-right: 100px;
+    padding-right: 50px;
     background-image: url(../src/images/navbar.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@ box-sizing: border-box;
 box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 padding: 5px 20px;
-margin-left: 20px;
+margin-left: 30px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: bold;
@@ -68,6 +68,7 @@ color: #000000;
     z-index: 1;
     font-size: 14px;
     font-weight: bold;
+    margin-top: 5px;
   }
   
   .dropdown-content a {
@@ -83,11 +84,12 @@ color: #000000;
     background-color: grey;
   }
   .dropdown:hover .dropdown-content {
-    display: inline-block;
+    display: block;
   }
 
   .dropdown {
-      display: inline;
+    position: relative;
+    display: inline-block;
   }
 
 .menu_active {
@@ -106,10 +108,12 @@ color: #000000;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
   .navbar{
-    padding-right: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 20px;
+    justify-content: center;
 }
 
 .SignOut {
@@ -117,22 +121,30 @@ display: none;
 }
 
 .right_buttons{
-padding: 2px 5px;
-margin-right: 5px;
-font-size: 12px;
+padding: 0px;
+margin-right: 7px;
+font-size: 14px;
+border: none;
+}
+
+.right_buttons:hover {
+  border: none;
 }
 
 .icon{
-    width: 22px;
+    width: 18px;
+    margin-bottom: 1px;
 }
 
 .triangle_down {
-    width: 16px;
+    width: 14px;
+    margin-bottom: 0px;
 }
   
   .dropdown-content {
-    min-width: 50px;
-    font-size: 10px;
+    min-width: 60px;
+    font-size: 11px;
+    margin-top: 2px;
   }
   
   .dropdown-content a {
@@ -140,6 +152,119 @@ font-size: 12px;
   }
 
 .menu_active {
-  padding: 2px 5px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  color: green;
+  border-bottom: 2px solid green;
+  border-radius: 0%;
 }
+
+.menu_active:hover {
+  border: none;
+  color: green;
+  border-bottom: 2px solid green;
+  border-radius: 0%;
+}
+}
+
+
+
+@media only screen and (max-width: 360px){
+  .navbar{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.SignOut {
+display: none;
+}
+
+.right_buttons{
+padding: 0px;
+margin-right: 7px;
+font-size: 11px;
+border: none;
+}
+
+.right_buttons:hover {
+  border: none;
+}
+
+.icon{
+    width: 14px;
+    margin-bottom: 0px;
+}
+
+.triangle_down {
+    width: 10px;
+    margin-bottom: 0px;
+}
+  
+  .dropdown-content {
+    min-width: 45px;
+    font-size: 9px;
+    margin-top: 2px;
+  }
+  
+  .dropdown-content a {
+    padding: 3px 7px 3px 7px ;
+  }
+
+.menu_active {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  color: green;
+  border-bottom: 2px solid green;
+  border-radius: 0%;
+}
+
+.menu_active:hover {
+  border: none;
+  color: green;
+  border-bottom: 2px solid green;
+  border-radius: 0%;
+}
+}
+
+
+@media only screen and (max-height: 600px){
+  .navbar{
+    display: flex;
+    padding-right: 40px;
+}
+
+.SignOut {
+padding: 3px 10px;
+margin-left: 10px;
+font-size: 16px;
+margin-top: 0px;
+}
+
+
+.right_buttons{
+padding: 1px 7px;
+margin-right: 10px;
+font-size: 13px;
+}
+
+.icon{
+  width: 21px;
+}
+
+.triangle_down {
+  width: 15px;
+}
+  
+  .dropdown-content {
+    min-width: 45px;
+    font-size: 12px;
+  }
+  
+  .dropdown-content a {
+    padding: 5px 10px 5px 10px ;
+  }
 }
