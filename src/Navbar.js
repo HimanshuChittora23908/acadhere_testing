@@ -25,6 +25,7 @@ export default function Navbar() {
                 <img src={triangle_down} alt="" className="triangle_down dropbtn" />
                 <div class="dropdown-content">
                   <a href="#">Profile</a>
+                  <a href="#">Forms</a>
                   <a href="#">Settings</a>
                   <a href="#">Logout</a>
                 </div>

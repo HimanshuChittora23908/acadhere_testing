@@ -132,6 +132,29 @@ margin: 0px 0px;
         position: static;
     width: 80px;
     font-size: 18px;
+    }   
+}
+
+
+@media only screen and (min-width: 900px){
+    .card {
+        width: 120px;
+        margin-top: 15px;
+        padding: 4px;
+        margin-left: 110px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        }
+    
+    .card_img {
+    width: 20px;
+    height: 20px;
     }
     
+    .card-title{
+        position: static;
+        width: 80px;
+    font-size: 18px;
+    }
 }

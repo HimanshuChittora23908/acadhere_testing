@@ -364,7 +364,7 @@ transition: transform 1s;
 
 .study-bg{
     background: linear-gradient(180deg, rgba(163, 132, 36, 0) 0%, rgba(136, 103, 0, 0.5) 100%);
-    z-index: -2;
+    z-index: -1;
     margin-top: -50px;
     padding-bottom: 200px;
 }
@@ -1134,4 +1134,244 @@ margin-top: 10px;
 .right_main{
     margin-top: -360px;
 }
+}
+
+@media only screen and (min-width: 900px){
+    .Home {
+        padding-left: 300px;
+        padding-top: 100px;
+        padding-bottom: 120px;
+        padding-right: 50px;
+    }
+
+    .head_name{
+        font-size: 60px;
+        line-height: 0px;
+        margin-left: 100px;
+        margin-top: 20px;
+        }
+    
+        .tagline{
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 100px;
+        }
+    
+    .rectangle1{
+        top: 460px;
+        height: 30px;
+        }
+        
+    .rectangle2{
+        top: 500px;
+        height: 20px;
+        }
+    
+    .rectangle3{
+        top: 530px;
+        height: 15px;
+        }
+    
+    .rectangle4{
+        top: 560px;
+        height: 10px;
+        }
+    
+    .team{
+        font-size: 48px;
+        padding-top: 80px;
+        padding-left: 70px;
+        }
+        
+    .team_content {
+        font-size: 16px;
+        padding-left: 70px;
+        padding-right: 50px;
+        }
+    
+        .team_tagline {
+        font-size: 28px;
+        line-height: 36px;
+        padding-left: 70px;
+        padding-top: 12px;
+        color: #000000;
+        }
+    
+        .arrow_r {
+            display: inline;
+            width: 45px;
+            margin-left: 15px;
+        }
+    
+        .about{
+            font-size: 48px;
+            padding-top: 80px;
+            padding-left: 70px;
+            }
+            
+        .about_content {
+            font-size: 16px;
+            padding-left: 70px;
+            padding-right: 50px;
+            }
+        
+        .about_foot{
+            padding: 20px 30px;
+            width: 200px;
+            height: 50px;
+            margin-left: 70px;
+            margin-top: -140px;
+    }
+    
+    .about_quote {
+        z-index: -1;
+        margin-right: 80px;
+        margin-top: -220px;
+        width: 250px;
+        height: 250px;
+        float: right;
+    }
+    
+    .about_tagline {
+    font-size: 24px;
+    }
+    
+    .about_foot{
+        padding: 15px 20px;
+        width: 180px;
+        height: 45px;
+        margin-left: 70px;
+        margin-top: -20px;
+    }
+    
+    @keyframes triangle_move_about {
+        0% {margin-left: 0px;}
+        50%{margin-left: 40px;}
+        100%{margin-left: 0px;}
+    }
+    
+    @keyframes about_foot_move{
+        0% {width: 180px;}
+        50%{width: 220px;}
+        100%{width: 180px;}
+    }
+    
+    .contest {
+        font-size: 48px;
+        padding-top: 10px;
+        padding-left: 50px;
+        }
+    
+    .contest_content {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 16px;
+    }
+    
+    .contest_foot{
+        padding: 15px 20px;
+        width: 190px;
+        height: 45px;
+        margin-left: 50px;
+    }
+    
+    @keyframes triangle_move_contest {
+        0% {margin-left: 0px;}
+        50%{margin-left: 50px;}
+        100%{margin-left: 0px;}
+    }
+    
+    @keyframes contest_foot_move{
+        0% {width: 190px;}
+        50%{width: 240px;}
+        100%{width: 190px;}
+    }
+    
+    .contest_tagline {
+    font-size: 24px;
+    }
+    
+    .triangle_right {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .contest_bg {
+        margin-top: 75px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    
+    .code_img{
+    width: 300px;
+    height: 180px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 0px;
+    }
+    
+    .code_img:hover{
+        -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    
+    .notes {
+        font-size: 48px;
+        padding-top: 70px;
+        padding-left: 70px;
+        }
+    
+    .notes_content {
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 16px;
+    }
+    
+    .notes_book {
+        z-index: -1;
+        margin-right: 40px;
+        margin-top: -380px;
+        float: right;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .openbook{
+        width: 800px;
+        z-index: -1;
+    }
+    
+    .study-bg{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    
+    .study{
+    font-size: 40px;
+    line-height: 0px;
+    margin-top: -400px;
+    margin-left: 180px;
+    margin-bottom: -20px;
+    }
+    
+    .study_left{
+    font-size: 32px;
+    line-height: 25px;
+    color: #5B350F;
+    margin-left: 260px;
+    margin-top: 65px;
+    }
+    
+    .study_right{
+    font-size: 32px;
+    margin-left: 625px;
+    margin-bottom: 20px;
+    }
+    
+    .right_main{
+        margin-top: -380px;
+    }
 }
