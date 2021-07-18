@@ -18,15 +18,19 @@ function Home() {
       <p className="tagline">Destination for various type of <p class="black_color">academic support</p> !!!</p>
     </div>
     <div>
-    <p className="rectangle4"></p>
-    <p className="rectangle3"></p>
-    <p className="rectangle2"></p>
+      <div className="rec">
     <p className="rectangle1"></p>
+    <p className="rectangle2"></p>
+    <p className="rectangle3"></p>
+    <p className="rectangle4"></p>
+    </div>
+    <div className="team_main">
     <p className="team">Our Team</p>
     <p className="team_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
     <div className="team_foot">
     <p className="team_tagline">Have a look</p>
     <img src={arrow_right} alt="" className="arrow_r" />
+    </div>
     </div>
     </div>
     <div className="about_bg">
@@ -73,13 +77,15 @@ function Home() {
         </div>
         <img src={notes_book} alt="" class="notes_book" />
     </div>
-    <div className="mx-auto study-bg">
-      <img src={open_book} alt="" className="openbook" />
+    <img src={open_book} alt="" className="openbook" />
+    <div className="study-bg">
+      <div className="left_main">
       <p className="study">Study Material</p>
       <p className="study_left">ECT 102</p>
       <p className="study_left">MAT 102</p>
       <p className="study_left">CST 104</p>
       <p className="study_left">CST 102</p>
+      </div>
       <div className="right_main">
       <p className="study_right">HST 104</p>
       <p className="study_right">HST 102</p>
