@@ -9,6 +9,9 @@ import Contest from "./Contest";
 import Notes from "./Notes";
 import Resources from "./Resources";
 import Footer from "./footer.js";
+import Classroom from "./Classroom";
+import Login from './components/login';
+import Logout from './components/logout';
 
 export default function App() {
   return (
@@ -23,6 +26,7 @@ export default function App() {
           <Route path="/contest" exact component={Contest} />
           <Route path="/notes" exact component={Notes} />
           <Route path="/resources" exact component={Resources} />
+          <Route path="/classroom" exact component={Classroom} />
           <Redirect to ="/"></Redirect>
         </Switch>
         <Footer />

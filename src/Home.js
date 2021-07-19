@@ -15,7 +15,7 @@ function Home() {
       <p className="head_name">Acad<p className="green_color">HERE</p></p>
       <br />
       <br />
-      <p className="tagline">Destination for various type of <p class="black_color">academic support</p> !!!</p>
+      <p className="tagline">Destination for various type of <p className="black_color">academic support</p> !!!</p>
     </div>
     <div>
       <div className="rec">
@@ -36,13 +36,13 @@ function Home() {
     <div className="about_bg">
       <p className="about">About</p>
       <p className="about_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
-      <img src={about_quote} alt="" class="about_quote" />
+      <img src={about_quote} alt="" className="about_quote" />
       <div className="about_foot">
         <p className="about_tagline">About Us</p>
         <img src={triangle_right} alt="" className="triangle_right"/>
       </div>
     </div>
-    <div class="contest_bg">
+    <div className="contest_bg">
       <div>
         <p className="contest">Contests</p>
         <p className="contest_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
@@ -52,7 +52,7 @@ function Home() {
       </div>
       </div>
       <div>
-        <img src={code_img} alt="" class="code_img" />
+        <img src={code_img} alt="" className="code_img" />
       </div>
     </div>
     <div className="notes_bg">
@@ -75,7 +75,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <img src={notes_book} alt="" class="notes_book" />
+        <img src={notes_book} alt="" className="notes_book" />
     </div>
     <img src={open_book} alt="" className="openbook" />
     <div className="study-bg">

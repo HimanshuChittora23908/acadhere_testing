@@ -1032,3 +1032,36 @@ footer{
             display: none;
             }
 }
+
+@media only screen and (width:720px){
+    
+    .rectangle1{
+        width: 39.5vw;
+        height: 3vh;
+        margin-left: -30vh;
+        }
+        
+    .rectangle2{
+        width: 39.5vw;
+        height: 3vh;
+        margin-left: -24.5vh;
+        }
+    
+    .rectangle3{
+        width: 39.5vw;
+        height: 4vh;
+        margin-left: -19vh;
+        }
+    
+    .rectangle4{
+        display: none;
+        }
+    .study-bg{
+        padding: 0 0 5vw 0;
+        }
+    
+    .study{
+    font-size: 4vw;
+    margin: -40vw 0 -3vh 21.5vw;
+    }
+}
