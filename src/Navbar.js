@@ -6,44 +6,20 @@ import triangle_down from "../src/images/triangle-down.svg"
 
 export default function Navbar() {
 
-window.gapi.load("client:auth2", function () {
-    window.gapi.auth2.init({ client_id: "1051900366163-uug3fp44cmthn7d2o9pmtprtjs9o53mo.apps.googleusercontent.com" });
-});
-
-  function loadClient() {
-    window.gapi.client.setApiKey("AIzaSyCVj_naD42lS6dvS93bes74UfP8IKGeU3A");
-    return window.gapi.client.load("https://classroom.googleapis.com/$discovery/rest?version=v1")
-        .then(function () { console.log("GAPI client loaded for API"); },
-            function (err) { console.error("Error loading GAPI client for API", err); });
-}
-function authenticate() {
-    return window.gapi.auth2.getAuthInstance()
-        .signIn({ scope: "https://www.googleapis.com/auth/classroom.courses.readonly https://www.googleapis.com/auth/classroom.coursework.me.readonly https://www.googleapis.com/auth/classroom.announcements.readonly https://www.googleapis.com/auth/classroom.student-submissions.me.readonly https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly" })
-        .then(res => {
-            console.log("Signin successfull!\n", res.getBasicProfile());
-            console.log(res.getAuthResponse().id_token);
-        })
-        .catch(err => console.error(err));
-}
-function execute() {
-    window.gapi.client.classroom.courses.list({
-        "courseStates": [
-            "ACTIVE"
-        ]
-    })
-        .then(function (res) {
-            let para = document.getElementById("render");
-            para.innerHTML += res.body;
-            console.log("Response", res.body);
-        },
-            function (err) { console.error("Execute error", err); });
+    function myFunction() {
+        var x = document.getElementsByClassName("right_buttons");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
 
     return (
         <>
         <div className="navbar">
             <div>
-                <button className="SignOut" onClick={() => {authenticate().then(loadClient().then(execute))}}>Login</button>
+                <button className="logo">AcadHERE</button>
             </div>
             <div>
                 <NavLink activeClassName="menu_active" className="right_buttons" exact to="./home">Main</NavLink>
@@ -65,7 +41,6 @@ function execute() {
                 </div>
             </div>
         </div>
-        <p id="render"></p>
         </>
     )
 }
