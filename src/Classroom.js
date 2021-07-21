@@ -1,13 +1,16 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import "./Classroom.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
 export default function Classroom() {
   const [courses, setCourses] = useState(null);
-  console.log(courses);
+  const [courseWork1, setCourseWork1] = useState(null);
 
   window.gapi.load("client:auth2", function () {
-    window.gapi.auth2.init({ client_id: "1051900366163-uug3fp44cmthn7d2o9pmtprtjs9o53mo.apps.googleusercontent.com" });
+  window.gapi.auth2.init({ client_id: "1051900366163-uug3fp44cmthn7d2o9pmtprtjs9o53mo.apps.googleusercontent.com" });
 });
 
   function loadClient() {
@@ -20,6 +23,10 @@ function authenticate() {
     return window.gapi.auth2.getAuthInstance()
         .signIn({ scope: "https://www.googleapis.com/auth/classroom.courses.readonly https://www.googleapis.com/auth/classroom.coursework.me.readonly https://www.googleapis.com/auth/classroom.announcements.readonly https://www.googleapis.com/auth/classroom.student-submissions.me.readonly https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly" })
         .then(res => {
+          if (res) {
+            console.log(res);
+            //localStorage.setItem('user',res.mc.access_token);
+          }
         })
         .catch(err => console.error(err));
 }
@@ -29,35 +36,47 @@ function authenticate() {
 function execute() {
   const fetchApi = async () => {
   window.gapi.client.classroom.courses.list({ "courseStates": ["ACTIVE"] }).then(data => setCourses(data.result.courses));
+  window.gapi.client.classroom.courses.courseWork.list({"courseId": "327456695244","orderBy": "updateTime" }).then(data => setCourseWork1(data.result.courseWork));
   }
 
-    window.gapi.client.classroom.courses.list({
-        "courseStates": [
-            "ACTIVE"
-        ]
-    })
-        .then(function (res) {
+    window.gapi.client.classroom.courses.list({"courseStates": ["ACTIVE"]})
+    window.gapi.client.classroom.courses.courseWork.list({"courseId": "315275681813","orderBy": "updateTime"})
+        .then(function () {
           fetchApi();
         },
             function (err) { console.error("Execute error", err); });
       }
 
+      useEffect(() => {
+        function test(){
+            let webApiUrl = 'https://classroom.googleapis.com/v1/courses';
+            let tokenStr = localStorage.getItem('user');
+            axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => setCourses(data.data.courses));
+        }
+        if(localStorage.getItem('user'))
+        //console.log(localStorage.getItem('user'));
+      test();
+      }, [])
+
+
+
   return (
-    <div>
+    <div className="bg_class">
       <button className="login" onClick={() => {authenticate()}}>Signing with Google</button>
       <button className="load" onClick={() => {loadClient().then(execute)}}>Load the Google Classroom</button>
-
-      {courses ? courses.map((item,index) => {return (
-        <div className="col-md-4 col-10 mx-auto">
+      {courses ? courses.map((item,index) => {
+        return (
+        <div key={item.id}>
         <div className="card">
             <div className="card-body">
-              <h5 className="card-title font-weight-bold">{item.name}</h5>
+              <h3 className="card-title font-weight-bold">{item.name}</h3>
+              <h5 className="card-subTitle">{item.section}</h5>
+              <a href={"/announcement/"+item.id}><h6>Announcement</h6></a>
              </div>
         </div>
       </div>
       )}) : null}
-
-    </div>
+      
+      </div>
   )
 }
-
