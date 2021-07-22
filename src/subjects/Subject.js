@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
 
 const url = "https://classroom.googleapis.com/v1/courses/327456695244/announcements"
 
@@ -12,10 +11,12 @@ export default function Subject() {
   useEffect(() => {
     let webApiUrl = `https://classroom.googleapis.com/v1/courses/${id}/announcements`;
     let tokenStr = localStorage.getItem('user');
-    axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => data.data.announcements ? setAnnouncement(data.data.announcements) : window.location.replace('/'));
+    axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => data.data.announcements ? setAnnouncement(data.data.announcements) : setAnnouncement(null));
   }, [])
 
-  if (!Announcement) return null;
+  if (!Announcement) {return (
+    <div>Loading ...</div>
+  )};
 
     return (
       <div>
@@ -23,11 +24,10 @@ export default function Subject() {
           console.log(item)
         return (
         <div key={item.id}>
-        <div className="card">
-            <div className="card-body">
-              <h3 className="card-title font-weight-bold">{item.title}</h3>
-              <h5 className="card-subTitle">{item.text}</h5>
-              <a href={"/announcement/"+item.id}><h6>Announcement</h6></a>
+        <div className="card2">
+            <div className="card2-body">
+              <h3 className="card2-title font-weight-bold">{item.title}</h3>
+              <h5 className="card2-subTitle">{item.text}</h5>
              </div>
         </div>
       </div>

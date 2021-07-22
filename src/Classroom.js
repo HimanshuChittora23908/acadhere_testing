@@ -25,7 +25,7 @@ function authenticate() {
         .then(res => {
           if (res) {
             console.log(res);
-            //localStorage.setItem('user',res.mc.access_token);
+            localStorage.setItem('user',res.mc.access_token);
           }
         })
         .catch(err => console.error(err));
@@ -54,7 +54,7 @@ function execute() {
             axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => setCourses(data.data.courses));
         }
         if(localStorage.getItem('user'))
-        //console.log(localStorage.getItem('user'));
+        
       test();
       }, [])
 

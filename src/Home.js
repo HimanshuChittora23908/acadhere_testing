@@ -12,10 +12,10 @@ function Home() {
   return (
     <>
     <div className="Home">
-      <p className="head_name">Acad<p className="green_color">HERE</p></p>
+      <div className="head_name">Acad<p className="green_color">HERE</p></div>
       <br />
       <br />
-      <p className="tagline">Destination for various type of <p className="black_color">academic support</p> !!!</p>
+      <div className="tagline">Destination for various type of <p className="black_color">academic support</p> !!!</div>
     </div>
     <div>
       <div className="rec">
