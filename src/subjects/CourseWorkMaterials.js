@@ -10,7 +10,7 @@ export default function CourseWorkMaterials() {
 
   useEffect(() => {
     let webApiUrl = `https://classroom.googleapis.com/v1/courses/${id}/courseWorkMaterials`;
-    let tokenStr = localStorage.getItem('user4');
+    let tokenStr = localStorage.getItem('user7');
     axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => data.data.courseWorkMaterial ? setCourseWorkMaterials(data.data.courseWorkMaterial) : setCourseWorkMaterials(null));
   }, [])
 
@@ -27,13 +27,14 @@ export default function CourseWorkMaterials() {
         <div className="card3">
             <div className="card3-body">
               <h3 className="card3-title font-weight-bold">{item.title}</h3>
-              Link to Material Post: <a href={item.alternateLink} className="card3-subTitle"><img src={google}></img> Classroom</a>
+              <div className="button_bg">
+              <button className="hover_button"><a href={item.alternateLink} className="card3-subTitle announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
               <h6 className="card3-subTitle">Created on: {new Date(`${item.creationTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
               <h6 className="card3-subTitle">Updated on: {new Date(`${item.updateTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
               <div>{item.materials.map((material) => {
                 return(
                   <div key={material.id}>
-                    <h6>{material.driveFile.driveFile.title}</h6>
+                    <h5>{material.driveFile.driveFile.title}</h5>
                     <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img class="img_course" src={material.driveFile.driveFile.thumbnailUrl}></img></a>
                   </div>
                 )
@@ -41,6 +42,7 @@ export default function CourseWorkMaterials() {
              </div>
              </div>
         </div>
+      </div>
       </div>
       )}) : null}
       </div>

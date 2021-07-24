@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./Classroom.css";
+import Bg from '../src/Bg';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
@@ -24,7 +25,7 @@ function authenticate() {
         .then(res => {
           if (res) {
             console.log(res.Zb);
-            localStorage.setItem('user4',res.Zb.access_token);
+            localStorage.setItem('user7',res.Zb.access_token);
           }
         })
         .catch(err => console.error(err));
@@ -47,15 +48,13 @@ function execute() {
       useEffect(() => {
         function test(){
             let webApiUrl = 'https://classroom.googleapis.com/v1/courses';
-            let tokenStr = localStorage.getItem('user4');
+            let tokenStr = localStorage.getItem('user7');
             axios.get(webApiUrl,{ headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => setCourses(data.data.courses));
         }
-        if(localStorage.getItem('user4'))
+        if(localStorage.getItem('user7'))
         test();
-        console.log(localStorage.getItem('user4'));
+        console.log(localStorage.getItem('user7'));
       }, [])
-
-
 
   return (
     <div className="bg_class">
@@ -64,7 +63,9 @@ function execute() {
       {courses ? courses.map((item,index) => {
         return (
         <div key={item.id}>
-        <div className="card">
+          <div> {Bg.map((val,ind) => {
+        <div className="card" style={{backgroundImage: `url(${val.imgsrc})`}}>
+        </div>})}
             <div className="card-body">
               <h3 className="card-title font-weight-bold">{item.name}</h3>
               <h5 className="card-subTitle">{item.section}</h5>

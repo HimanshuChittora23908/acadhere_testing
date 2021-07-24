@@ -22,7 +22,7 @@ display: block;
 margin: 1vw auto 0 auto;
 }
 
-.card{
+.card-body{
     background: rgba(0,255,255, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20.0px );
