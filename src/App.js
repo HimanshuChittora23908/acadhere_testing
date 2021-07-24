@@ -10,8 +10,10 @@ import Notes from "./Notes";
 import Resources from "./Resources";
 import Footer from "./footer.js";
 import Classroom from "./Classroom";
-import Subject from "./subjects/Subject";
-import {id} from "./subjects/Subject";
+import Announcement from "./subjects/Announcement";
+import CourseWork from "./subjects/CourseWork";
+import {id} from "./subjects/Announcement";
+import CourseWorkMaterials from "./subjects/CourseWorkMaterials";
 
 export default function App() {
   return (
@@ -27,7 +29,9 @@ export default function App() {
           <Route path="/notes" exact component={Notes} />
           <Route path="/resources" exact component={Resources} />
           <Route path="/classroom" exact component={Classroom} />
-          <Route path={"/announcement/" + id} component={Subject} />
+          <Route path={"/announcement/" + id} component={Announcement} />
+          <Route path={"/coursework/" + id} component={CourseWork} />
+          <Route path={"/materials/" + id} component={CourseWorkMaterials} />
           <Redirect to="/"/>
         </Switch>
         <Footer />
