@@ -10,7 +10,7 @@ export default function Announcement() {
 
   useEffect(() => {
     let webApiUrl = `https://classroom.googleapis.com/v1/courses/${id}/announcements`;
-    let tokenStr = localStorage.getItem('user8');
+    let tokenStr = localStorage.getItem('user11');
     axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => data.data.announcements ? setAnnouncement(data.data.announcements) : setAnnouncement(null));
   }, [])
 

@@ -10,7 +10,7 @@ export default function CourseWorkMaterials() {
 
   useEffect(() => {
     let webApiUrl = `https://classroom.googleapis.com/v1/courses/${id}/courseWorkMaterials`;
-    let tokenStr = localStorage.getItem('user8');
+    let tokenStr = localStorage.getItem('user11');
     axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => data.data.courseWorkMaterial ? setCourseWorkMaterials(data.data.courseWorkMaterial) : setCourseWorkMaterials(null));
   }, [])
 

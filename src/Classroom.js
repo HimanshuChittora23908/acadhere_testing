@@ -5,6 +5,7 @@ import "./Classroom.css";
 import Bg from '../src/Bg_array';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import google from "./images/Google.png";
 
 export default function Classroom() {
   const [courses, setCourses] = useState(null);
@@ -25,7 +26,7 @@ function authenticate() {
         .then(res => {
           if (res) {
             console.log(res.Zb);
-            localStorage.setItem('user8',res.Zb.access_token);
+            localStorage.setItem('user11',res.Zb.access_token);
           }
         })
         .catch(err => console.error(err));
@@ -48,16 +49,17 @@ function execute() {
       useEffect(() => {
         function test(){
             let webApiUrl = 'https://classroom.googleapis.com/v1/courses';
-            let tokenStr = localStorage.getItem('user8');
+            let tokenStr = localStorage.getItem('user11');
             axios.get(webApiUrl,{ headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => setCourses(data.data.courses));
         }
-        if(localStorage.getItem('user8'))
+        if(localStorage.getItem('user11'))
         test();
-        console.log(localStorage.getItem('user8'));
+        console.log(localStorage.getItem('user11'));
       }, [])
 
       function bg_image(){
-        for (let i = 0; i < courses.length; i++) {
+        for (let i = 0; i < Bg.length; i++) {
+            var back = document.getElementsByClassName("card").style.backgroundImage = `url('${Bg[i]}')`;
           }
         }
 
@@ -65,8 +67,10 @@ function execute() {
 
   return (
     <div className="bg_class">
-      <button className="login" onClick={() => {authenticate()}}>Signing with Google</button>
-      <button className="load" onClick={() => {loadClient().then(execute)}}>Load the Google Classroom</button>
+      <div className="google_button">
+      <button className="login neumorphic variation" onClick={() => {authenticate()}}><span><strong>Signing with <img src={google} className="google2"></img></strong></span></button>
+      <button className="load neumorphic variation" onClick={() => {loadClient().then(execute)}}><span><strong>Load the <img src={google} className="google2"></img> Classroom</strong></span></button>
+      </div>
       {courses ? courses.map((item,index) => {
         return (
         <div key={item.id}>
@@ -74,9 +78,11 @@ function execute() {
             <div className="card-body">
               <h3 className="card-title font-weight-bold">{item.name}</h3>
               <h5 className="card-subTitle">{item.section}</h5>
-              <a href={"/acadhere_testing/announcement/"+item.id}><h6>Announcement</h6></a>
-              <a href={"/acadhere_testing/coursework/"+item.id}><h6>Class Work</h6></a>
-              <a href={"/acadhere_testing/materials/"+item.id}><h6>Material</h6></a>
+              <div className="button_bg">
+              <button className="hover_button"><a href={"/acadhere_testing/announcement/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Announcement</a></button>
+              <button className="hover_button"><a href={"/acadhere_testing/coursework/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Class Work</a></button>
+              <button className="hover_button"><a href={"/acadhere_testing/materials/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Material</a></button>
+              </div>
              </div>
         </div>
       </div>
