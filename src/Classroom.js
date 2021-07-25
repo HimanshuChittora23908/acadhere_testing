@@ -74,9 +74,9 @@ function execute() {
             <div className="card-body">
               <h3 className="card-title font-weight-bold">{item.name}</h3>
               <h5 className="card-subTitle">{item.section}</h5>
-              <a href={"/announcement/"+item.id}><h6>Announcement</h6></a>
-              <a href={"/coursework/"+item.id}><h6>Class Work</h6></a>
-              <a href={"/materials/"+item.id}><h6>Material</h6></a>
+              <a href={"/acadhere_testing/announcement/"+item.id}><h6>Announcement</h6></a>
+              <a href={"/acadhere_testing/coursework/"+item.id}><h6>Class Work</h6></a>
+              <a href={"/acadhere_testing/materials/"+item.id}><h6>Material</h6></a>
              </div>
         </div>
       </div>

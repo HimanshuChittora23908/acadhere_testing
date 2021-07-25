@@ -34,7 +34,7 @@ export default function Announcement() {
              </div>
         </div>
       </div>
-      )}) : window.location.replace("/")}
+      )}) : window.location.replace("/acadhere_testing/")}
       </div>
     )
 }

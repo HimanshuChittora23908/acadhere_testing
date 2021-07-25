@@ -44,7 +44,7 @@ export default function CourseWorkMaterials() {
         </div>
       </div>
       </div>
-      )}) : null}
+      )}) : window.location.replace("/acadhere_testing/")}
       </div>
     )
 }

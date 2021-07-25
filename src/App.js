@@ -21,18 +21,18 @@ export default function App() {
     <div className="App">
         <Navbar />
         <Switch>
-        <Route path="/" exact component={Home} />
-          <Route path="/home" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/team" exact component={Team} />
-          <Route path="/contest" exact component={Contest} />
-          <Route path="/notes" exact component={Notes} />
-          <Route path="/resources" exact component={Resources} />
-          <Route path="/classroom" exact component={Classroom} />
-          <Route path={"/announcement/" + id} component={Announcement} />
-          <Route path={"/coursework/" + id} component={CourseWork} />
-          <Route path={"/materials/" + id} component={CourseWorkMaterials} />
-          <Redirect to="/"/>
+        <Route path="/acadhere_testing/" exact component={Home} />
+          <Route path="/acadhere_testing/home" exact component={Home} />
+          <Route path="/acadhere_testing/about" exact component={About} />
+          <Route path="/acadhere_testing/team" exact component={Team} />
+          <Route path="/acadhere_testing/contest" exact component={Contest} />
+          <Route path="/acadhere_testing/notes" exact component={Notes} />
+          <Route path="/acadhere_testing/resources" exact component={Resources} />
+          <Route path="/acadhere_testing/classroom" exact component={Classroom} />
+          <Route path={"/acadhere_testing/announcement/" + id} component={Announcement} />
+          <Route path={"/acadhere_testing/coursework/" + id} component={CourseWork} />
+          <Route path={"/acadhere_testing/materials/" + id} component={CourseWorkMaterials} />
+          <Redirect to="/acadhere_testing/"/>
         </Switch>
         <Footer />
     </div>
