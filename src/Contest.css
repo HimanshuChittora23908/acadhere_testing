@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+.bg_contest{
+    padding: 0.1vw 20vw 2vw 20vw;
+    background-image: linear-gradient(280deg, #ef5734 0%, #f6c412 75%);
+    text-align: center;
+}
+
+.flip_button{
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flip_button a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+.flip_button a:before,
+.flip_button a:after{
+  position: absolute;
+  content: "VISIT";
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.flip_button a:before{
+  color: white;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 80%);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.flip_button a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.flip_button a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.card_contest{
+  background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        margin: 3vw 0 2vw 0;
+        padding: 1vw;
+}
+
+.Clock{
+  width: 25px;
+  margin-top: -0.3vw;
+}
+
+.Hourglass{
+  width: 25px;
+  margin-top: -0.3vw;
+}
+
+.contest_website{
+  color: green;
+}
