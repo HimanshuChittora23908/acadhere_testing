@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './Home.css';
 import Card from "./Cards";
 import Sdata from "./Sdata" 
@@ -8,7 +9,8 @@ import code_img from "../src/images/code_img.svg";
 import about_quote from "../src/images/about_quote.svg";
 import notes_book from "../src/images/notes_book.svg";
 import open_book from "../src/images/openbook.svg";
-function Home() {
+
+export default function Home() {
   return (
     <>
     <div className="Home">
@@ -97,5 +99,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

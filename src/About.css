@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.about_bg_main{
+    background-image: url("../src/images/about.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.about_content_main{
+    margin: 0 10vw 0 50vw;
+    padding-top: 2vw;
+}
+
+.about_head_main{
+    color: orange;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6.5vw;
+    margin: 0 10vw 0 50vw;
+    padding-top: 3vw;
+}

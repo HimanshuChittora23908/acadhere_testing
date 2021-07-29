@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+
+
+
+.bg_video{
+    position: relative;
+    width: 100vw;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.video_size{
+    height: 93vh;
+    overflow: hidden;
+}
+
+.bg_team_main{
+    overflow-x: hidden;
+}
+
+.bg_top_line{
+    position: absolute;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    top: 40vh;
+    margin: 0 20vw 0 20vw;
+    text-align: center;
+    font-style: italic;
+}
+
+.team_title_main{
+    color: #008D00;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3vw;
+    margin: 3vw 0 3vw 0;
+}
+
+.img_team_member{
+    width: 22vw;
+    border-radius: 1.5vw;
+}
+
+.team_members{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+    margin: 0 15vw 0 15vw;
+}
+
+.card_teamMember{
+    flex-grow: 1;
+    width: 20vw;
+}
