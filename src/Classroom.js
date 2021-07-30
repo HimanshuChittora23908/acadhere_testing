@@ -26,7 +26,7 @@ function authenticate() {
         .then(res => {
           if (res) {
             console.log(res.Zb);
-            localStorage.setItem('user11',res.Zb.access_token);
+            localStorage.setItem('user12',res.Zb.access_token);
           }
         })
         .catch(err => console.error(err));
@@ -49,12 +49,12 @@ function execute() {
       useEffect(() => {
         function test(){
             let webApiUrl = 'https://classroom.googleapis.com/v1/courses';
-            let tokenStr = localStorage.getItem('user11');
+            let tokenStr = localStorage.getItem('user12');
             axios.get(webApiUrl,{ headers: { "Authorization": `Bearer ${tokenStr}`}}).then(data => setCourses(data.data.courses));
         }
-        if(localStorage.getItem('user11'))
+        if(localStorage.getItem('user12'))
         test();
-        console.log(localStorage.getItem('user11'));
+        console.log(localStorage.getItem('user12'));
       }, [])
 
       function bg_image(){

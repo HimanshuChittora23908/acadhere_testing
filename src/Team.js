@@ -14,12 +14,13 @@ export default function Team() {
         </div>
         <p className="bg_top_line">"Transforming the Way Students are Accessing Various Technologies and Contents"</p>
         <h1 className="team_title_main">Meet the Crew</h1>
+        <h5 class="team_tagline_main">Making Difficult and Out of the Box Things Possible</h5>
         <div className="team_members">
         {teamMembers ? teamMembers.map((item,ind) => 
       <div key={ind} className="card_teamMember">
-        <img src={item.imgsrc} className="img_team_member" onMouseOver={this.src = item.imghoversrc} onMouseOut={this.src = item.imgsrc} />
+        <img src={item.imgsrc} className="img_team_member" onMouseOver={e => (e.currentTarget.src = item.imghoversrc)} onMouseOut={e => (e.currentTarget.src = item.imgsrc)} />
         <h2>{item.name}</h2>
-        <h6>{item.designation}</h6>
+        <h6 className="designation">{item.designation}</h6>
         </div>
       ) : null}
         </div>

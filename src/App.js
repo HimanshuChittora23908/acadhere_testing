@@ -6,7 +6,7 @@ import Home from "./Home";
 import About from "./About";
 import Team from "./Team";
 import Contest from "./Contest";
-import Notes from "./Notes";
+import NoticeBoard from "./NoticeBoard";
 import Resources from "./Resources";
 import Footer from "./footer.js";
 import Classroom from "./Classroom";
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="/acadhere_testing/about" exact component={About} />
           <Route path="/acadhere_testing/team" exact component={Team} />
           <Route path="/acadhere_testing/contest" exact component={Contest} />
-          <Route path="/acadhere_testing/notes" exact component={Notes} />
+          <Route path="/acadhere_testing/noticeboard" exact component={NoticeBoard} />
           <Route path="/acadhere_testing/resources" exact component={Resources} />
           <Route path="/acadhere_testing/classroom" exact component={Classroom} />
           <Route path={"/acadhere_testing/announcement/" + id} component={Announcement} />

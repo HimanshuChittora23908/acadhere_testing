@@ -35,49 +35,27 @@ const getOldList = async () => {
       })
 }
 
-if(id == 1) {
-  return (
-    <div className="bg_contest">
-      {contest ? contest.contest.map((item,ind) => 
-      <div key={ind}>
-        <div className="card_contest">
-        <div className="card_contest-body"></div>
-        <h2>{item.event_name}</h2>
-        <h5><img src={Clock} className="Clock"></img> {(`${item.start_time}`).slice(0,15)}, {new Date(`${item.start_time}`).toTimeString().slice(0,8)}</h5>
-        <h5><img src={Hourglass} className="Hourglass"></img> {new Date(`${item.duration}`*1000).toISOString().substr(11,8)}</h5>
-        <h6 className="contest_website"><a href={"https://"+`${item.resource_website}`} className="contest_url">{item.resource_website}</a></h6>
-        <span className="flip_button"><a href={item.contest_url}></a></span>
-        </div>
-      </div>
-      ) : null}
-      <button onClick={getMoreList} className="custom-btn-nav btn-nav">Next</button>
-    </div>
-  )
+const nextprev = (res) => {
+  if(res.maxPages == id && id == 1) {
+      return null
+  }
+  else if (id == res.maxPages){
+      return (<button onClick={getOldList} className="custom-btn-nav btn-nav">Previous</button>)
+  }
+  else if (id > 1 && id < res.maxPages){
+      return(<div className="pagination">
+          <button onClick={getOldList} className="custom-btn-nav btn-nav">Previous</button>
+          <button onClick={getMoreList} className="custom-btn-nav btn-nav">Next</button>
+          </div>)
+  }
+  else {
+      return(<button onClick={getMoreList} className="custom-btn-nav btn-nav">Next</button>)
+  }
 }
 
-if(id == contest.maxPages) {
-  return(
-    <div className="bg_contest">
-  {contest ? contest.contest.map((item,ind) => 
-  <div key={ind}>
-    <div className="card_contest">
-    <div className="card_contest-body"></div>
-    <h2>{item.event_name}</h2>
-    <h5><img src={Clock} className="Clock"></img> {(`${item.start_time}`).slice(0,15)}, {new Date(`${item.start_time}`).toTimeString().slice(0,8)}</h5>
-    <h5><img src={Hourglass} className="Hourglass"></img> {new Date(`${item.duration}`*1000).toISOString().substr(11,8)}</h5>
-    <h6 className="contest_website"><a href={"https://"+`${item.resource_website}`} className="contest_url">{item.resource_website}</a></h6>
-    <span className="flip_button"><a href={item.contest_url}></a></span>
-    </div>
-  </div>
-  ) : null}
-  <button onClick={getOldList} className="custom-btn-nav btn-nav">Previous</button>
-</div>
-  )
-}
-if(id > 1 && id < contest.maxPages){
   return (
     <div className="bg_contest">
-      {contest ? contest.contest.map((item,ind) => 
+      {contest ? contest.contest.map((item,ind) =>
       <div key={ind}>
         <div className="card_contest">
         <div className="card_contest-body"></div>
@@ -89,13 +67,9 @@ if(id > 1 && id < contest.maxPages){
         </div>
       </div>
       ) : null}
-      <div className="pagination">
-      <button onClick={getOldList} className="custom-btn-nav btn-nav">Previous</button>
-      <button onClick={getMoreList} className="custom-btn-nav btn-nav">Next</button>
-      </div>
+      {contest ? nextprev(contest) : null}
     </div>
   )
-}
 }
 
 export default Contest;

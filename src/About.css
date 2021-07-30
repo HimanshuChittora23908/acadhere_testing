@@ -1,21 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-
-.about_bg_main{
-    background-image: url("../src/images/about.jpg");
-    background-size: cover;
-    height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400&display=swap');
 
 .about_content_main{
-    margin: 0 10vw 0 50vw;
-    padding-top: 2vw;
+    margin: 0 15vw 0 15vw;
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(71, 71, 71);
+    font-style: italic;
+    font-weight: 400;
 }
 
 .about_head_main{
-    color: orange;
+    color: #008D00;
     font-family: 'Permanent Marker', cursive;
-    font-size: 6.5vw;
-    margin: 0 10vw 0 50vw;
-    padding-top: 3vw;
+    font-size: 5vw;
+    margin: 0 20vw 0 20vw;
+    padding: 3vw 0 1vw 0;
+    text-align: center;
+}
+
+.bg_books{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.bg_tagline{
+    top: 35vh;
+    margin-left: 50vw;
+    position: absolute;
+    font-size: 5vw;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.green_about{
+    color: rgb(0, 255, 0);
+}
+
+.blink{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+}
+
+.start{
+    color: #008D00;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5vw;
+    margin: 0 20vw 0 20vw;
+    padding: 7vw 0 0 0;
+    text-align: center;
+}
+
+.icon_about{
+    height: 12vw;
+}
+
+.box_left{
+    display: flex;
+    margin: 5vw 10vw 5vw 10vw;
+}
+
+.box_right{
+    display: flex;
+    margin: 5vw 10vw 5vw 10vw;
+}
+
+.content_box:nth-child(even){
+    margin-left: 2vw;
+    padding: 2vw 10vw 2vw 3vw;
+    background-image: url("./images/brush.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content_box:nth-child(odd){
+    margin-right: 2vw;
+    padding: 2vw 3vw 2vw 10vw;
+    background-image: url("./images/brush180.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: right;
 }

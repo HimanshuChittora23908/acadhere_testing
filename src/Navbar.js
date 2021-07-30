@@ -26,7 +26,7 @@ export default function Navbar() {
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./about">About</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./team">Team</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./contest">Contest</NavLink>
-                <NavLink activeClassName='menu_active' exact className="right_buttons" to="./notes">Notes</NavLink>
+                <NavLink activeClassName='menu_active' exact className="right_buttons" to="./noticeboard">Notice Board</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./resources">Resources</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./classroom">Classroom</NavLink>
                 <div className="dropdown">
