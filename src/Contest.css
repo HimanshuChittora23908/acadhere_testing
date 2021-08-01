@@ -3,9 +3,16 @@
 
 
 .bg_contest{
-    padding: 0.1vw 20vw 2vw 20vw;
+    padding: 0.1vw 10vw 2vw 10vw;
     background-image: linear-gradient(280deg, #ef5734 0%, #f6c412 75%);
     text-align: center;
+}
+
+.card_contest_complete{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+    padding-bottom: 2vw;
 }
 
 .flip_button{
@@ -64,12 +71,12 @@
 }
 
 .Clock{
-  width: 25px;
+  width: 20px;
   margin-top: -0.3vw;
 }
 
 .Hourglass{
-  width: 25px;
+  width: 22px;
   margin-top: -0.3vw;
 }
 
@@ -138,6 +145,24 @@
 
 .pagination{
   display: flex;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap: 25vw;
+  text-align: center;
+  gap: 33.5vw;
+}
+
+.date{
+  text-align: center;
+  margin-right: 8.5vw;
+  margin-left: 8.5vw;
+  border-radius: 1vw;
+  padding: 0.25vw;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: inset 4px 4px 8px #6e6e6e,
+              inset -4px -4px 8px #ffffff;
+}
+
+.Status{
+  color: red;
 }

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import './Announcement.css';
 import google from "../images/Google.png";
+import ScrollUpButton from "react-scroll-up-button";
 
 export const id =  window.location.href.slice(-12);
 
@@ -31,20 +32,21 @@ export default function CourseWorkMaterials() {
               <button className="hover_button"><a href={item.alternateLink} className="card3-subTitle announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
               <h6 className="card3-subTitle">Created on: {new Date(`${item.creationTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
               <h6 className="card3-subTitle">Updated on: {new Date(`${item.updateTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
-              <div>{item.materials.map((material) => {
+              <div>{item.materials ? item.materials.map((material,index) => {
                 return(
                   <div key={material.id}>
-                    <h5>{material.driveFile.driveFile.title}</h5>
-                    <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img class="img_course" src={material.driveFile.driveFile.thumbnailUrl}></img></a>
+                    {material.driveFile ? <div><h5>{material.driveFile.driveFile.title}</h5>
+                    <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img src={material.driveFile.driveFile.thumbnailUrl} className="img_course" /></a></div> : <div><h5>{material.form.title}</h5><a href={material.form.formUrl} className="card3-subTitle"><img src={material.form.thumbnailUrl} className="img_course" /></a></div>}
                   </div>
                 )
-              })}
+              }): null}
              </div>
              </div>
         </div>
       </div>
       </div>
       )}) : window.location.replace("/acadhere_testing/")}
+      <ScrollUpButton />
       </div>
     )
 }

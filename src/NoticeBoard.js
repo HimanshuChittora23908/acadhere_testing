@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contest.css'
 import Clock from "../src/images/Clock.png";
+import ScrollUpButton from "react-scroll-up-button";
 
 const Contest = () => {
   const [contest, setContest] = useState(null)
@@ -54,17 +55,23 @@ const nextprev = (res) => {
 
   return (
     <div className="bg_contest">
+      <div className="card_contest_complete">
       {contest ? contest.messages.map((item,ind) => 
       <div key={ind}>
         <div className="card_contest">
         <div className="card_contest-body"></div>
-        <h2>{item.Message}</h2>
-        <h5><img src={Clock} className="Clock"></img>{item.Post_Time}</h5>
-        <h6 className="contest_website">{item.Status}</h6>
+        <h5 className="date"><img src={Clock} className="Clock"></img> {new Date(`${item.Post_Time}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h5>
+        <h6 className="Status">{item.Status}</h6>
+        <h3>{item.Heading}</h3>
+        <h5>{item.Message}</h5>
+        {item.Link ? <h6 className="contest_website"><a href={"https://"+`${item.Link}`} className="contest_url">{item.Link}</a></h6>: null}
+        {item.Other ? <h6 className="contest_website"><a href={"https://"+`${item.Other}`} className="contest_url">{item.Other}</a></h6>: null}
         </div>
       </div>
       ) : null}
+      </div>
       {contest ? nextprev(contest) : null}
+      <ScrollUpButton />
     </div>
   )
       }

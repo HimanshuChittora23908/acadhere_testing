@@ -6,6 +6,7 @@ import Bg from '../src/Bg_array';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import google from "./images/Google.png";
+import ScrollUpButton from "react-scroll-up-button";
 
 export default function Classroom() {
   const [courses, setCourses] = useState(null);
@@ -69,8 +70,9 @@ function execute() {
     <div className="bg_class">
       <div className="google_button">
       <button className="login neumorphic variation" onClick={() => {authenticate()}}><span><strong>Signing with <img src={google} className="google2"></img></strong></span></button>
-      <button className="load neumorphic variation" onClick={() => {loadClient().then(execute)}}><span><strong>Load the <img src={google} className="google2"></img> Classroom</strong></span></button>
+      <button className="load neumorphic variation" onClick={() => {loadClient().then(execute)}}><span><strong>Load Google Classroom</strong></span></button>
       </div>
+      <div className="card_classroom_complete">
       {courses ? courses.map((item,index) => {
         return (
         <div key={item.id}>
@@ -87,6 +89,8 @@ function execute() {
         </div>
       </div>
       )}) : "Loading ..."}
+      </div>
+      <ScrollUpButton />
       </div>
   )
 }

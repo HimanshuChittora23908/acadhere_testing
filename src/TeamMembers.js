@@ -1,5 +1,6 @@
-import man from "../src/images/man.jpg";
 import Himanshu from "../src/images/Himanshu.jpg";
+import Raghhav from "../src/images/Raghhav.png"
+import Sidhhant from "../src/images/Sidhhant.png"
 import expert from "../src/videos/expert.gif"
 import cat from "../src/videos/cat.gif"
 import dog from "../src/videos/dog.gif"
@@ -14,27 +15,27 @@ const teamMember = [
         imghoversrc: cat,
     },
     {
-        imgsrc: man,
-        name: "Aakash Tureha",
+        imgsrc: "https://avatars.githubusercontent.com/u/72198360?v=4",
+        name: "Akash Tureha",
         designation: "App Developer",
         imghoversrc: dance,
     },
     {
-        imgsrc: man,
+        imgsrc: Raghhav,
         name: "Raghhav D Turki",
         designation: "Backend Developer",
         imghoversrc: dog,
     },
     {
-        imgsrc: man,
+        imgsrc: "https://avatars.githubusercontent.com/u/74523865?v=4",
         name: "Ankur Agarwal",
         designation: "Content Writer",
         imghoversrc: study,
     },
     {
-        imgsrc: man,
+        imgsrc: Sidhhant,
         name: "Sidhhant Jha",
-        designation: "Content Writer",
+        designation: "Website and App Tester",
         imghoversrc: expert,
     },
 ]
