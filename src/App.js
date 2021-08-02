@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -12,16 +12,29 @@ import Footer from "./footer.js";
 import Classroom from "./Classroom";
 import Announcement from "./subjects/Announcement";
 import CourseWork from "./subjects/CourseWork";
-import {id} from "./subjects/Announcement";
+import { id } from "./subjects/Announcement";
 import CourseWorkMaterials from "./subjects/CourseWorkMaterials";
+import logo from './assets/Ripple.svg';
 
 export default function App() {
+  const [Load, setLoad] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(false)
+    }, 2000);
+  }, [])
+
+  if (Load)
+    return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100vw", height: '100vh' }}>
+      <img src={logo} alt="Logo" />
+    </div>
   return (
     <>
-    <div className="App">
+      <div className="App">
         <Navbar />
         <Switch>
-        <Route path="/acadhere_testing/" exact component={Home} />
+          <Route path="/acadhere_testing/" exact component={Home} />
           <Route path="/acadhere_testing/home" exact component={Home} />
           <Route path="/acadhere_testing/about" exact component={About} />
           <Route path="/acadhere_testing/team" exact component={Team} />
@@ -32,10 +45,10 @@ export default function App() {
           <Route path={"/acadhere_testing/announcement/" + id} component={Announcement} />
           <Route path={"/acadhere_testing/coursework/" + id} component={CourseWork} />
           <Route path={"/acadhere_testing/materials/" + id} component={CourseWorkMaterials} />
-          <Redirect to="/acadhere_testing/"/>
+          <Redirect to="/acadhere_testing/" />
         </Switch>
         <Footer />
-    </div>
+      </div>
     </>
   );
 }
