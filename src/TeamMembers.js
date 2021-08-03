@@ -1,6 +1,5 @@
 import Himanshu from "../src/images/Himanshu.jpg";
 import Raghhav from "../src/images/Raghhav.png"
-import Sidhhant from "../src/images/Sidhhant.png"
 import expert from "../src/videos/expert.gif"
 import cat from "../src/videos/cat.gif"
 import dog from "../src/videos/dog.gif"
@@ -33,7 +32,7 @@ const teamMember = [
         imghoversrc: study,
     },
     {
-        imgsrc: Sidhhant,
+        imgsrc: "https://avatars.githubusercontent.com/u/72513126?v=4",
         name: "Sidhhant Jha",
         designation: "Website and App Tester",
         imghoversrc: expert,

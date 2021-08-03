@@ -54,6 +54,20 @@ const nextprev = (res) => {
   }
 }
 
+function secondsToDhms(seconds) {
+  seconds = Number(seconds);
+  var d = Math.floor(seconds / (3600*24));
+  var h = Math.floor(seconds % (3600*24) / 3600);
+  var m = Math.floor(seconds % 3600 / 60);
+  var s = Math.floor(seconds % 60);
+  
+  var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days ") : "";
+  var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours ") : "";
+  var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes ") : "";
+  var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+  return dDisplay + hDisplay + mDisplay + sDisplay;
+  }
+
   return (
     <>
     <div className="bg_contest">
@@ -64,7 +78,7 @@ const nextprev = (res) => {
         <div className="card_contest-body"></div>
         <h5 className="date"><img src={Clock} className="Clock"></img> {(`${item.start_time}`).slice(0,15)}, {new Date(`${item.start_time}`).toTimeString().slice(0,8)}</h5>
         <h3>{item.event_name}</h3>
-        <h5><img src={Hourglass} className="Hourglass"></img> {new Date(`${item.duration}`*1000).toISOString().substr(11,8)}</h5>
+        {item.duration<86400 ? <h5><img src={Hourglass} className="Hourglass"></img> {new Date(`${item.duration}`*1000).toISOString().substr(11,8)}</h5> : <h5><img src={Hourglass} className="Hourglass" />{secondsToDhms(`${item.duration}`)}</h5>}
         <h6 className="contest_website"><a href={"https://"+`${item.resource_website}`} className="contest_url">{item.resource_website}</a></h6>
         <span className="flip_button"><a href={item.contest_url}></a></span>
         </div>

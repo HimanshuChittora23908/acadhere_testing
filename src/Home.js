@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './Home.css';
-import Card from "./Cards";
-import Sdata from "./Sdata" 
 import arrow_right from "../src/images/arrow-right.svg";
 import triangle_right from "../src/images/triangle_right.svg";
 import code_img from "../src/images/code_img.svg";
 import about_quote from "../src/images/about_quote.svg";
 import notes_book from "../src/images/notes_book.svg";
-import open_book from "../src/images/openbook.svg";
+import classroom from "../src/images/Google_Classroom_Logo.png"
 
 export default function Home() {
   return (
@@ -58,43 +55,19 @@ export default function Home() {
       </div>
     </div>
     <div className="notes_bg">
-      <p className="notes">Notes</p>
+      <p className="notes">Notice Board</p>
       <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
-      <div className="container-fluid notes_bg mb-5">
-            <div className="row row_notes">
-                <div className="col-5">
-                    <div className="row row_foot">
-                        {
-                            Sdata.map((val, ind) => {
-                                return <Card 
-                                    key = {ind} 
-                                    imgsrc = {val.imgsrc}
-                                    title = {val.title}
-                                />
-                            })
-                        }
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src={notes_book} alt="" className="notes_book" />
+      <a className="bn31" href="/"><span className="bn31span">Stay Updated</span></a>
     </div>
-    <img src={open_book} alt="" className="openbook" />
-    <div className="study-bg">
-      <div className="left_main">
-      <p className="study">Study Material</p>
-      <p className="study_left">ECT 102</p>
-      <p className="study_left">MAT 102</p>
-      <p className="study_left">CST 104</p>
-      <p className="study_left">CST 102</p>
-      </div>
-      <div className="right_main">
-      <p className="study_right">HST 104</p>
-      <p className="study_right">HST 102</p>
-      <p className="study_right">ECP 102</p>
-      <p className="study_right">CSP 102</p>
-      <p className="study_right">CSP 112</p>
-      </div>
+    <div className="notes_bg">
+      <p className="notes">Resources <img src={notes_book} alt="" className="notes_book" /></p>
+      <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+        <a className="bn31" href="/"><span className="bn31span">Boost Grades</span></a>
+    </div>
+    <div className="notes_bg">
+      <p className="notes"><img src={classroom} className="classroom_logo" /> Google Classroom</p>
+      <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+      <a className="bn31" href="/"><span className="bn31span">See Courses</span></a>
     </div>
     </>
   );

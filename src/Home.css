@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-
-
 .Home {
     background-image: url(../src/images/home.svg);
     background-size: cover;
@@ -215,14 +213,15 @@ margin: 0 0 0 0;
 }
 
 .about_quote {
+    width: 20vw;
     z-index: -1;
     float: right;
-    margin: -18vw 10vw 0 0;
+    margin: -15vw 10vw 0 0;
 }
 
 .triangle_right {
-    width: 2vw;
-    height: 2vw;
+    width: 1.75vw;
+    height: 1.75vw;
 }
 
 .contest {
@@ -312,7 +311,7 @@ transition: transform 1s;
     font-family: 'Fjalla One';
     font-weight: 500;
     font-size: 4.5vw;
-    margin: 4vw 0 0 7vw;
+    margin: 2vw 0 0 7vw;
     color: #008D00;
     }
 
@@ -324,61 +323,50 @@ transition: transform 1s;
 .notes_book {
     z-index: -1;
     float: right;
-    margin: -26vw 7vw 0 0;
+    margin: 0 8.5vw 0 0;
+    width: 25vw;
 }
 
+.classroom_logo{
+    width: 6vw;
+}
 
-.openbook{
+.bn31 {
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #00a84f;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
-    z-index: -1;
-}
-
-.study-bg{
-    background: linear-gradient(180deg, rgba(163, 132, 36, 0) 0%, rgba(136, 103, 0, 0.5) 100%);
-    padding: 0 0 10vw 0;
+    height: 45px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 13vw;
+    z-index: 2;
+    margin: 2vw 0 4vw 7vw;
+    font-weight: 700;
+  }
+  
+  .bn31:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: white;
+    border-radius: 40px;
     display: flex;
-    width: 100vw;
-}
-
-.left_main{
-    display: flex;
-    flex-direction: column;
-}
-
-.study{
-font-family: 'Mukta';
-font-style: normal;
-font-weight: 800;
-font-size: 4vw;
-line-height: 106px;
-color: #120A07;
-font-weight: 1000;
-margin: -38vw 0 0 21vw;
-}
-
-.study_left{
-font-family: 'Staatliches';
-font-style: normal;
-font-weight: normal;
-font-size: 4vw;
-color: #5B350F;
-margin-left: 29vw;
-}
-
-.study_right{
-    font-family: 'Staatliches';
-font-style: normal;
-font-weight: normal;
-font-size: 4vw;
-color: #5B350F;
-}
-
-.right_main{
-    margin: -38vw 0 0 12vw;
-}
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }
 
 footer{
     background-color: #2e2e2e;
@@ -543,40 +531,6 @@ footer{
         margin: 0 6vh 0 6vh;
         font-size: 1.5vh;
     }
-    
-    .notes_book {
-        display: none;
-    }
-    
-    .openbook{
-        width: 70vw;
-    }
-    
-    .study-bg{
-    padding: 0 0 5vh 0;
-    }
-    
-    .study{
-    font-size: 4vw;
-    margin: -48vw 0 -4.5vh 21.5vw;
-    }
-    
-    .study_left{
-    font-size: 4vw;
-    margin-left: 29vw;
-    margin-bottom: 1vh;
-    }
-    
-    .study_right{
-        margin-bottom: 1.3vw;
-    }
-}
-
-
-@media only screen and (max-width: 380px){
-    .study{
-        margin: -50vw 0 -6vh 21.5vw;
-        }
 }
 
 @media only screen and (max-height: 600px){
@@ -736,30 +690,6 @@ footer{
     .notes_content {
         margin: 0 6vw 0 6vw;
         font-size: 1.5vw;
-    }
-    
-    .notes_book {
-        display: none;
-    }
-    
-    .openbook{
-        width: 70vw;
-    }
-    
-    .study-bg{
-    padding: 0 0 5vw 0;
-    }
-    
-    .study{
-    margin: -41vw 0 -4.5vh 21.5vw;
-    }
-    
-    .study_left{
-    margin-bottom: 1vw;
-    }
-    
-    .study_right{
-        margin-bottom: 1.3vw;
     }
 }
 
@@ -933,23 +863,6 @@ footer{
         margin: 0 6vw 0 6vw;
         font-size: 1.5vw;
     }
-
-    .notes_book {
-        display: none;
-    }
-
-    .openbook{
-        width: 70vw;
-    }
-
-    .study-bg{
-    padding: 0 0 5vw 0;
-    }
-
-    .study{
-    font-size: 4vw;
-    margin: -41vw 0 -3vh 21.5vw;
-    }
 }
 
 @media only screen and (min-height: 1200px){
@@ -991,11 +904,6 @@ footer{
     
     .rectangle4{
         display: none;
-        }
-
-    .study{
-        font-size: 4vw;
-        margin: -40vw 0 0 21.5vw;
         }
 }
 
@@ -1059,12 +967,4 @@ footer{
     .rectangle4{
         display: none;
         }
-    .study-bg{
-        padding: 0 0 5vw 0;
-        }
-    
-    .study{
-    font-size: 4vw;
-    margin: -40vw 0 -3vh 21.5vw;
-    }
 }
