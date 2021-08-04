@@ -79,7 +79,8 @@ color: #000000;
   }
   
   .dropdown-content a:hover {
-    background-color: grey;
+    background-color: black;
+    color: rgb(0, 255, 0);
   }
   .dropdown:hover .dropdown-content {
     display: block;

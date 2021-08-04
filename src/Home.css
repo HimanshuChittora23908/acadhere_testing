@@ -77,7 +77,7 @@ transform: rotate(-45deg);
     position: absolute;
     width: 39.5vw;
     height: 4vh;
-    margin-left: -8vw;
+    margin-left: -8.3vw;
     z-index: -1;
     background: #D9A401;
     transform: rotate(-45deg);
@@ -87,7 +87,7 @@ transform: rotate(-45deg);
     position: absolute;
     width: 39.5vw;
     height: 5vh;
-    margin-left: -4vw;
+    margin-left: -4.3vw;
     z-index: -1;
     background: #D9A401;
     transform: rotate(-45deg);
@@ -110,6 +110,7 @@ color: #008D00;
 .team_content {
     font-family: 'Poppins';
     margin: 0 7vw 0 7vw;
+    font-size: 1.2vw;
 }
 
 .team_tagline {
@@ -161,6 +162,7 @@ color: #000000;
     .about_content {
         font-family: 'Poppins';
         padding: 0 7vw 0 7vw;
+        font-size: 1.2vw;
     }
 
     .about_foot{
@@ -216,7 +218,7 @@ margin: 0 0 0 0;
     width: 20vw;
     z-index: -1;
     float: right;
-    margin: -15vw 10vw 0 0;
+    margin: -18vw 10vw 0 0;
 }
 
 .triangle_right {
@@ -236,6 +238,7 @@ margin: 0 0 0 0;
     font-family: 'Poppins';
     margin: 0 5vw 0 9vw;
     color: whitesmoke;
+    font-size: 1.2vw;
 }
 
 .contest_foot{
@@ -311,13 +314,14 @@ transition: transform 1s;
     font-family: 'Fjalla One';
     font-weight: 500;
     font-size: 4.5vw;
-    margin: 2vw 0 0 7vw;
+    margin: 4vw 0 0 7vw;
     color: #008D00;
     }
 
 .notes_content {
     font-family: 'Poppins';
     margin: 0 7vw 0 7vw;
+    font-size: 1.2vw;
 }
 
 .notes_book {
@@ -333,13 +337,13 @@ transition: transform 1s;
 
 .bn31 {
     background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
-    border-radius: 40px;
+    border-radius: 2vw;
     box-sizing: border-box;
     color: #00a84f;
     display: block;
-    height: 45px;
-    font-size: 1.4em;
-    padding: 4px;
+    height: 3.2vw;
+    font-size: 1.4vw;
+    padding: 0.3vw;
     position: relative;
     text-decoration: none;
     width: 13vw;
@@ -356,7 +360,7 @@ transition: transform 1s;
   .bn31 .bn31span {
     align-items: center;
     background: white;
-    border-radius: 40px;
+    border-radius: 2vw;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -372,599 +376,4 @@ footer{
     background-color: #2e2e2e;
     color: whitesmoke;
     text-align: center;
-}
-
-@media only screen and (max-width: 600px){
-    .Home {
-        height: 100vh;
-        padding: 55vh 0 0 15vw;
-    }
-    
-    .head_name{
-    font-size: 7vh;
-    }
-    
-    .tagline{
-    font-size: 2.5vh;
-    max-width: 40vh;
-    }
-    
-    .rec{
-        margin-left: -5vh;
-    }
-    
-    .rectangle1{
-    width: 39.5vh;
-    height: 3vw;
-    margin-left: -31vw;
-    }
-    
-    .rectangle2{
-        width: 39.5vh;
-        height: 3vw;
-        margin-left: -25vw;
-        }
-    
-    .rectangle3{
-        width: 39.5vh;
-        height: 4vw;
-        margin-left: -19vw;
-        }
-    
-    .rectangle4{
-        width: 39.5vh;
-        height: 5vw;
-        margin-left: -11vw;
-        }
-    
-    .team{
-    font-size: 4vh;
-    margin: 3vh 0 0 6vh;
-    }
-    
-    .team_content {
-        margin: 0 6vh 0 6vh;
-        font-size: 1.5vh;
-    }
-    
-    .team_tagline {
-    font-size: 2.5vh;
-    padding: 2vh 0 0 6vh;
-    }
-    
-    .team_foot {
-        margin-top: 0;
-    }
-    
-    .arrow_r {
-        width: 3vh;
-        margin-left: 1vh;
-    }
-    
-    .about {
-        font-size: 4vh;
-        margin: 3vh 0 0 6vh;
-        }
-    
-    .about_content {
-        padding: 0 6vh 0 6vh;
-        font-size: 1.5vh;
-    }
-
-    .about_foot{
-    padding: 1vh 1.5vh;
-    width: 12vh;
-    height: 3vh;
-    margin: 2vh 0 5vh 6vh;
-    border-radius: 2vh;
-    }
-    
-    @keyframes triangle_move_about {
-        50%{margin-left: 3vh;}
-    }
-    
-    @keyframes about_foot_move{
-        0% {width: 12vh;}
-        50%{width: 15vh;}
-        100%{width: 12vh;}
-    }
-    
-    .about_tagline {
-    font-size: 1.5vh;
-    }
-    
-    .about_quote {
-        margin: -35vh 5vh 0 0;
-        width: 20vh;
-    }
-    
-    .triangle_right {
-        width: 2vh;
-        height: 2vh;
-    }
-    
-    .contest {
-        font-size: 5vh;
-        padding: 5vh 0 0 2vh;
-        }
-    
-    .contest_content {
-        margin: 0 2vh 0 2vh;
-        font-size: 1.5vh;
-    }
-    
-    .contest_foot{
-        border-radius: 2vh;
-        padding: 0.3vh 1.5vh;
-        width: 13vh;
-        margin: 2vh 0 0 2vh;
-    }
-    
-    @keyframes triangle_move_contest {
-        50%{margin-left: 3vh;}
-    }
-    
-    @keyframes contest_foot_move{
-        0% {width: 13vh;}
-        50%{width: 16vh;}
-        100%{width: 13vh;}
-    }
-    
-    .contest_tagline {
-    font-size: 1.6vh;
-    }
-    
-    .contest_bg {
-        padding-bottom: 5vh;
-    }
-    
-    .code_img{
-        display: none;
-    }
-    
-    .notes {
-        font-size: 4vh;
-        margin: 4vh 0 0 6vh;
-        }
-    
-    .notes_content {
-        margin: 0 6vh 0 6vh;
-        font-size: 1.5vh;
-    }
-}
-
-@media only screen and (max-height: 600px){
-    .Home {
-        height: 100vh;
-        padding: 3vw 0 0 40vw;
-    }
-    
-    .head_name{
-    font-size: 7vw;
-    }
-    
-    .tagline{
-    font-size: 2.5vw;
-    max-width: 40vw;
-    margin-top: -10vh;
-    }
-    
-    .rec{
-        margin-left: -5vw;
-    }
-    
-    .rectangle1{
-    width: 39.5vw;
-    height: 3vh;
-    margin-left: -35vh;
-    }
-    
-    .rectangle2{
-        width: 39.5vw;
-        height: 3vh;
-        margin-left: -29vh;
-        }
-    
-    .rectangle3{
-        width: 39.5vw;
-        height: 4vh;
-        margin-left: -23vh;
-        }
-    
-    .rectangle4{
-        width: 39.5vw;
-        height: 5vh;
-        margin-left: -15vh;
-        }
-    
-    .team{
-    font-size: 4vw;
-    margin: 2vw 0 0 6vw;
-    }
-    
-    .team_content {
-        margin: 0 6vw 0 6vw;
-        font-size: 1.5vw;
-    }
-    
-    .team_tagline {
-    font-size: 2.5vw;
-    padding: 2vw 0 0 6vw;
-    }
-    
-    .team_foot {
-        margin-top: 0;
-    }
-    
-    .arrow_r {
-        width: 3vw;
-        margin-left: 1vw;
-    }
-    
-    .about {
-        font-size: 4vw;
-        margin: 3vw 0 0 6vw;
-        }
-    
-    .about_content {
-        padding: 0 6vw 0 6vw;
-        font-size: 1.5vw;
-    }
-
-    .about_foot{
-    padding: 1vw 1.5vw;
-    width: 12vw;
-    height: 3vw;
-    margin: 2vw 0 5vh 6vw;
-    border-radius: 2vw;
-    }
-    
-    @keyframes triangle_move_about {
-        50%{margin-left: 3vw;}
-    }
-    
-    @keyframes about_foot_move{
-        0% {width: 12vw;}
-        50%{width: 15vw;}
-        100%{width: 12vw;}
-    }
-    
-    .about_tagline {
-    font-size: 1.5vw;
-    }
-    
-    .about_quote {
-        margin: -23vw 10vw 0 0;
-        width: 20vw;
-    }
-    
-    .triangle_right {
-        width: 2vw;
-        height: 2vw;
-    }
-    
-    .contest {
-        font-size: 5vw;
-        padding: 5vw 0 0 5vw;
-        }
-    
-    .contest_content {
-        margin: 0 5vw 0 5vw;
-        font-size: 1.5vw;
-    }
-    
-    .contest_foot{
-        border-radius: 2vw;
-        padding: 0.5vw 1.5vw;
-        width: 13vw;
-        margin: 2vw 0 0 5vw;
-    }
-    
-    @keyframes triangle_move_contest {
-        50%{margin-left: 3vw;}
-    }
-    
-    @keyframes contest_foot_move{
-        0% {width: 13vw;}
-        50%{width: 16vw;}
-        100%{width: 13vw;}
-    }
-    
-    .contest_tagline {
-    font-size: 1.6vw;
-    }
-    
-    .contest_bg {
-        padding-bottom: 5vw;
-    }
-    
-    .code_img{
-        display: none;
-    }
-    
-    .notes {
-        font-size: 4vw;
-        margin: 4vw 0 0 6vw;
-        }
-    
-    .notes_content {
-        margin: 0 6vw 0 6vw;
-        font-size: 1.5vw;
-    }
-}
-
-@media only screen and (max-width: 1000px){
-    .Home {
-        padding: 30vw 0 0 40vw;
-    }
-    
-    .head_name{
-    font-size: 10vw;
-    }
-    
-    .tagline{
-    font-size: 4vw;
-    max-width: 50vw;
-    margin-top: -5vw;
-    }
-    
-    .rec{
-        margin-left: -5vw;
-    }
-    
-    .rectangle1{
-    width: 39.5vw;
-    height: 3vh;
-    margin-left: -15vh;
-    }
-    
-    .rectangle2{
-        width: 39.5vw;
-        height: 3vh;
-        margin-left: -10vh;
-        }
-    
-    .rectangle3{
-        width: 39.5vw;
-        height: 4vh;
-        margin-left: -4.5vh;
-        }
-    
-    .rectangle4{
-        display: none;
-        }
-
-        .study-bg{
-    padding: 0 0 5vw 0;
-    }
-    
-    .study{
-    margin: -41vw 0 -4.5vh 21.5vw;
-    }
-    
-    .study_left{
-    margin-bottom: 1vw;
-    }
-    
-    .study_right{
-        margin-bottom: 1.3vw;
-    }
-
-    .team{
-    font-size: 4vw;
-    margin: 3vw 0 0 6vw;
-    }
-
-    .team_content {
-        margin: 0 6vw 0 6vw;
-        font-size: 1.5vw;
-    }
-
-    .team_tagline {
-    font-size: 2.5vw;
-    padding: 2vw 0 0 6vw;
-    }
-
-    .team_foot {
-        margin-top: 0;
-    }
-
-    .arrow_r {
-        width: 3vw;
-        margin-left: 1vw;
-    }
-
-    .about {
-        font-size: 4vw;
-        margin: 3vw 0 0 6vw;
-        }
-
-    .about_content {
-        padding: 0 6vw 0 6vw;
-        font-size: 1.5vw;
-    }   
-    .about_foot{
-    padding: 1vw 1.5vw;
-    width: 12vw;
-    height: 3vw;
-    margin: 2vw 0 5vw 6vw;
-    border-radius: 2vw;
-    }
-
-    @keyframes triangle_move_about {
-        50%{margin-left: 3vw;}
-    }
-
-    @keyframes about_foot_move{
-        0% {width: 12vw;}
-        50%{width: 15vw;}
-        100%{width: 12vw;}
-    }
-
-    .about_tagline {
-    font-size: 1.5vw;
-    }
-
-    .about_quote {
-        margin: -25vw 10vw 0 0;
-        width: 20vw;
-    }
-
-    .triangle_right {
-        width: 2vw;
-        height: 2vw;
-    }
-
-    .contest {
-        font-size: 5vw;
-        padding: 5vw 0 0 2vw;
-        }
-
-    .contest_content {
-        margin: 0 2vw 0 2vw;
-        font-size: 1.5vw;
-    }
-
-    .contest_foot{
-        border-radius: 2vw;
-        padding: 0.5vw 1.5vw;
-        width: 13vw;
-        margin: 2vw 0 0 2vw;
-    }
-
-    @keyframes triangle_move_contest {
-        50%{margin-left: 3vw;}
-    }
-
-    @keyframes contest_foot_move{
-        0% {width: 13vw;}
-        50%{width: 16vw;}
-        100%{width: 13vw;}
-    }
-
-    .contest_tagline {
-    font-size: 1.6vw;
-    }
-
-    .contest_bg {
-        padding-bottom: 5vw;
-    }
-
-    .code_img{
-        display: none;
-    }
-
-    .notes {
-        font-size: 4vw;
-        margin: 4vw 0 0 6vw;
-        }
-
-    .notes_content {
-        margin: 0 6vw 0 6vw;
-        font-size: 1.5vw;
-    }
-}
-
-@media only screen and (min-height: 1200px){
-    .Home {
-        padding: 50vh 0 0 10vh;
-    }
-    
-    .head_name{
-    font-size: 6vh;
-    }
-    
-    .tagline{
-    font-size: 3vh;
-    max-width: 35vh;
-    margin-top: -5vw;
-    }
-    
-    .rec{
-        margin-left: -5vh;
-    }
-    
-    .rectangle1{
-    width: 39.5vh;
-    height: 3vw;
-    margin-left: -30vw;
-    }
-    
-    .rectangle2{
-        width: 39.5vh;
-        height: 3vw;
-        margin-left: -24.5vw;
-        }
-    
-    .rectangle3{
-        width: 39.5vh;
-        height: 4vw;
-        margin-left: -19vw;
-        }
-    
-    .rectangle4{
-        display: none;
-        }
-}
-
-@media only screen and (min-height: 300px) and (max-width: 1000px){
-    .Home {
-        padding: 10vw 0 0 50vw;
-    }
-    
-    .head_name{
-    font-size: 6vw;
-    }
-    
-    .tagline{
-    font-size: 3vw;
-    max-width: 40vw;
-    margin-top: -5vh;
-    }
-    .rectangle1{
-        width: 39.5vw;
-        height: 3vh;
-        margin-left: -30vh;
-        }
-        
-        .rectangle2{
-            width: 39.5vw;
-            height: 3vh;
-            margin-left: -24.5vh;
-            }
-        
-        .rectangle3{
-            width: 39.5vw;
-            height: 4vh;
-            margin-left: -19vh;
-            }
-        
-        .rectangle4{
-            display: none;
-            }
-}
-
-@media only screen and (width:720px){
-    
-    .rectangle1{
-        width: 39.5vw;
-        height: 3vh;
-        margin-left: -30vh;
-        }
-        
-    .rectangle2{
-        width: 39.5vw;
-        height: 3vh;
-        margin-left: -24.5vh;
-        }
-    
-    .rectangle3{
-        width: 39.5vw;
-        height: 4vh;
-        margin-left: -19vh;
-        }
-    
-    .rectangle4{
-        display: none;
-        }
 }

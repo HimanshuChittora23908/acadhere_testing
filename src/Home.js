@@ -57,17 +57,17 @@ export default function Home() {
     <div className="notes_bg">
       <p className="notes">Notice Board</p>
       <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
-      <a className="bn31" href="/"><span className="bn31span">Stay Updated</span></a>
+      <a className="bn31" href="/acadhere_testing/noticeboard"><span className="bn31span">Stay Updated</span></a>
     </div>
     <div className="notes_bg">
       <p className="notes">Resources <img src={notes_book} alt="" className="notes_book" /></p>
       <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
-        <a className="bn31" href="/"><span className="bn31span">Boost Grades</span></a>
+        <a className="bn31" href="/acadhere_testing/resources"><span className="bn31span">Boost Grades</span></a>
     </div>
     <div className="notes_bg">
       <p className="notes"><img src={classroom} className="classroom_logo" /> Google Classroom</p>
       <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
-      <a className="bn31" href="/"><span className="bn31span">See Courses</span></a>
+      <a className="bn31" href="/acadhere_testing/classroom"><span className="bn31span">See Courses</span></a>
     </div>
     </>
   );

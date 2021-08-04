@@ -33,10 +33,10 @@ export default function Navbar() {
                 <img src={icon} alt="" className="icon dropbtn" />
                 <img src={triangle_down} alt="" className="triangle_down dropbtn" />
                 <div className="dropdown-content">
-                  <a to="#">Profile</a>
-                  <a to="#">Forms</a>
-                  <a to="#">Settings</a>
-                  <a to="#">Logout</a>
+                  <a href="#">Profile</a>
+                  <a href="#">Forms</a>
+                  <a href="#">Settings</a>
+                  <a href="#">Logout</a>
                 </div>
                 </div>
             </div>
