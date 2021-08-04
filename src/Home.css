@@ -397,13 +397,140 @@ footer{
     .Home {
         height: 40vh;
         padding-top: 12vh;
+        padding-left: 35vw;
     }
 
     .tagline{
         margin-top: -10vw;
+        font-size: 4vw;
+        max-width: 50vw;
     }
     
     .rectangle1, .rectangle2, .rectangle3, .rectangle4{
         display: none;
     }
+
+    .head_name{
+    font-size: 10vw;
+    }
+    
+    .team{
+    font-size: 7vw;
+    }
+    
+    .team_content {
+        font-size: 3vw;
+    }
+    
+    .team_tagline {
+    font-size: 4vw;
+    }
+    
+    .arrow_r {
+        width: 6vw;
+        margin-top: -3vw;
+        margin-left: 2vw;
+    }
+    
+    .about {
+        font-size: 7vw;
+        }
+    
+    .about_content {
+        font-size: 3vw;
+    }
+
+    .about_foot{
+        border-radius: 4vw;
+        padding: 2vw 3vw;
+        width: 24vw;
+        height: 6vw;
+        margin-bottom: 5vw;
+    }
+    
+    @keyframes triangle_move_about {
+        50%{margin-left: 6vw;}
+    }
+    
+    @keyframes about_foot_move{
+        0% {width: 24vw;}
+        50%{width: 30vw;}
+        100%{width: 24vw;}
+    }
+    
+    .about_tagline {
+        font-size: 3vw;
+    }
+    
+    .about_quote {
+        width: 40vw;
+        margin: -60vw 10vw 0 0;
+    }
+    
+    .triangle_right {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    
+    .contest {
+        font-size: 9vw;
+        }
+    
+    .contest_content {
+        font-size: 3vw;
+    }
+    
+    .contest_foot{
+        border-radius: 4vw;
+        padding: 0.6vw 3vw;
+        width: 30vw;
+    }
+    
+    @keyframes triangle_move_contest {
+        50%{margin-left: 6vw;}
+    }
+    
+    @keyframes contest_foot_move{
+        0% {width: 30vw;}
+        50%{width: 36vw;}
+        100%{width: 30vw;}
+    }
+    
+    .contest_tagline {
+    font-size: 4vw;
+    }
+    
+    .code_img{
+    display: none;
+    }
+    
+    .notes {
+        font-size: 7vw;
+        }
+    
+    .notes_content {
+        font-size: 3vw;
+    }
+    
+    .notes_book {
+        width: 40vw;
+    }
+    
+    .classroom_logo{
+        width: 9vw;
+    }
+    
+    .bn31 {
+        border-radius: 4vw;
+        height: 7vw;
+        font-size: 4vw;
+        padding: 0.8vw;
+        width: 32vw;
+        margin: 2vw 0 4vw 7vw;
+        font-weight: 700;
+      }
+      
+      .bn31 .bn31span {
+        border-radius: 6vw;
+      }
 }
