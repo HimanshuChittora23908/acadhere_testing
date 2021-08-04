@@ -377,3 +377,33 @@ footer{
     color: whitesmoke;
     text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .Home {
+        height: 40vh;
+        padding-top: 12vh;
+    }
+
+    .tagline{
+        margin-top: -5vw;
+    }
+    
+    .rectangle1, .rectangle2, .rectangle3, .rectangle4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Home {
+        height: 40vh;
+        padding-top: 12vh;
+    }
+
+    .tagline{
+        margin-top: -10vw;
+    }
+    
+    .rectangle1, .rectangle2, .rectangle3, .rectangle4{
+        display: none;
+    }
+}
