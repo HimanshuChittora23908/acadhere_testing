@@ -88,3 +88,71 @@
     background-repeat: no-repeat;
     text-align: right;
 }
+
+@media screen and (min-width: 600px){
+.icon_inline{
+    display: none;
+}
+}
+
+@media screen and (max-width: 600px){
+    .about_content_main{
+        padding-top: 2vw;
+        font-size: 4vw;
+    }
+    
+    .contentHead1{
+        font-size: 7vw;
+    }
+
+    .content1{
+        font-size: 3.5vw;
+    }
+
+    .about_head_main{
+        font-size: 10vw;
+        padding: 6vw 0 2vw 0;
+    }
+    
+    .bg_books{
+        height: auto;
+    }
+    
+    .bg_tagline{
+        top: 8vh;
+        margin-left: 50vw;
+        font-size: 10vw;
+    }
+    
+    .blink{
+        width: 20vw;
+    }
+    
+    .start{
+        font-size: 9vw;
+        margin: 0 10vw 0 10vw;
+    }
+    
+    .icon_about{
+        display: none;
+    }
+
+    .icon_inline{
+        height: 10vw;
+        margin-top: -2vw;
+    }
+    
+    .box_left, .box_right{
+        margin: 5vw;
+    }
+    
+    .content_box:nth-child(even){
+        margin-left: 0vw;
+        padding: 8vw 10vw 8vw 5vw;
+    }
+    
+    .content_box:nth-child(odd){
+        margin-right: 0vw;
+        padding: 8vw 5vw 8vw 10vw;
+    }
+}

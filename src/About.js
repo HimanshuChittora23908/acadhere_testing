@@ -24,13 +24,13 @@ export default function About() {
         <div className="box_left">
         <img src={idea} className="icon_about"/>
         <div className="content_box">
-        <h1 className="contentHead1">Idea</h1>
+        <h1 className="contentHead1"><img src={idea} className="icon_inline"/> Idea</h1>
         <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
         </div>
         </div>
         <div className="box_right">
         <div className="content_box">
-        <h1 className="contentHead1">Brainstorming</h1>
+        <h1 className="contentHead1">Brainstorming <img src={brainstorming} className="icon_inline"/></h1>
         <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
         </div>
         <img src={brainstorming} className="icon_about"/>
@@ -38,13 +38,13 @@ export default function About() {
         <div className="box_left">
         <img src={team} className="icon_about"/>
         <div className="content_box">
-        <h1 className="contentHead1">Finding a Team</h1>
+        <h1 className="contentHead1"><img src={team} className="icon_inline"/> Finding a Team</h1>
         <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
         </div>
         </div>
         <div className="box_right">
         <div className="content_box">
-        <h1 className="contentHead1">Features and UI</h1>
+        <h1 className="contentHead1">Features and UI <img src={ui} className="icon_inline"/></h1>
         <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
         </div>
         <img src={ui} className="icon_about"/>
@@ -52,13 +52,13 @@ export default function About() {
         <div className="box_left">
         <img src={api} className="icon_about"/>
         <div className="content_box">
-        <h1 className="contentHead1">Google and Custom APIs</h1>
+        <h1 className="contentHead1"><img src={api} className="icon_inline"/> Google and Custom APIs</h1>
         <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
         </div>
         </div>
         <div className="box_right">
         <div className="content_box">
-        <h1 className="contentHead1">Finishing and Launching </h1>
+        <h1 className="contentHead1">Finishing and Launching <img src={finish} className="icon_inline"/></h1>
         <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
         </div>
         <img src={finish} className="icon_about"/>
