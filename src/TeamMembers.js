@@ -10,7 +10,7 @@ const teamMember = [
     {
         imgsrc: Himanshu,
         name: "Himanshu Chittora",
-        designation: "Frontend Developer",
+        designation: "UI/UX Designer & Frontend Developer",
         imghoversrc: cat,
     },
     {

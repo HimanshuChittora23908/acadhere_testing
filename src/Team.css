@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
 
-
-
-
 .bg_video{
     position: relative;
     width: 100vw;
@@ -42,7 +39,7 @@
 
 .team_tagline_main{
     text-align: center;
-    margin: 1vw 0 3vw 0;
+    margin: 1vw 5vw 3vw 5vw;
 }
 
 .img_team_member{
@@ -67,4 +64,48 @@
 
 .designation{
     color: #D9A401;
+}
+
+@media screen and (max-width: 600px){
+.video_size{
+    height: auto;
+}
+
+.bg_top_line{
+    font-size: 3.5vw;
+    top: 30vw;
+}
+
+.team_title_main{
+    font-size: 8vw;
+    margin: 10vw 0 0vw 0;
+}
+
+.team_tagline_main{
+    font-size: 4vw;
+}
+
+.name_team{
+    font-size: 4vw;
+}
+
+.img_team_member{
+    width: 35vw;
+}
+
+.team_members{
+    margin: 0 5vw;
+}
+
+.card_teamMember{
+    flex-grow: 1;
+    width: 33vw;
+    height: 50vw;
+}
+
+.designation{
+    font-size: 3vw;
+    margin-top: -1vw;
+    font-weight: 400;
+}
 }

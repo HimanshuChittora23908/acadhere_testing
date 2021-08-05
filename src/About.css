@@ -115,11 +115,11 @@
     }
     
     .bg_books{
-        height: auto;
+        height: 90vw;
     }
     
     .bg_tagline{
-        top: 8vh;
+        top: 15vh;
         margin-left: 50vw;
         font-size: 10vw;
     }
