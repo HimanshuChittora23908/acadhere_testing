@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Announcement.css';
 import google from "../images/Google.png";
 import ScrollUpButton from "react-scroll-up-button";
+import Clock from "../images/Clock.png";
 
 export const id =  window.location.href.slice(-12);
 
@@ -27,16 +28,15 @@ export default function CourseWorkMaterials() {
         <div key={item.id}>
         <div className="card3">
             <div className="card3-body">
+            <h6 className="date"><img src={Clock} className="Clock"></img> {new Date(`${item.updateTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
               <h3 className="card3-title font-weight-bold">{item.title}</h3>
               <div className="button_bg">
-              <button className="hover_button"><a href={item.alternateLink} className="card3-subTitle announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
-              <h6 className="card3-subTitle">Created on: {new Date(`${item.creationTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
-              <h6 className="card3-subTitle">Updated on: {new Date(`${item.updateTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
+              <button className="hover_button_classroom"><a href={item.alternateLink} className="announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
               <div>{item.materials ? item.materials.map((material,index) => {
                 return(
                   <div key={material.id}>
-                    {material.driveFile ? <div><h5>{material.driveFile.driveFile.title}</h5>
-                    <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img src={material.driveFile.driveFile.thumbnailUrl} className="img_course" /></a></div> : <div><h5>{material.form.title}</h5><a href={material.form.formUrl} className="card3-subTitle"><img src={material.form.thumbnailUrl} className="img_course" /></a></div>}
+                    {material.driveFile ? <div><h5 className="material_title">{material.driveFile.driveFile.title}</h5>
+                    <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img src={material.driveFile.driveFile.thumbnailUrl} className="img_course" /></a></div> : <div><h5 className="material_title">{material.form.title}</h5><a href={material.form.formUrl} className="card3-subTitle"><img src={material.form.thumbnailUrl} className="img_course" /></a></div>}
                   </div>
                 )
               }): null}

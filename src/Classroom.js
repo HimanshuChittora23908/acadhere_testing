@@ -78,12 +78,12 @@ function execute() {
         <div key={item.id}>
         <div className="card">
             <div className="card-body">
-              <h3 className="card-title font-weight-bold">{item.name}</h3>
-              <h5 className="card-subTitle">{item.section}</h5>
+              <h3 className="card-title font-weight-bold name_classroom">{item.name}</h3>
+              <h5 className="card-subTitle section_classroom">{item.section}</h5>
               <div className="button_bg">
-              <button className="hover_button"><a href={"/acadhere_testing/announcement/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Announcement</a></button>
-              <button className="hover_button"><a href={"/acadhere_testing/coursework/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Class Work</a></button>
-              <button className="hover_button"><a href={"/acadhere_testing/materials/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Material</a></button>
+              <button className="hover_button_classroom"><a href={"/acadhere_testing/announcement/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Announcement</a></button>
+              <button className="hover_button_classroom"><a href={"/acadhere_testing/coursework/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Class Work</a></button>
+              <button className="hover_button_classroom"><a href={"/acadhere_testing/materials/"+item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Material</a></button>
               </div>
              </div>
         </div>

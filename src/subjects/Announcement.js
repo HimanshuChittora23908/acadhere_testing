@@ -28,11 +28,11 @@ export default function Announcement() {
         <div key={item.id}>
         <div className="card3">
             <div className="card3-body">
+            <h6 className="date"><img src={Clock} className="Clock"></img> {new Date(`${item.updateTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
               <h3 className="card3-title font-weight-bold">{item.title}</h3>
-              <h5 className="card3-subTitle">{item.text}</h5>
-              <h6 className="card3-subTitle"><img src={Clock} className="Clock"></img>{new Date(`${item.updateTime}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h6>
+              <h5 className="card3-text">{item.text}</h5>
               <div className="button_bg">
-              <button className="hover_button"><a href={item.alternateLink} className="card3-subTitle announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
+              <button className="hover_button_classroom"><a href={item.alternateLink} className="announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
               </div>
              </div>
         </div>

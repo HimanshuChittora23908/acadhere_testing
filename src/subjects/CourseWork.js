@@ -30,12 +30,12 @@ export default function CourseWork() {
               <h3 className="card3-title font-weight-bold">{item.title}</h3>
               <h6 className="card3-subTitle">Type: {item.workType}</h6>
               <div className="button_bg">
-              <button className="hover_button"><a href={item.alternateLink} className="card3-subTitle announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
+              <button className="hover_button_classroom"><a href={item.alternateLink} className="announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
               <div>{item.materials ? item.materials.map((material,index) => {
                 return(
                   <div key={material.id}>
-                    {material.driveFile ? <div><h5>{material.driveFile.driveFile.title}</h5>
-                    <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img src={material.driveFile.driveFile.thumbnailUrl} className="img_course" /></a></div> : <div><h5>{material.form.title}</h5><a href={material.form.formUrl} className="card3-subTitle"><img src={material.form.thumbnailUrl} className="img_course" /></a></div>}
+                    {material.driveFile ? <div><h5 className="material_title">{material.driveFile.driveFile.title}</h5>
+                    <a href={material.driveFile.driveFile.alternateLink} className="card3-subTitle"><img src={material.driveFile.driveFile.thumbnailUrl} className="img_course" /></a></div> : <div><h5 className="material_title">{material.form.title}</h5><a href={material.form.formUrl} className="card3-subTitle"><img src={material.form.thumbnailUrl} className="img_course" /></a></div>}
                   </div>
                 )
               }): null}
