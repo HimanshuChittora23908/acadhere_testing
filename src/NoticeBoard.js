@@ -62,8 +62,8 @@ const nextprev = (res) => {
         <div className="card_contest-body"></div>
         <h5 className="date"><img src={Clock} className="Clock"></img> {new Date(`${item.Post_Time}`).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</h5>
         <h6 className="Status">{item.Status}</h6>
-        <h3>{item.Heading}</h3>
-        <h5>{item.Message}</h5>
+        <h3 className="name_contest">{item.Heading}</h3>
+        <h5 className="message">{item.Message}</h5>
         {item.Link ? <h6 className="contest_website"><a href={"https://"+`${item.Link}`} className="contest_url">{item.Link}</a></h6>: null}
         {item.Other ? <h6 className="contest_website"><a href={"https://"+`${item.Other}`} className="contest_url">{item.Other}</a></h6>: null}
         </div>
