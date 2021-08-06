@@ -13,14 +13,14 @@ const Contest = () => {
     getList();
   }, [])
 
-  const getList = async () => {
+  const getList = () => {
     axios.get(`https://backend-clg-app.herokuapp.com/cp_reminder?pg=${id}`)
     .then((data) => {
           setContest(data.data)
         })
 }
 
-const getMoreList = async () => {
+const getMoreList = () => {
   setId(id+1);
   axios.get(`https://backend-clg-app.herokuapp.com/cp_reminder?pg=${id+1}`)
   .then((data) => {
@@ -28,7 +28,7 @@ const getMoreList = async () => {
       })
 }
 
-const getOldList = async () => {
+const getOldList = () => {
   setId(id-1);
   axios.get(`https://backend-clg-app.herokuapp.com/cp_reminder?pg=${id-1}`)
   .then((data) => {
@@ -83,7 +83,7 @@ function secondsToDhms(seconds) {
         <span className="flip_button"><a href={item.contest_url}></a></span>
         </div>
       </div>
-      ) : null}
+      ) : "Loading ..."}
       </div>
     {contest ? nextprev(contest) : null}
     <ScrollUpButton />
