@@ -96,7 +96,7 @@ export default function Footer() {
   </section>
 
   <div className="text-center p-4">
-    © 2021 Copyright : Team Aztecs
+    <p>© 2021 Copyright : Team Aztecs</p>
     <p>Maintainer - Himanshu Chittora</p>
     <p className="maintainer"> Email @ <a href="mailto:2020kucp1023@iiitkota.ac.in" className="mail_maintainer">2020kucp1023@iiitkota.ac.in</a></p>
   </div>

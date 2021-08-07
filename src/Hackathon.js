@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contest.css'
 import Clock from "../src/images/Clock.png";
-import Hourglass from "../src/images/Hourglass.png";
 import ScrollUpButton from "react-scroll-up-button";
 
-const Contest = () => {
+const Hackathon = () => {
   const [contest, setContest] = useState(null)
   const [id,setId] = useState(1);
 
@@ -14,7 +13,7 @@ const Contest = () => {
   }, [])
 
   const getList = () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/cp_reminder?pg=${id}`)
+    axios.get(`https://backend-clg-app.herokuapp.com/hackathons?pg=${id}`)
     .then((data) => {
           setContest(data.data)
         })
@@ -22,7 +21,7 @@ const Contest = () => {
 
 const getMoreList = () => {
   setId(id+1);
-  axios.get(`https://backend-clg-app.herokuapp.com/cp_reminder?pg=${id+1}`)
+  axios.get(`https://backend-clg-app.herokuapp.com/hackathons?pg=${id+1}`)
   .then((data) => {
         setContest(data.data)
       })
@@ -30,7 +29,7 @@ const getMoreList = () => {
 
 const getOldList = () => {
   setId(id-1);
-  axios.get(`https://backend-clg-app.herokuapp.com/cp_reminder?pg=${id-1}`)
+  axios.get(`https://backend-clg-app.herokuapp.com/hackathons?pg=${id-1}`)
   .then((data) => {
         setContest(data.data)
       })
@@ -54,20 +53,6 @@ const nextprev = (res) => {
   }
 }
 
-function secondsToDhms(seconds) {
-  seconds = Number(seconds);
-  var d = Math.floor(seconds / (3600*24));
-  var h = Math.floor(seconds % (3600*24) / 3600);
-  var m = Math.floor(seconds % 3600 / 60);
-  var s = Math.floor(seconds % 60);
-  
-  var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days ") : "";
-  var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours ") : "";
-  var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes ") : "";
-  var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
-  return dDisplay + hDisplay + mDisplay + sDisplay;
-  }
-
   return (
     <>
     <div className="bg_contest">
@@ -76,11 +61,10 @@ function secondsToDhms(seconds) {
       <div key={ind}>
         <div className="card_contest">
         <div className="card_contest-body"></div>
-        <h5 className="date"><img src={Clock} className="Clock"></img> {(`${item.start_time}`).slice(0,10)}, {new Date(`${item.start_time}`).toTimeString().slice(0,8)}</h5>
-        <h3 className="name_contest">{item.event_name}</h3>
-        {item.duration<86400 ? <h5 className="time_contest"><img src={Hourglass} className="Hourglass"></img> {new Date(`${item.duration}`*1000).toISOString().substr(11,8)}</h5> : <h5 className="time_contest"><img src={Hourglass} className="Hourglass" />{secondsToDhms(`${item.duration}`)}</h5>}
-        <h6 className="contest_website"><a href={"https://"+`${item.resource_website}`} className="contest_url">{item.resource_website}</a></h6>
-        <span className="flip_button"><a href={item.contest_url}></a></span>
+        <h5 className="date">From: {(`${item.reg_start}`).slice(0,10)}, {new Date(`${item.reg_start}`).toTimeString().slice(0,8)} <br /> To: {(`${item.reg_end}`).slice(0,10)}, {new Date(`${item.reg_end}`).toTimeString().slice(0,8)}</h5>
+        <h3 className="name_contest">{item.name}</h3>
+        <h6 className="contest_website"><a href={"https://"+`${item.host}`} className="contest_url">{item.host}</a></h6>
+        <span className="flip_button"><a href={item.site}></a></span>
         </div>
       </div>
       ) : "Loading ..."}
@@ -92,5 +76,4 @@ function secondsToDhms(seconds) {
   )
 }
 
-export default Contest;
-
+export default Hackathon;

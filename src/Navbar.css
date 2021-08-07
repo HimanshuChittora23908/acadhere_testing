@@ -26,6 +26,14 @@ color: #FFFFFF;
 margin-top: -0.1vw;
 }
 
+.logo_link{
+    color: #FFFFFF;
+}
+
+.logo_link:hover{
+  color: lightgreen;
+  text-decoration: none;
+}
 
 .right_buttons{
 background: transparent;
@@ -114,8 +122,8 @@ display: none;
 
 .right_buttons{
 padding: 0px;
-margin-right: 2.25vw;
-font-size: 2.5vw;
+margin-right: 2vw;
+font-size: 2.7vw;
 border: none;
 }
 
@@ -124,19 +132,20 @@ border: none;
 }
 
 .icon{
-    width: 2.25vw;
+    width: 2.5vw;
 }
 
 .triangle_down {
-    width: 1.5vw;
+    width: 2vw;
 }
   
   .dropdown-content {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
+    margin-left: -2vw;
   }
   
   .dropdown-content a {
-    padding: 0.5vw 1.5vw;
+    padding: 0.5vw 1vw;
   }
 
 .menu_active {

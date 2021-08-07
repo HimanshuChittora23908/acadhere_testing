@@ -15,6 +15,7 @@ import CourseWork from "./subjects/CourseWork";
 import { id } from "./subjects/Announcement";
 import CourseWorkMaterials from "./subjects/CourseWorkMaterials";
 import logo from './images/Ripple.svg';
+import Hackathon from "./Hackathon";
 
 export default function App() {
   const [Load, setLoad] = useState(true)
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/acadhere_testing/about" exact component={About} />
           <Route path="/acadhere_testing/team" exact component={Team} />
           <Route path="/acadhere_testing/contest" exact component={Contest} />
+          <Route path="/acadhere_testing/hackathon" exact component={Hackathon} />
           <Route path="/acadhere_testing/noticeboard" exact component={NoticeBoard} />
           <Route path="/acadhere_testing/resources" exact component={Resources} />
           <Route path="/acadhere_testing/classroom" exact component={Classroom} />

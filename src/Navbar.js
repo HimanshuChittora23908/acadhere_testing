@@ -5,27 +5,17 @@ import icon from "../src/images/person_icon.svg";
 import triangle_down from "../src/images/triangle-down.svg"
 
 export default function Navbar() {
-
-    function myFunction() {
-        var x = document.getElementsByClassName("right_buttons");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
     return (
         <>
         <div className="navbar">
             <div>
-                <button className="logo">AcadHERE</button>
+                <button className="logo"><NavLink exact className="logo_link" to="./home">AcadHERE</NavLink></button>
             </div>
             <div>
-                <NavLink activeClassName="menu_active" className="right_buttons" exact to="./home">Main</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./about">About</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./team">Team</NavLink>
-                <NavLink activeClassName='menu_active' exact className="right_buttons" to="./contest">Contest</NavLink>
+                <NavLink activeClassName='menu_active' exact className="right_buttons" to="./contest">CP</NavLink>
+                <NavLink activeClassName="menu_active" exact className="right_buttons" to="./hackathon">Hackathon</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./noticeboard">Notice Board</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./resources">Resources</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./classroom">Classroom</NavLink>

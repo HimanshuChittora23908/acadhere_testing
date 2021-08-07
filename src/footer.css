@@ -35,3 +35,14 @@
 .bg_footer{
     background-color: #19a186;
 }
+
+@media screen and (max-width: 600px){
+    p{
+        font-size: 3.5vw;
+    }
+
+    .mail_maintainer:hover{
+        animation: none;
+        color: white;
+    }
+}
