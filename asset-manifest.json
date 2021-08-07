@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/acadhere_testing/static/css/main.0f1f543c.chunk.css",
-    "main.js": "/acadhere_testing/static/js/main.a8c7ae1f.chunk.js",
-    "main.js.map": "/acadhere_testing/static/js/main.a8c7ae1f.chunk.js.map",
+    "main.css": "/acadhere_testing/static/css/main.3a82097f.chunk.css",
+    "main.js": "/acadhere_testing/static/js/main.e13d995b.chunk.js",
+    "main.js.map": "/acadhere_testing/static/js/main.e13d995b.chunk.js.map",
     "runtime-main.js": "/acadhere_testing/static/js/runtime-main.00fe1455.js",
     "runtime-main.js.map": "/acadhere_testing/static/js/runtime-main.00fe1455.js.map",
     "static/css/2.8a58ebc3.chunk.css": "/acadhere_testing/static/css/2.8a58ebc3.chunk.css",
-    "static/js/2.e2129df1.chunk.js": "/acadhere_testing/static/js/2.e2129df1.chunk.js",
-    "static/js/2.e2129df1.chunk.js.map": "/acadhere_testing/static/js/2.e2129df1.chunk.js.map",
+    "static/js/2.bd56d707.chunk.js": "/acadhere_testing/static/js/2.bd56d707.chunk.js",
+    "static/js/2.bd56d707.chunk.js.map": "/acadhere_testing/static/js/2.bd56d707.chunk.js.map",
     "index.html": "/acadhere_testing/index.html",
     "static/css/2.8a58ebc3.chunk.css.map": "/acadhere_testing/static/css/2.8a58ebc3.chunk.css.map",
-    "static/css/main.0f1f543c.chunk.css.map": "/acadhere_testing/static/css/main.0f1f543c.chunk.css.map",
-    "static/js/2.e2129df1.chunk.js.LICENSE.txt": "/acadhere_testing/static/js/2.e2129df1.chunk.js.LICENSE.txt",
+    "static/css/main.3a82097f.chunk.css.map": "/acadhere_testing/static/css/main.3a82097f.chunk.css.map",
+    "static/js/2.bd56d707.chunk.js.LICENSE.txt": "/acadhere_testing/static/js/2.bd56d707.chunk.js.LICENSE.txt",
     "static/media/Clock.1a69199c.png": "/acadhere_testing/static/media/Clock.1a69199c.png",
     "static/media/Google.221f782d.png": "/acadhere_testing/static/media/Google.221f782d.png",
     "static/media/Google_Classroom_Logo.287c00b8.png": "/acadhere_testing/static/media/Google_Classroom_Logo.287c00b8.png",
@@ -43,6 +43,7 @@
     "static/media/notes_book.b7fe4daf.svg": "/acadhere_testing/static/media/notes_book.b7fe4daf.svg",
     "static/media/person_icon.1216ee98.svg": "/acadhere_testing/static/media/person_icon.1216ee98.svg",
     "static/media/study.92b6c802.gif": "/acadhere_testing/static/media/study.92b6c802.gif",
+    "static/media/target.6e387e68.gif": "/acadhere_testing/static/media/target.6e387e68.gif",
     "static/media/team.08216f21.png": "/acadhere_testing/static/media/team.08216f21.png",
     "static/media/triangle-down.30f7ab58.svg": "/acadhere_testing/static/media/triangle-down.30f7ab58.svg",
     "static/media/triangle_right.6740f54a.svg": "/acadhere_testing/static/media/triangle_right.6740f54a.svg",
@@ -51,8 +52,8 @@
   "entrypoints": [
     "static/js/runtime-main.00fe1455.js",
     "static/css/2.8a58ebc3.chunk.css",
-    "static/js/2.e2129df1.chunk.js",
-    "static/css/main.0f1f543c.chunk.css",
-    "static/js/main.a8c7ae1f.chunk.js"
+    "static/js/2.bd56d707.chunk.js",
+    "static/css/main.3a82097f.chunk.css",
+    "static/js/main.e13d995b.chunk.js"
   ]
 }
