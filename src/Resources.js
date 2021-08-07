@@ -12,6 +12,10 @@ export default function Resources() {
     const [notes, setNotes] = useState(false)
     const [book, setBook] = useState(false)
   
+    const [q,setQ] = useState("");
+
+    const [searchParam] = useState(["Message", "Subject_Code"]);
+
     useEffect(() => {
       Videos_list();
       Notes_list();
@@ -80,10 +84,35 @@ const Books_list = () => {
       }
 
       function Books() {
+        function search(items) {
+            return items.filter((item) => {
+                return searchParam.some((newItem) => {
+                    return (
+                        item[newItem]
+                            .toString()
+                            .toLowerCase()
+                            .indexOf(q.toLowerCase()) > -1
+                    );
+                });
+            });
+        }
         return(
             <>
+                <div className="search-wrapper">
+                        <label htmlFor="search-form" className="search-form">
+                            <input
+                                type="search"
+                                name="search-form"
+                                id="search-form"
+                                className="search-input"
+                                placeholder="Search with Book Name or Course Code"
+                                value={q}
+                                onChange={(e) => setQ(e.target.value)}
+                            />
+                        </label>
+                    </div>
             <div className="card_contest_complete">
-            {BooksMaterial ? BooksMaterial.map((item,ind) =>
+            {BooksMaterial ? search(BooksMaterial).map((item,ind) =>
             <div key={ind}>
               <div className="card_contest">
               <div className="card_contest-body"></div>

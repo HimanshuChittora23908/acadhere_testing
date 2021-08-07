@@ -6,3 +6,21 @@
     gap: 25vw;
     margin-top: 2vw;
   }
+
+.search-input{
+    width: 70vw;
+    padding: 0.5vw;
+    border: none;
+    border-radius: 2vw;
+}
+
+.search-form{
+    margin-top: 3vw;
+}
+
+@media screen and (max-width: 600px){
+    .search-input{
+        padding: 0;
+        border-radius: 4vw;
+    }
+}

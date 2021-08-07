@@ -50,10 +50,10 @@ export default function About() {
         <div className="content_box">
         <h1 className="contentHead1">Features and UI <img src={ui} className="icon_inline"/></h1>
         <p className="content1">Students can:
-            1. See all the assignments with their deadline shared on google classrooms and also can set a timer so as to receive a notification reminder for completing a particular assignment.
-            2. View all the important notices.
-            3. Access all the material including books and slides shared by the professors.
-            4. View details of upcoming coding contests and hackathons.
+            <br/> 1. See all the assignments with their deadline shared on google classrooms and also can set a timer so as to receive a notification reminder for completing a particular assignment.
+            <br/> 2. View all the important notices.
+            <br/> 3. Access all the material including books and slides shared by the professors.
+            <br/> 4. View details of upcoming coding contests and hackathons.
             </p>
         </div>
         <img src={ui} className="icon_about"/>
