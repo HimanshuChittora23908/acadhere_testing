@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.navbar{
+.navbar_big{
     display: flex;
     padding-right: 3vw;
     background-image: url(../src/images/navbar.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1vw;
+    padding-bottom: 1vw;
+    justify-content: space-between;
 }
 
 .logo {
@@ -43,8 +45,6 @@ border-radius: 1vw;
 padding: 0.2vw 1vw;
 margin-right: 1vw;
 font-family: 'Roboto',sans-serif;
-font-style: normal;
-font-weight: normal;
 font-size: 1.1vw;
 text-align: center;
 color: #000000;
@@ -109,59 +109,20 @@ color: #000000;
     color: #ffc800;
     text-decoration: none;
 }
-
-@media only screen and (max-width: 780px){
-  .navbar{
-    padding-top: 2vw;
-    justify-content: center;
-}
-
-.logo {
-display: none;
-}
-
-.right_buttons{
-padding: 0px;
-margin-right: 2vw;
-font-size: 2.7vw;
-border: none;
-}
-
-.right_buttons:hover {
-  border: none;
-}
-
-.icon{
-    width: 2.5vw;
-}
-
-.triangle_down {
-    width: 2vw;
-}
-  
-  .dropdown-content {
-    font-size: 1.75vw;
-    margin-left: -2vw;
-  }
-  
-  .dropdown-content a {
-    padding: 0.5vw 1vw;
-  }
-
-.menu_active {
-  padding: 0px;
-  border: none;
-  background-color: transparent;
-  color: green;
-  border-bottom: 0.4vw solid green;
-  border-radius: 0%;
-}
-
-.menu_active:hover {
-  border: none;
-  color: green;
-  border-bottom: 0.4vw solid green;
-  border-radius: 0%;
+@media screen and (min-width: 768px) {
+.mobile-container{
+  display: none;
 }
 }
 
+@media only screen and (max-width: 767px){
+  .navbar_big{
+    display: none;
+}
+
+.navbar{
+  background-color: #f6c412;
+  width: 100vw;
+  left: -4vw;
+}
+}

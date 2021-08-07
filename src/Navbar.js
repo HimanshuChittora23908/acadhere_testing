@@ -5,17 +5,26 @@ import icon from "../src/images/person_icon.svg";
 import triangle_down from "../src/images/triangle-down.svg"
 
 export default function Navbar() {
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
     return (
         <>
-        <div className="navbar">
+        <div className="navbar_big">
             <div>
                 <button className="logo"><NavLink exact className="logo_link" to="./home">AcadHERE</NavLink></button>
             </div>
-            <div>
+            <div className="rightside_navbar">
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./about">About</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./team">Team</NavLink>
-                <NavLink activeClassName='menu_active' exact className="right_buttons" to="./contest">CP</NavLink>
-                <NavLink activeClassName="menu_active" exact className="right_buttons" to="./hackathon">Hackathon</NavLink>
+                <NavLink activeClassName='menu_active' exact className="right_buttons" to="./contest">Coding Contests</NavLink>
+                <NavLink activeClassName="menu_active" exact className="right_buttons" to="./hackathon">Hackathons</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./noticeboard">Notice Board</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./resources">Resources</NavLink>
                 <NavLink activeClassName='menu_active' exact className="right_buttons" to="./classroom">Classroom</NavLink>
@@ -24,12 +33,33 @@ export default function Navbar() {
                 <img src={triangle_down} alt="" className="triangle_down dropbtn" />
                 <div className="dropdown-content">
                   <a href="#">Profile</a>
-                  <a href="#">Forms</a>
-                  <a href="#">Settings</a>
                   <a href="#">Logout</a>
                 </div>
                 </div>
             </div>
+        </div>
+
+        <div class="mobile-container">
+        <div class="container">
+        <nav class="navbar navbar-light light-blue lighten-4">
+        <a class="navbar-brand" href="./home">AcadHERE</a>
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="./home">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./about">About</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./team">Team</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./contest">Coding Contests</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./hackathon">Hackathons</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./noticeboard">Notice Board</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./resource">Resource</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./classroom">Classroom</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./classroom">Profile</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./classroom">Logout</a></li>
+        </ul>
+        </div>
+        </nav>
+        </div>
         </div>
         </>
     )

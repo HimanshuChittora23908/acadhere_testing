@@ -22,8 +22,7 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 3vw;
     color: rgb(255, 255, 255);
-    top: 40vh;
-    margin: 0 20vw 0 20vw;
+    margin: -40vw 20vw 0 20vw;
     text-align: center;
     font-style: italic;
 }
@@ -73,7 +72,7 @@
 
 .bg_top_line{
     font-size: 3.5vw;
-    top: 30vw;
+    margin-top: -38vw;
 }
 
 .team_title_main{

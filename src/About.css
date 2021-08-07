@@ -29,7 +29,7 @@
 }
 
 .bg_tagline{
-    top: 35vh;
+    margin-top: -35vw;
     margin-left: 50vw;
     position: absolute;
     font-size: 5vw;
@@ -119,7 +119,7 @@
     }
     
     .bg_tagline{
-        top: 15vh;
+        margin-top: -80vw;
         margin-left: 50vw;
         font-size: 10vw;
     }
