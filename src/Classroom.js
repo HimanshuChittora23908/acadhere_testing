@@ -73,7 +73,7 @@ export default function Classroom() {
   return (
     <div className="bg_class">
       <div className="google_button">
-        {token === "null" || !token
+        {!token 
           ? <button className="login neumorphic variation" onClick={() => { authenticate() }}><span><strong>Signing with <img src={google} className="google2"></img></strong></span></button>
           : <button className="load neumorphic variation" onClick={() => { loadClient().then(execute) }}><span><strong>Load Google Classroom</strong></span></button>}
       </div>
@@ -94,7 +94,7 @@ export default function Classroom() {
               </div>
             </div>
           )
-        }) : token !== "null" ? <div style={{ display: 'flex', background: "transparent", width: '85vw', justifyContent: "center", alignItems: 'center' }}>
+        }) : token  ? <div style={{ display: 'flex', background: "transparent", width: '85vw', justifyContent: "center", alignItems: 'center' }}>
           <img style={{ width: '20vw', height: "20vw" }} src={logo} alt="Logo" />
         </div> : null}
       </div>
