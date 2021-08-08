@@ -6,7 +6,7 @@
   padding: 60px 0;
   margin-bottom: 170px;
   background-position: center top;
-  background-image: url("./images/map.png");
+  background-image: url("./images/map.webp");
 }
 
 .contact2 h1,
@@ -79,7 +79,7 @@
 }
 
 .bg-image{
-    background-image: url("./images/black.jpg");
+    background-image: url("./images/black.webp");
 }
 
 .card-contact{

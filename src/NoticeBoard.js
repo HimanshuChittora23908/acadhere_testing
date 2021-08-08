@@ -14,7 +14,7 @@ const Contest = () => {
   }, [])
 
   const getList = async () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in', 'Access-Control-Allow-Origin': '*' } })
+    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in' } })
       .then((data) => {
         setContest(data.data)
       })
@@ -22,7 +22,7 @@ const Contest = () => {
 
   const getMoreList = async () => {
     setId(id + 1);
-    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id + 1}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in', 'Access-Control-Allow-Origin': '*' } })
+    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id + 1}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in' } })
       .then((data) => {
         setContest(data.data)
       })
@@ -30,7 +30,7 @@ const Contest = () => {
 
   const getOldList = async () => {
     setId(id - 1);
-    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id - 1}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in', 'Access-Control-Allow-Origin': '*' } })
+    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id - 1}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in' } })
       .then((data) => {
         setContest(data.data)
       })

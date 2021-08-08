@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Announcement.css';
 import google from "../images/google.webp";
 import ScrollUpButton from "react-scroll-up-button";
-import Clock from "../images/Clock.png";
+import Clock from "../images/clock.webp";
 import logo from '../images/Loader.gif';
 
 export const id = window.location.href.slice(-12);

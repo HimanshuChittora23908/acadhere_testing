@@ -75,7 +75,7 @@
 .content_box:nth-child(even){
     margin-left: 2vw;
     padding: 2vw 10vw 2vw 3vw;
-    background-image: url("./images/brush.png");
+    background-image: url("./images/brush.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -83,7 +83,7 @@
 .content_box:nth-child(odd){
     margin-right: 2vw;
     padding: 2vw 3vw 2vw 10vw;
-    background-image: url("./images/brush180.png");
+    background-image: url("./images/brush180.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: right;
