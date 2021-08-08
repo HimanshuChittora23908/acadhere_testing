@@ -5,7 +5,7 @@ import triangle_right from "../src/images/triangle_right.svg";
 import code_img from "../src/images/code_img.svg";
 import about_quote from "../src/images/about_quote.svg";
 import notes_book from "../src/images/notes_book.svg";
-import classroom from "../src/images/Google_Classroom_Logo.png"
+import classroom from "../src/images/Google_Classroom_Logo.webp"
 import ScrollUpButton from "react-scroll-up-button";
 
 export default function Home() {

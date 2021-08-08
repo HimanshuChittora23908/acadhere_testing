@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Resources.css'
-import Clock from "../src/images/Clock.png";
+import Clock from "../src/images/clock.webp";
 import ScrollUpButton from "react-scroll-up-button";
 import axios from 'axios'
 

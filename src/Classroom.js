@@ -4,7 +4,7 @@ import axios from 'axios';
 import "./Classroom.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import google from "./images/Google.png";
+import google from "./images/google.webp";
 import ScrollUpButton from "react-scroll-up-button";
 
 export default function Classroom() {

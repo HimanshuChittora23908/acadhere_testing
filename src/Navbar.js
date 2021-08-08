@@ -5,15 +5,6 @@ import icon from "../src/images/person_icon.svg";
 import triangle_down from "../src/images/triangle-down.svg"
 
 export default function Navbar() {
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
     return (
         <>
         <div className="navbar_big">
@@ -32,7 +23,6 @@ export default function Navbar() {
                 <img src={icon} alt="" className="icon dropbtn" />
                 <img src={triangle_down} alt="" className="triangle_down dropbtn" />
                 <div className="dropdown-content">
-                  <a href="#">Profile</a>
                   <a href="./contactUs">Contact Us</a>
                   <a href="faq">FAQ</a>
                   <a href="#">Logout</a>
@@ -56,7 +46,8 @@ export default function Navbar() {
         <li class="nav-item active"><a class="nav-link" href="./noticeboard">Notice Board</a></li>
         <li class="nav-item active"><a class="nav-link" href="./resource">Resource</a></li>
         <li class="nav-item active"><a class="nav-link" href="./classroom">Classroom</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./classroom">Profile</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./contactUs">Contact Us</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./faq">FAQ</a></li>
         <li class="nav-item active"><a class="nav-link" href="./classroom">Logout</a></li>
         </ul>
         </div>

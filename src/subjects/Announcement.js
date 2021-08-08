@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import './Announcement.css';
-import google from "../images/Google.png";
-import Clock from "../images/Clock.png";
+import google from "../images/google.webp";
+import Clock from "../images/clock.webp";
 import ScrollUpButton from "react-scroll-up-button";
 
 export const id =  window.location.href.slice(-12);

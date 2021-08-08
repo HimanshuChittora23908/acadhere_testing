@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contest.css'
-import Clock from "../src/images/Clock.png";
-import Hourglass from "../src/images/Hourglass.png";
+import Clock from "../src/images/clock.webp";
+import Hourglass from "../src/images/hourglass.webp";
 import ScrollUpButton from "react-scroll-up-button";
 
 const Contest = () => {

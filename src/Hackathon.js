@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contest.css'
-import Clock from "../src/images/Clock.png";
 import ScrollUpButton from "react-scroll-up-button";
 
 const Hackathon = () => {

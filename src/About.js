@@ -1,13 +1,13 @@
 import React from 'react'
 import './About.css'
-import bg_books from "./images/bg_books.jpg"
+import bg_books from "./images/bg_books.webp"
 import blink from "./videos/blink.gif"
-import idea from "./images/lightbulb.png"
-import brainstorming from "./images/brainstorming.png"
-import team from "./images/team.png"
-import ui from "./images/ui.png"
-import api from "./images/api.png"
-import finish from "./images/finish.png"
+import idea from "./images/lightbulb.webp"
+import brainstorming from "./images/brainstorming.webp"
+import team from "./images/team.webp"
+import ui from "./images/ui.webp"
+import api from "./images/api.webp"
+import finish from "./images/finish.webp"
 import target from "./videos/target.gif"
 import ScrollUpButton from "react-scroll-up-button";
 
