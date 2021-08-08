@@ -5,6 +5,7 @@ import icon from "../src/images/person_icon.svg";
 import triangle_down from "../src/images/triangle-down.svg"
 
 export default function Navbar() {
+    const logout = () => {localStorage.removeItem("user12"),window.location.replace("./home")};
     return (
         <>
         <div className="navbar_big">
@@ -25,7 +26,7 @@ export default function Navbar() {
                 <div className="dropdown-content">
                   <a href="./contactUs">Contact Us</a>
                   <a href="faq">FAQ</a>
-                  {localStorage.getItem('user12') ? <a className="logout" onClick={() => {localStorage.removeItem("user12"),window.location.replace("./home")}}>Logout</a> : null}
+                  {localStorage.getItem('user12') ? <a className="logout" onClick={logout}>Logout</a> : null}
                 </div>
                 </div>
             </div>
