@@ -107,6 +107,14 @@ margin: 3vw 0 0 7vw;
 color: #008D00;
 }
 
+.team_link{
+    display: flex;
+}
+
+.team_link:hover{
+    text-decoration: none;
+}
+
 .team_content {
     font-family: 'Poppins';
     margin: 0 7vw 0 7vw;

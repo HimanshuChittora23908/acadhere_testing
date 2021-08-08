@@ -13,22 +13,16 @@ export default function Footer() {
       <span>Get connected with us on social networks:</span>
     </div>
     <div>
-      <a href="" className="me-4 text-reset">
+      <a href="https://www.facebook.com/himanshu.chittora.56/" className="me-4 text-reset">
         <i className="fa fa-facebook"></i>
       </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fa fa-twitter"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fa fa-google"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
+      <a href="https://www.instagram.com/himanshu_23908/" className="me-4 text-reset">
         <i className="fa fa-instagram"></i>
       </a>
-      <a href="" className="me-4 text-reset">
+      <a href="https://www.linkedin.com/in/himanshu-chittora-57b695200/" className="me-4 text-reset">
         <i className="fa fa-linkedin"></i>
       </a>
-      <a href="" className="me-4 text-reset">
+      <a href="https://github.com/HimanshuChittora23908" className="me-4 text-reset">
         <i className="fa fa-github"></i>
       </a>
     </div>

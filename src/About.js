@@ -41,13 +41,7 @@ export default function About() {
         <img src={brainstorming} className="icon_about"/>
         </div>
         <div className="box_left">
-        <img src={team} className="icon_about"/>
-        <div className="content_box">
-        <h1 className="contentHead1"><img src={team} className="icon_inline"/> Finding a Team</h1>
-        <p className="content1">A team plays a major role in deciding the future of any project and luckily we formed a perfect team of 5 friends in which each of us contributed independently in different domains. We have a balanced team consisting of a frontend developer, backend developer, android developer, content writer and a tester. Apart from this every member in our team remains keen to solve each other's doubts, which increases the efficiency of other teammates also.</p>
-        </div>
-        </div>
-        <div className="box_right">
+        <img src={ui} className="icon_about"/>
         <div className="content_box">
         <h1 className="contentHead1">Features and UI <img src={ui} className="icon_inline"/></h1>
         <p className="content1">Students can:
@@ -57,7 +51,13 @@ export default function About() {
             <br/> 4. View details of upcoming coding contests and hackathons.
             </p>
         </div>
-        <img src={ui} className="icon_about"/>
+        </div>
+        <div className="box_right">
+        <div className="content_box">
+        <h1 className="contentHead1"><img src={team} className="icon_inline"/> Finding a Team</h1>
+        <p className="content1">A team plays a major role in deciding the future of any project and luckily we formed a perfect team of 5 friends in which each of us contributed independently in different domains. We have a balanced team consisting of a frontend developer, backend developer, android developer, content writer and a tester. Apart from this every member in our team remains keen to solve each other's doubts, which increases the efficiency of other teammates also.</p>
+        </div>
+        <img src={team} className="icon_about"/>
         </div>
         <div className="box_left">
         <img src={api} className="icon_about"/>

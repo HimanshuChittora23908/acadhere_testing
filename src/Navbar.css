@@ -70,15 +70,15 @@ color: #000000;
     background-color: rgb(49, 49, 49);
     box-shadow: 0px 0.5vw 1vw 0px rgba(0,0,0,0.2);
     z-index: 1;
-    font-size: 0.9vw;
+    font-size: 1vw;
     font-weight: 500;
-    width: 7vw;
+    width: auto;
     margin-left: -1vw;
   }
   
   .dropdown-content a {
     color: white;
-    padding: 0.1vw 0.8vw 0.5vw 0.8vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
     text-decoration: none;
     display: block;
     text-align: left;

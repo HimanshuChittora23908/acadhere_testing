@@ -27,7 +27,7 @@ export default function Navbar() {
                 <img src={icon} alt="" className="icon dropbtn" />
                 <img src={triangle_down} alt="" className="triangle_down dropbtn" />
                 <div className="dropdown-content">
-                  <a href="./contactUs">Contact Us</a>
+                  <a href="./contactUs">Contact</a>
                   <a href="faq">FAQ</a>
                   {localStorage.getItem('user12') ? <a className="logout" onClick={logout}>Logout</a> : null}
                 </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
         <li className="nav-item active"><a className="nav-link" href="./noticeboard">Notice Board</a></li>
         <li className="nav-item active"><a className="nav-link" href="./resource">Resource</a></li>
         <li className="nav-item active"><a className="nav-link" href="./classroom">Classroom</a></li>
-        <li className="nav-item active"><a className="nav-link" href="./contactUs">Contact Us</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./contactUs">Contact</a></li>
         <li className="nav-item active"><a className="nav-link" href="./faq">FAQ</a></li>
         <li className="nav-item active"><a className="nav-link" href="./classroom">Logout</a></li>
         </ul>

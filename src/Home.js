@@ -40,9 +40,10 @@ export default function Home() {
     <div className="team_main">
     <p className="team">Our Team</p>
     <p className="team_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
-    <div className="team_foot">
+    <div className="team_foot"><a href="/acadhere_testing/team" className="team_link">
     <p className="team_tagline">Have a look</p>
     <img src={arrow_right} alt="" className="arrow_r" />
+    </a>
     </div>
     </div>
     </div>
@@ -50,8 +51,9 @@ export default function Home() {
       <p className="about">About</p>
       <p className="about_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
       <img src={about_quote} alt="" className="about_quote" />
-      <div className="about_foot">
+      <div className="about_foot"><a href="/acadhere_testing/about" className="team_link">
         <p className="about_tagline">About Us</p>
+        </a>
         <img src={triangle_right} alt="" className="triangle_right"/>
       </div>
     </div>
@@ -60,7 +62,9 @@ export default function Home() {
         <p className="contest">Contests</p>
         <p className="contest_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
         <div className="contest_foot">
+        <a href="/acadhere_testing/contest" className="team_link">
         <p className="contest_tagline">Check Out</p>
+        </a>
         <img src={triangle_right} alt="" className="triangle_right"/>
       </div>
       </div>
