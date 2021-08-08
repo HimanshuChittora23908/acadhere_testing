@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/acadhere_testing/static/css/main.ce437d7c.chunk.css",
-    "main.js": "/acadhere_testing/static/js/main.adc5d074.chunk.js",
-    "main.js.map": "/acadhere_testing/static/js/main.adc5d074.chunk.js.map",
+    "main.css": "/acadhere_testing/static/css/main.3a27072d.chunk.css",
+    "main.js": "/acadhere_testing/static/js/main.73c13d01.chunk.js",
+    "main.js.map": "/acadhere_testing/static/js/main.73c13d01.chunk.js.map",
     "runtime-main.js": "/acadhere_testing/static/js/runtime-main.00fe1455.js",
     "runtime-main.js.map": "/acadhere_testing/static/js/runtime-main.00fe1455.js.map",
     "static/css/2.8a58ebc3.chunk.css": "/acadhere_testing/static/css/2.8a58ebc3.chunk.css",
-    "static/js/2.bd56d707.chunk.js": "/acadhere_testing/static/js/2.bd56d707.chunk.js",
-    "static/js/2.bd56d707.chunk.js.map": "/acadhere_testing/static/js/2.bd56d707.chunk.js.map",
+    "static/js/2.b3c6aebd.chunk.js": "/acadhere_testing/static/js/2.b3c6aebd.chunk.js",
+    "static/js/2.b3c6aebd.chunk.js.map": "/acadhere_testing/static/js/2.b3c6aebd.chunk.js.map",
     "index.html": "/acadhere_testing/index.html",
     "static/css/2.8a58ebc3.chunk.css.map": "/acadhere_testing/static/css/2.8a58ebc3.chunk.css.map",
-    "static/css/main.ce437d7c.chunk.css.map": "/acadhere_testing/static/css/main.ce437d7c.chunk.css.map",
-    "static/js/2.bd56d707.chunk.js.LICENSE.txt": "/acadhere_testing/static/js/2.bd56d707.chunk.js.LICENSE.txt",
+    "static/css/main.3a27072d.chunk.css.map": "/acadhere_testing/static/css/main.3a27072d.chunk.css.map",
+    "static/js/2.b3c6aebd.chunk.js.LICENSE.txt": "/acadhere_testing/static/js/2.b3c6aebd.chunk.js.LICENSE.txt",
     "static/media/Clock.1a69199c.png": "/acadhere_testing/static/media/Clock.1a69199c.png",
     "static/media/Google.221f782d.png": "/acadhere_testing/static/media/Google.221f782d.png",
     "static/media/Google_Classroom_Logo.287c00b8.png": "/acadhere_testing/static/media/Google_Classroom_Logo.287c00b8.png",
@@ -24,6 +24,7 @@
     "static/media/api.bfb545fc.png": "/acadhere_testing/static/media/api.bfb545fc.png",
     "static/media/arrow-right.1b3dc3cc.svg": "/acadhere_testing/static/media/arrow-right.1b3dc3cc.svg",
     "static/media/bg_books.a941a040.jpg": "/acadhere_testing/static/media/bg_books.a941a040.jpg",
+    "static/media/ContactUs.css": "/acadhere_testing/static/media/map.0125c196.png",
     "static/media/blink.b6c8a0f8.gif": "/acadhere_testing/static/media/blink.b6c8a0f8.gif",
     "static/media/brainstorming.a0ab710d.png": "/acadhere_testing/static/media/brainstorming.a0ab710d.png",
     "static/media/About.css": "/acadhere_testing/static/media/brush180.51ef4a26.png",
@@ -35,9 +36,6 @@
     "static/media/finish.8846e9cf.png": "/acadhere_testing/static/media/finish.8846e9cf.png",
     "static/media/font-awesome.min.css": "/acadhere_testing/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/Home.css": "/acadhere_testing/static/media/home.21001895.svg",
-    "static/media/img_backtoschool.6857717a.jpg": "/acadhere_testing/static/media/img_backtoschool.6857717a.jpg",
-    "static/media/img_code.7050289f.jpg": "/acadhere_testing/static/media/img_code.7050289f.jpg",
-    "static/media/img_reachout.920ebfb0.jpg": "/acadhere_testing/static/media/img_reachout.920ebfb0.jpg",
     "static/media/lightbulb.56b1ad57.png": "/acadhere_testing/static/media/lightbulb.56b1ad57.png",
     "static/media/Navbar.css": "/acadhere_testing/static/media/navbar.91285be8.svg",
     "static/media/notes_book.b7fe4daf.svg": "/acadhere_testing/static/media/notes_book.b7fe4daf.svg",
@@ -52,8 +50,8 @@
   "entrypoints": [
     "static/js/runtime-main.00fe1455.js",
     "static/css/2.8a58ebc3.chunk.css",
-    "static/js/2.bd56d707.chunk.js",
-    "static/css/main.ce437d7c.chunk.css",
-    "static/js/main.adc5d074.chunk.js"
+    "static/js/2.b3c6aebd.chunk.js",
+    "static/css/main.3a27072d.chunk.css",
+    "static/js/main.73c13d01.chunk.js"
   ]
 }
