@@ -1,5 +1,5 @@
 {
-  "homepage": "https://himanshuchittora23908.github.io/acadhere_testing/",
+  "homepage": "https://acadhere.vercel.app/",
   "name": "AcadHERE",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +22,7 @@
     "react": "^17.0.2",
     "react-alert": "^7.0.3",
     "react-async": "^10.0.1",
+    "react-autolink-text2": "^3.3.0",
     "react-axios": "^2.0.5",
     "react-bootstrap": "^1.6.1",
     "react-burger-menu": "^3.0.6",

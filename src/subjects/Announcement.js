@@ -5,6 +5,7 @@ import google from "../images/google.webp";
 import Clock from "../images/clock.webp";
 import ScrollUpButton from "react-scroll-up-button";
 import logo from '../images/Loader.gif';
+import AutoLinkText from 'react-autolink-text2';
 
 export const id = window.location.href.slice(-12);
 
@@ -35,7 +36,7 @@ export default function Announcement() {
               <div className="card3-body">
                 <h6 className="date"><img src={Clock} className="Clock"></img> {new Date(`${item.updateTime}`).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</h6>
                 <h3 className="card3-title font-weight-bold">{item.title}</h3>
-                <h5 className="card3-text">{item.text}</h5>
+                <h5 className="card3-text"><AutoLinkText text={item.text} /></h5>
                 <div className="button_bg1">
                   <button className="hover_button_classroom"><a href={item.alternateLink} className="announcement_a"><span></span><span></span><span></span><span></span><img src={google} className="google"></img> Classroom</a></button>
                 </div>

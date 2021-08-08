@@ -37,8 +37,8 @@ export default function Classroom() {
       .catch(err => console.error(err));
   }
 
-  // localStorage.setItem('user12', null)
-  // console.log(token);
+   // localStorage.setItem('user12', null)
+   console.log(token);
 
   function execute() {
     setLoading(true);
@@ -57,21 +57,23 @@ export default function Classroom() {
       setToken(localStorage.getItem('user12'))
   }, [])
 
+  // setToken(null)
+
   useEffect(() => {
     function test() {
-      // setToken(null)
+      
       let webApiUrl = 'https://classroom.googleapis.com/v1/courses';
       axios.get(webApiUrl, { headers: { "Authorization": `Bearer ${token}` } }).then(data => setCourses(data.data.courses));
     }
     if (localStorage.getItem('user12'))
       test();
-    // console.log(localStorage.getItem('user12'));
+     console.log(localStorage.getItem('user12'));
   }, [token])
 
   return (
     <div className="bg_class">
       <div className="google_button">
-        {token === null
+        {token === "null" || !token
           ? <button className="login neumorphic variation" onClick={() => { authenticate() }}><span><strong>Signing with <img src={google} className="google2"></img></strong></span></button>
           : <button className="load neumorphic variation" onClick={() => { loadClient().then(execute) }}><span><strong>Load Google Classroom</strong></span></button>}
       </div>
@@ -92,7 +94,7 @@ export default function Classroom() {
               </div>
             </div>
           )
-        }) : token ? <div style={{ display: 'flex', background: "transparent", width: '85vw', justifyContent: "center", alignItems: 'center' }}>
+        }) : token !== "null" ? <div style={{ display: 'flex', background: "transparent", width: '85vw', justifyContent: "center", alignItems: 'center' }}>
           <img style={{ width: '20vw', height: "20vw" }} src={logo} alt="Logo" />
         </div> : null}
       </div>

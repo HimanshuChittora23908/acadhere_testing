@@ -26,6 +26,7 @@
         "react": "^17.0.2",
         "react-alert": "^7.0.3",
         "react-async": "^10.0.1",
+        "react-autolink-text2": "^3.3.0",
         "react-axios": "^2.0.5",
         "react-bootstrap": "^1.6.1",
         "react-burger-menu": "^3.0.6",
@@ -16636,6 +16637,17 @@
       "integrity": "sha512-ORUz5ca0B57QgBIzEZM5SuhJ6xFjkvEEs0gylLNlWf06vuVcLZsjIw3wx58jJkZG38p+0nUAxRgFW2b7mnVZzA==",
       "peerDependencies": {
         "react": ">=16.3.1"
+      }
+    },
+    "node_modules/react-autolink-text2": {
+      "version": "3.3.0",
+      "resolved": "https://registry.npmjs.org/react-autolink-text2/-/react-autolink-text2-3.3.0.tgz",
+      "integrity": "sha512-ECEjdbDGZKYoGSmOoZlGHO+DRyQIvsxQLzvGnRhQwt+8p6WPjdIrFIIHFEYNgXpEaidjw1dc65tx7DDdb4QQ0A==",
+      "dependencies": {
+        "prop-types": "^0.14.9 || ^15.3.0 || ^16.0.0"
+      },
+      "peerDependencies": {
+        "react": "^0.14.9 || ^15.3.0 || ^16.0.0"
       }
     },
     "node_modules/react-axios": {
@@ -35014,6 +35026,14 @@
       "resolved": "https://registry.npmjs.org/react-async/-/react-async-10.0.1.tgz",
       "integrity": "sha512-ORUz5ca0B57QgBIzEZM5SuhJ6xFjkvEEs0gylLNlWf06vuVcLZsjIw3wx58jJkZG38p+0nUAxRgFW2b7mnVZzA==",
       "requires": {}
+    },
+    "react-autolink-text2": {
+      "version": "3.3.0",
+      "resolved": "https://registry.npmjs.org/react-autolink-text2/-/react-autolink-text2-3.3.0.tgz",
+      "integrity": "sha512-ECEjdbDGZKYoGSmOoZlGHO+DRyQIvsxQLzvGnRhQwt+8p6WPjdIrFIIHFEYNgXpEaidjw1dc65tx7DDdb4QQ0A==",
+      "requires": {
+        "prop-types": "^0.14.9 || ^15.3.0 || ^16.0.0"
+      }
     },
     "react-axios": {
       "version": "2.0.5",

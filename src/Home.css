@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .Home {
-    background-image: url(../src/images/home.svg);
+    background-image: url("../src/images/home.webp");
     background-size: cover;
     height: 100vh;
     display: flex;
