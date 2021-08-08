@@ -3,7 +3,7 @@
 .navbar_big{
     display: flex;
     padding-right: 3vw;
-    background-image: url(../src/images/navbar.svg);
+    background-image: url("../src/images/navbar.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1vw;
@@ -90,6 +90,10 @@ color: #000000;
   }
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .logout{
+    color: white;
   }
 
   .dropdown {

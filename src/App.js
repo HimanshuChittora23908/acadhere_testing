@@ -14,24 +14,11 @@ import Announcement from "./subjects/Announcement";
 import CourseWork from "./subjects/CourseWork";
 import { id } from "./subjects/Announcement";
 import CourseWorkMaterials from "./subjects/CourseWorkMaterials";
-import logo from './images/Ripple.svg';
 import Hackathon from "./Hackathon";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 
 export default function App() {
-  const [Load, setLoad] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(false)
-    }, 2500);
-  }, [])
-
-  if (Load)
-    return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100vw", height: '100vh' }}>
-      <img src={logo} alt="Logo" />
-    </div>
   return (
     <>
       <div className="App">

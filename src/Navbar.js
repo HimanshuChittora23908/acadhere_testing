@@ -25,7 +25,7 @@ export default function Navbar() {
                 <div className="dropdown-content">
                   <a href="./contactUs">Contact Us</a>
                   <a href="faq">FAQ</a>
-                  <a href="#">Logout</a>
+                  {localStorage.getItem('user12') ? <a className="logout" onClick={() => {localStorage.removeItem("user12"),window.location.replace("./home")}}>Logout</a> : null}
                 </div>
                 </div>
             </div>

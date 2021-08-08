@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import arrow_right from "../src/images/arrow-right.svg";
 import triangle_right from "../src/images/triangle_right.svg";
@@ -7,8 +7,21 @@ import about_quote from "../src/images/about_quote.svg";
 import notes_book from "../src/images/notes_book.svg";
 import classroom from "../src/images/Google_Classroom_Logo.webp"
 import ScrollUpButton from "react-scroll-up-button";
+import logo from './images/Ripple.svg';
 
 export default function Home() {
+  const [Load, setLoad] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(false)
+    }, 1000);
+  }, [])
+
+  if (Load)
+    return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100vw", height: '100vh' }}>
+      <img src={logo} alt="Logo" />
+    </div>
   return (
     <>
     <div className="Home">

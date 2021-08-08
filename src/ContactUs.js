@@ -14,21 +14,21 @@ export default function ContactUs() {
                         <div className="col-lg-8">
                           <div className="contact-box p-4">
                             <h4 className="title">Contact Us</h4>
-                            <form>
+                            <form action="mailto:2020kucp1023@iiitkota.ac.in" method="get" encType="text/plain">
                               <div className="row">
                                 <div className="col-lg-6">
                                   <div className="form-group mt-3">
-                                    <input className="form-control" type="text" placeholder="name" />
+                                    <input className="form-control" type="text" placeholder="name" required />
                                   </div>
                                 </div>
                                 <div className="col-lg-6">
                                   <div className="form-group mt-3">
-                                    <input className="form-control" type="text" placeholder="email" />
+                                    <input className="form-control" type="text" placeholder="email" required />
                                   </div>
                                 </div>
                                 <div className="col-lg-6">
                                   <div className="form-group mt-3">
-                                    <input className="form-control" type="text" placeholder="phone" />
+                                    <input className="form-control" type="text" placeholder="phone" required />
                                   </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -38,7 +38,7 @@ export default function ContactUs() {
                                 </div>
                                 <div className="col-lg-12">
                                   <div className="form-group mt-3">
-                                    <input className="form-control" type="text" placeholder="message" />
+                                    <input className="form-control" type="text" placeholder="message" required />
                                   </div>
                                 </div>
                                 <div className="col-lg-12">
