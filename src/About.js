@@ -9,6 +9,7 @@ import ui from "./images/ui.png"
 import api from "./images/api.png"
 import finish from "./images/finish.png"
 import target from "./videos/target.gif"
+import ScrollUpButton from "react-scroll-up-button";
 
 export default function About() {
     return (
@@ -73,6 +74,7 @@ export default function About() {
         <img src={finish} className="icon_about"/>
         </div>
         </div>
+        <ScrollUpButton />
         </>
     )
 }

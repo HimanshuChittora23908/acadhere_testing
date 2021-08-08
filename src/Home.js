@@ -6,6 +6,7 @@ import code_img from "../src/images/code_img.svg";
 import about_quote from "../src/images/about_quote.svg";
 import notes_book from "../src/images/notes_book.svg";
 import classroom from "../src/images/Google_Classroom_Logo.png"
+import ScrollUpButton from "react-scroll-up-button";
 
 export default function Home() {
   return (
@@ -69,6 +70,7 @@ export default function Home() {
       <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
       <a className="bn31" href="/acadhere_testing/classroom"><span className="bn31span">See Courses</span></a>
     </div>
+    <ScrollUpButton />
     </>
   );
 }

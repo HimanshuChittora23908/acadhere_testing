@@ -25,7 +25,7 @@ font-weight: bold;
 font-size: 1.25vw;
 text-align: center;
 color: #FFFFFF;
-margin-top: -0.1vw;
+margin-top: -0.5vw;
 }
 
 .logo_link{
@@ -72,6 +72,8 @@ color: #000000;
     z-index: 1;
     font-size: 0.9vw;
     font-weight: 500;
+    width: 7vw;
+    margin-left: -1vw;
   }
   
   .dropdown-content a {
@@ -124,5 +126,11 @@ color: #000000;
   background-color: #f6c412;
   width: 100vw;
   left: -4vw;
+}
+
+.navbar-brand{
+  font-weight: 700;
+  display: flex;
+  font-size: 20px;
 }
 }

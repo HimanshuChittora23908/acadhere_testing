@@ -50,16 +50,16 @@ export default function Footer() {
             Products
           </h6>
           <p>
-            <a href="#!" className="text-reset">Notes</a>
+            <a href="./notes" className="text-reset">Notes</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Study Material</a>
+            <a href="./hackathon" className="text-reset">Hackathon</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Contests</a>
+            <a href="./contest" className="text-reset">Contests</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Recordings</a>
+            <a href="./noticeboard" className="text-reset">Notice Board</a>
           </p>
         </div>
         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -67,16 +67,16 @@ export default function Footer() {
             Useful links
           </h6>
           <p>
-            <a href="#!" className="text-reset">About Us</a>
+            <a href="./about" className="text-reset">About Us</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Team</a>
+            <a href="./team" className="text-reset">Team</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Contact Us</a>
+            <a href="./contactUs" className="text-reset">Contact Us</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">FAQ</a>
+            <a href="./faq" className="text-reset">FAQ</a>
           </p>
         </div>
         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -88,13 +88,12 @@ export default function Footer() {
             <i className="fa fa-envelope me-3"></i>
             himanshuhome908@gmail.com
           </p>
-          <p><i className="fa fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i className="fa fa-print me-3"></i> + 01 234 567 89</p>
+          <p><i className="fa fa-phone me-3"></i> XXXXXXXXXX</p>
+          <p><i className="fa fa-print me-3"></i> XXXXXXXXXX</p>
         </div>
       </div>
     </div>
   </section>
-
   <div className="text-center p-4">
     <p>© 2021 Copyright : Team Aztecs</p>
     <p>Maintainer - Himanshu Chittora</p>
