@@ -5,7 +5,10 @@ import icon from "../src/images/person_icon.svg";
 import triangle_down from "../src/images/triangle-down.svg"
 
 export default function Navbar() {
-    const logout = () => {localStorage.removeItem("user12"),window.location.replace("./home")};
+    const logout = () => {
+        localStorage.removeItem("user12")
+        window.location.replace("./home")
+    };
     return (
         <>
         <div className="navbar_big">
