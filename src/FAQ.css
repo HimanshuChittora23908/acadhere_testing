@@ -1,0 +1,21 @@
+.bg_faq{
+    padding: 5vw 15vw 8vw 15vw;
+    background-image: linear-gradient(280deg, #20ded3 0%, #f6c412 75%);
+}
+
+@media screen and (max-width: 767px){
+    .bg_faq{
+        display: none;
+    }
+
+    .bg_faq_mobile{
+        padding: 5vw 15vw 8vw 15vw;
+        background-image: linear-gradient(280deg, #20ded3 0%, #f6c412 75%);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .bg_faq_mobile{
+        display: none;
+    }
+}
