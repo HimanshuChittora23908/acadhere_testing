@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contest.css'
 import ScrollUpButton from "react-scroll-up-button";
-import logo from './images/Loader.gif';
+import logo from './images/Loader.svg';
 
 const Hackathon = () => {
   const [contest, setContest] = useState(null)

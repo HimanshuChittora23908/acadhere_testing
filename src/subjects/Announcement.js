@@ -4,7 +4,7 @@ import './Announcement.css';
 import google from "../images/google.webp";
 import Clock from "../images/clock.webp";
 import ScrollUpButton from "react-scroll-up-button";
-import logo from '../images/Loader.gif';
+import logo from '../images/Loader.svg';
 import AutoLinkText from 'react-autolink-text2';
 
 export const id = window.location.href.slice(-12);

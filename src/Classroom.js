@@ -6,7 +6,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import google from "./images/google.webp";
 import ScrollUpButton from "react-scroll-up-button";
-import logo from './images/Loader.gif';
+import logo from './images/Loader.svg';
 
 export default function Classroom() {
   const [courses, setCourses] = useState(null);

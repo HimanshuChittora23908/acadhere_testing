@@ -3,7 +3,7 @@ import axios from 'axios'
 import './Contest.css'
 import Clock from "../src/images/clock.webp";
 import ScrollUpButton from "react-scroll-up-button";
-import logo from './images/Loader.gif';
+import logo from './images/Loader.svg';
 
 const Contest = () => {
   const [contest, setContest] = useState(null)
@@ -14,7 +14,9 @@ const Contest = () => {
   }, [])
 
   const getList = async () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in' } })
+    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id}`,{
+      headers: { 'email': "2020kucp1023@iiitkota.ac.in" }
+  })
       .then((data) => {
         setContest(data.data)
       })
@@ -22,7 +24,9 @@ const Contest = () => {
 
   const getMoreList = async () => {
     setId(id + 1);
-    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id + 1}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in' } })
+    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id + 1}`,{
+      headers: { 'email': "2020kucp1023@iiitkota.ac.in" }
+  })
       .then((data) => {
         setContest(data.data)
       })
@@ -30,7 +34,9 @@ const Contest = () => {
 
   const getOldList = async () => {
     setId(id - 1);
-    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id - 1}`, { headers: { 'email': '2020kucp1023@iiitkota.ac.in' } })
+    axios.get(`https://backend-clg-app.herokuapp.com/notice_board?pg=${id - 1}`,{
+      headers: { 'email': "2020kucp1023@iiitkota.ac.in" }
+  })
       .then((data) => {
         setContest(data.data)
       })

@@ -4,7 +4,7 @@ import './Contest.css'
 import Clock from "../src/images/clock.webp";
 import Hourglass from "../src/images/hourglass.webp";
 import ScrollUpButton from "react-scroll-up-button";
-import logo from './images/Loader.gif';
+import logo from './images/Loader.svg';
 
 const Contest = () => {
   const [contest, setContest] = useState(null)

@@ -35,24 +35,24 @@ export default function Navbar() {
             </div>
         </div>
 
-        <div class="mobile-container">
-        <div class="container">
-        <nav class="navbar navbar-light light-blue lighten-4">
-        <a class="navbar-brand" href="./home">AcadHERE</a>
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"><a class="nav-link" href="./home">Home</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./about">About</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./team">Team</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./contest">Coding Contests</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./hackathon">Hackathons</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./noticeboard">Notice Board</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./resource">Resource</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./classroom">Classroom</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./contactUs">Contact Us</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./faq">FAQ</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./classroom">Logout</a></li>
+        <div className="mobile-container">
+        <div className="container">
+        <nav className="navbar navbar-light light-blue lighten-4">
+        <a className="navbar-brand" href="./home">AcadHERE</a>
+        <button className="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span className="dark-blue-text"><i className="fas fa-bars fa-1x"></i></span></button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul className="navbar-nav mr-auto">
+        <li className="nav-item active"><a className="nav-link" href="./home">Home</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./about">About</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./team">Team</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./contest">Coding Contests</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./hackathon">Hackathons</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./noticeboard">Notice Board</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./resource">Resource</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./classroom">Classroom</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./contactUs">Contact Us</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./faq">FAQ</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./classroom">Logout</a></li>
         </ul>
         </div>
         </nav>

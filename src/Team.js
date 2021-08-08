@@ -14,7 +14,7 @@ export default function Team() {
         <p className="bg_top_line">"Transforming the Way Students are Accessing Various Technologies and Contents"</p>
         </div>
         <h1 className="team_title_main">Meet the Crew</h1>
-        <h5 class="team_tagline_main"><i>"Making Difficult and Out of the Box Things Possible"</i></h5>
+        <h5 className="team_tagline_main"><i>"Making Difficult and Out of the Box Things Possible"</i></h5>
         <div className="team_members">
         {teamMembers ? teamMembers.map((item,ind) => 
         <div key={ind} className="card_teamMember">
