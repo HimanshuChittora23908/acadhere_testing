@@ -1,85 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-.bg{
-    padding: 2vw 20vw 2vw 20vw;
-    background-image: linear-gradient(330deg, #20ded3 0%, #f6c412 75%);
-	text-align: center;
+.bg {
+  padding: 2vw 20vw 2vw 20vw;
+  background-image: linear-gradient(330deg, #20ded3 0%, #f6c412 75%);
+  text-align: center;
 }
 
-.card3{
-    background: rgba( 255, 255, 255, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    margin: 0 0 2vw 0;
-    padding: 1vw;
+.card3 {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0 0 2vw 0;
+  padding: 1vw;
 }
-
-.announcement_a{
-	color: orangered;
+.button_bg1 {
+  text-align: center;
+  width: 100% !important;
+}
+.announcement_a {
+  color: orangered;
 }
 
 @keyframes color_trans {
-	0% {color:orangered;}
-	50%{color: green;}
-	100%{color: orangered;}
+  0% {
+    color: orangered;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: orangered;
+  }
 }
 
-.announcement_a:hover{
-    animation: color_trans;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-    text-decoration: none;
-    font-weight: bold;
+.announcement_a:hover {
+  animation: color_trans;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.img_course{
-    width: 5vw;
+.img_course {
+  width: 5vw;
 }
 
-.google{
-	height: 25px;
+.google {
+  height: 25px;
 }
 
-.card3-subTitle{
-	color: purple;
+.card3-subTitle {
+  color: purple;
 }
 
 @media screen and (max-width: 600px) {
-	.bg{
-		padding: 2vw 10vw 2vw 10vw;
-	}
-	
-	.card3{
-		margin: 0 0 10vw 0;
-		padding: 4vw;
-	}
-	
-	.card3-title{
-		font-size: 6vw;
-	}
+  .bg {
+    padding: 2vw 10vw 2vw 10vw;
+  }
 
-	.card3-subTitle{
-		font-size: 3vw;
-	}
+  .card3 {
+    margin: 0 0 10vw 0;
+    padding: 4vw;
+  }
 
-	.material_title{
-		font-size: 4vw;
-	}
+  .card3-title {
+    font-size: 6vw;
+  }
 
-	.img_course{
-		width: 20vw;
-	}
+  .card3-subTitle {
+    font-size: 3vw;
+  }
 
-	.google{
-		height: 4vw;
-		margin-top: -1vw;
-	}
+  .material_title {
+    font-size: 4vw;
+  }
 
-	.card3-text{
-		font-size: 4vw;
-		word-wrap: break-word;
-	}
+  .img_course {
+    width: 20vw;
+  }
+
+  .google {
+    height: 4vw;
+    margin-top: -1vw;
+  }
+
+  .card3-text {
+    font-size: 4vw;
+    word-wrap: break-word;
+  }
 }
