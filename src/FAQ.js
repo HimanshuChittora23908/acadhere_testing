@@ -23,11 +23,11 @@ const data = {
     },
     {
       title: "What if the classroom is not loading classes inside the application?",
-      content: "Go to Settings->privacy and security->clear browsing data (for Google Chrome, Microsoft Edge, Mozilla Firefox) or Setting->More Tools->Clear Browsing Data (for Brave), after this reload the application and try again."
+      content: "Go to Settings->Privacy and Security->Clear Browsing Data (for Google Chrome, Microsoft Edge, Mozilla Firefox) or Setting->More Tools->Clear Browsing Data (for Brave), after this reload the application and try again."
     },
     {
       title: "Any Future Updates ?",
-      content: "Releasing Time Table for Section IIIT Kota in few days."
+      content: "Releasing Time Table Section for IIIT Kota in few days."
     }]
 }
 

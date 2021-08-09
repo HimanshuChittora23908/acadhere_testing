@@ -22,9 +22,4 @@
     p{
         font-size: 3.5vw;
     }
-
-    .mail_maintainer:hover{
-        animation: none;
-        color: white;
-    }
 }

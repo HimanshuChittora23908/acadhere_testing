@@ -51,15 +51,14 @@ export default function ContactUs() {
                         <div className="col-lg-4 bg-image">
                           <div className="detail-box p-4">
                             <h5 className="text-white font-weight-light mb-3">ADDRESS</h5>
-                            <p className="text-white op-7">601 Sherwood Ave.
-                              <br /> San Bernandino</p>
+                            <p className="text-white op-7">Jaipur, Rajasthan, India, 302017</p>
                             <h5 className="text-white font-weight-light mb-3 mt-4">CALL US</h5>
-                            <p className="text-white op-7">251 546 9442
-                              <br /> 630 446 8851</p>
+                            <p className="text-white op-7">9549305890<br /> 8999272173<br /> 9315424447<br /> 8279443413<br /> 9699814916</p>
                             <div className="round-social light">
-                              <a href="#" className="ml-0 text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-facebook"></i></a>
-                              <a href="#" className="text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-twitter"></i></a>
-                              <a href="#" className="text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-youtube"></i></a>
+                              <a href="https://www.facebook.com/himanshu.chittora.56/" className="ml-0 text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-facebook"></i></a>
+                              <a href="https://www.instagram.com/himanshu_23908/" className="text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-instagram"></i></a>
+                              <a href="https://www.linkedin.com/in/himanshu-chittora-57b695200/" className="text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-linkedin"></i></a>
+                              <a href="https://github.com/HimanshuChittora23908" className="text-decoration-none text-white border border-white rounded-circle"><i className="fa fa_contact fa-github"></i></a>
                             </div>
                           </div>
                         </div>
