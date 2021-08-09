@@ -34,10 +34,7 @@ export default function Footer() {
           <h6 className="text-uppercase fw-bold mb-4">
             <i className="fa fa-hashtag me-3"></i>Team AZTECS
           </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
+          <p>When there is teamwork and collaboration, great things can be achieved !!!</p>
         </div>
         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 className="text-uppercase fw-bold mb-4">

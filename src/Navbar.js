@@ -48,11 +48,11 @@ export default function Navbar() {
         <li className="nav-item active"><a className="nav-link" href="./contest">Coding Contests</a></li>
         <li className="nav-item active"><a className="nav-link" href="./hackathon">Hackathons</a></li>
         <li className="nav-item active"><a className="nav-link" href="./noticeboard">Notice Board</a></li>
-        <li className="nav-item active"><a className="nav-link" href="./resource">Resource</a></li>
+        <li className="nav-item active"><a className="nav-link" href="./resources">Resources</a></li>
         <li className="nav-item active"><a className="nav-link" href="./classroom">Classroom</a></li>
         <li className="nav-item active"><a className="nav-link" href="./contactUs">Contact</a></li>
         <li className="nav-item active"><a className="nav-link" href="./faq">FAQ</a></li>
-        <li className="nav-item active"><a className="nav-link" href="./classroom">Logout</a></li>
+        <li className="nav-item active">{localStorage.getItem('user12') ? <a className="nav-link" onClick={logout}>Logout</a> : null}</li>
         </ul>
         </div>
         </nav>
