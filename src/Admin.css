@@ -1,5 +1,38 @@
-.container_admin{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
+.container_admin {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.userbox {
+  display: flex;
+  width: 100%;
+  height: 30vw;
+  justify-content: center;
+  align-items: center;
+}
+.userForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.items_admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listText {
+  border: 0.2rem solid grey;
+  padding: 0.1rem 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.listContainer {
+  margin: 1rem;
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
 }
