@@ -16,6 +16,7 @@ import CourseWorkMaterials from "./subjects/CourseWorkMaterials";
 import Hackathon from "./Hackathon";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
+import Admin from "./Admin";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
           <Route path={"/acadhere_testing/materials/" + id} component={CourseWorkMaterials} />
           <Route path={"/acadhere_testing/contactUs"} component={ContactUs} />
           <Route path={"/acadhere_testing/faq"} component={FAQ} />
+          <Route path={"/acadhere_testing/admin"} component={Admin} />
           <Redirect to="/acadhere_testing/" />
         </Switch>
         <Footer />
