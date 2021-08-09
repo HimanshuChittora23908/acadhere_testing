@@ -63,7 +63,7 @@ export default function About() {
         <img src={api} className="icon_about"/>
         <div className="content_box">
         <h1 className="contentHead1"><img src={api} className="icon_inline"/> Google and Custom APIs</h1>
-        <p className="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum amet quidem deserunt ab nisi minima vel voluptatum iure. Sint sequi dolor reprehenderit non maxime officiis illo? Aut, reprehenderit in!</p>
+        <p className="content1">After finalizing features, UI, and good team for the project, the main thing was on how to do things by automating almost everything rating than updating it into the code. For this, we decided to create Custom APIs by using Heroku and maintaining their shutting time. Also, we used Google Classroom API, for which we used Google OAuth v2.0 which was difficult at first to learn and use. But having a great team gives many advantages, so somehow we manage to learn and use it to load classroom API to show the results on the website. With all such backend work, we now just need to input it via admin route and it's visible on the website.</p>
         </div>
         </div>
         <div className="box_right">

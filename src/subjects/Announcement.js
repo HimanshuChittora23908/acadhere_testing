@@ -44,7 +44,7 @@ export default function Announcement() {
             </div>
           </div>
         )
-      }) : window.location.replace("/acadhere_testing/")}
+      }) : window.location.replace("/acadhere/")}
       <ScrollUpButton />
     </div>
   )

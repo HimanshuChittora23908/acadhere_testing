@@ -24,22 +24,22 @@ export default function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/acadhere_testing/" exact component={Home} />
-          <Route path="/acadhere_testing/home" exact component={Home} />
-          <Route path="/acadhere_testing/about" exact component={About} />
-          <Route path="/acadhere_testing/team" exact component={Team} />
-          <Route path="/acadhere_testing/contest" exact component={Contest} />
-          <Route path="/acadhere_testing/hackathon" exact component={Hackathon} />
-          <Route path="/acadhere_testing/noticeboard" exact component={NoticeBoard} />
-          <Route path="/acadhere_testing/resources" exact component={Resources} />
-          <Route path="/acadhere_testing/classroom" exact component={Classroom} />
-          <Route path={"/acadhere_testing/announcement/" + id} component={Announcement} />
-          <Route path={"/acadhere_testing/coursework/" + id} component={CourseWork} />
-          <Route path={"/acadhere_testing/materials/" + id} component={CourseWorkMaterials} />
-          <Route path={"/acadhere_testing/contactUs"} component={ContactUs} />
-          <Route path={"/acadhere_testing/faq"} component={FAQ} />
-          <Route path={"/acadhere_testing/admin"} component={Admin} />
-          <Redirect to="/acadhere_testing/" />
+          <Route path="/acadhere/" exact component={Home} />
+          <Route path="/acadhere/home" exact component={Home} />
+          <Route path="/acadhere/about" exact component={About} />
+          <Route path="/acadhere/team" exact component={Team} />
+          <Route path="/acadhere/contest" exact component={Contest} />
+          <Route path="/acadhere/hackathon" exact component={Hackathon} />
+          <Route path="/acadhere/noticeboard" exact component={NoticeBoard} />
+          <Route path="/acadhere/resources" exact component={Resources} />
+          <Route path="/acadhere/classroom" exact component={Classroom} />
+          <Route path={"/acadhere/announcement/" + id} component={Announcement} />
+          <Route path={"/acadhere/coursework/" + id} component={CourseWork} />
+          <Route path={"/acadhere/materials/" + id} component={CourseWorkMaterials} />
+          <Route path={"/acadhere/contactUs"} component={ContactUs} />
+          <Route path={"/acadhere/faq"} component={FAQ} />
+          <Route path={"/acadhere/admin"} component={Admin} />
+          <Redirect to="/acadhere/" />
         </Switch>
         <Footer />
       </div>

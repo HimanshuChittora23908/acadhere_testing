@@ -86,9 +86,9 @@ export default function Classroom() {
                   <h3 className="card-title font-weight-bold name_classroom">{item.name}</h3>
                   <h5 className="card-subTitle section_classroom">{item.section}</h5>
                   <div className="button_bg">
-                    <button className="hover_button_classroom"><a href={"/acadhere_testing/announcement/" + item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Announcement</a></button>
-                    <button className="hover_button_classroom"><a href={"/acadhere_testing/coursework/" + item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Class Work</a></button>
-                    <button className="hover_button_classroom"><a href={"/acadhere_testing/materials/" + item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Material</a></button>
+                    <button className="hover_button_classroom"><a href={"/acadhere/announcement/" + item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Announcement</a></button>
+                    <button className="hover_button_classroom"><a href={"/acadhere/coursework/" + item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Class Work</a></button>
+                    <button className="hover_button_classroom"><a href={"/acadhere/materials/" + item.id} className="announcement_a"><span></span><span></span><span></span><span></span>Material</a></button>
                   </div>
                 </div>
               </div>
