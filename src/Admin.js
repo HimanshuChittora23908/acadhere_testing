@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Admin.css'
 import axios from 'axios'
 import { filterData } from './filterData'
+import { gapi } from 'gapi-script'
 
 export default function Admin() {
     const [user, setuser] = useState(false)
@@ -35,8 +36,7 @@ export default function Admin() {
             "Subject_Code": code,
             "Message": message,
         };
-        console.log(item)
-        //     axios.post('https://backend-clg-app.herokuapp.com/admin/resources/ebooks/', item).then(response => console.log(response));
+        axios.post('https://backend-clg-app.herokuapp.com/admin/notice_board/', item).then(response => console.log(response));
     }
 
     const putNotes = (event) => {
@@ -96,7 +96,7 @@ export default function Admin() {
                             value={code}>
                             <option value="Important">Important</option>
                             <option value="Very Important">Very Important</option>
-                            <option value="Causual">Causual</option>
+                            <option value="Casual">Casual</option>
                         </select><br />
                         <textarea
                             value={message}

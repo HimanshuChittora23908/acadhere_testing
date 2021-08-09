@@ -27,7 +27,7 @@ const data = {
     },
     {
       title: "Any Future Updates ?",
-      content: "Releasing Time Table Section for IIIT Kota in few days."
+      content: "Releasing Time Table Section, Notice Board for every batch and year for IIIT Kota in few days"
     }]
 }
 

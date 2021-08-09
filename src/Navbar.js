@@ -9,7 +9,6 @@ export default function Navbar() {
     localStorage.removeItem("user12")
     window.location.replace("./home")
   };
-  console.log(localStorage.getItem('user12'))
   return (
     <>
       <div className="navbar_big">

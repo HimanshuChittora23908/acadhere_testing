@@ -20,8 +20,8 @@ export default function Classroom() {
   function loadClient() {
     window.gapi.client.setApiKey("AIzaSyCVj_naD42lS6dvS93bes74UfP8IKGeU3A");
     return window.gapi.client.load("https://classroom.googleapis.com/$discovery/rest?version=v1")
-      .then(function () { console.log("GAPI client loaded for API"); },
-        function (err) { console.error("Error loading GAPI client for API", err); });
+      .then(function () {},
+        function (err) {});
   }
 
   function authenticate() {
@@ -29,7 +29,7 @@ export default function Classroom() {
       .signIn({ scope: "https://www.googleapis.com/auth/classroom.courses.readonly https://www.googleapis.com/auth/classroom.coursework.me.readonly https://www.googleapis.com/auth/classroom.announcements.readonly https://www.googleapis.com/auth/classroom.student-submissions.me.readonly https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly" })
       .then(res => {
         if (res) {
-          console.log(res.Zb);
+          // console.log(res.Zb);
           setToken(res.Zb.access_token)
           localStorage.setItem('user12', res.Zb.access_token);
         }
@@ -38,7 +38,7 @@ export default function Classroom() {
   }
 
    // localStorage.setItem('user12', null)
-   console.log(token);
+  //  console.log(token);
 
   function execute() {
     setLoading(true);
@@ -67,7 +67,7 @@ export default function Classroom() {
     }
     if (localStorage.getItem('user12'))
       test();
-     console.log(localStorage.getItem('user12'));
+    //  console.log(localStorage.getItem('user12'));
   }, [token])
 
   return (

@@ -28,7 +28,7 @@ export default function CourseWorkMaterials() {
   return (
     <div className="bg">
       {CourseWorkMaterials ? CourseWorkMaterials.map((item, index) => {
-        console.log(item)
+        // console.log(item)
         return (
           <div key={item.id}>
             <div className="card3">
