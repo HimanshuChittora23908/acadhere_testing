@@ -20,7 +20,7 @@ const [message,setMessage] = useState("");
       "message": message
     })
     .then(function (response) {
-      console.log(response);
+      // console.log(response);
     })
   }
 

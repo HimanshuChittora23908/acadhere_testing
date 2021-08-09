@@ -47,7 +47,6 @@ export default function Admin() {
             "Message": message,
             "Resources_Type": "Notes",
         };
-        console.log(item)
         axios.post('https://backend-clg-app.herokuapp.com/admin/resources/notes/', item).then(response => console.log(response));
         reset()
     }
@@ -60,7 +59,6 @@ export default function Admin() {
             "Message": message,
             "Resources_Type": "Video",
         };
-        console.log(item)
         axios.post('https://backend-clg-app.herokuapp.com/admin/resources/videos/', item).then(response => console.log(response));
         reset()
     }

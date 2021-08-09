@@ -29,7 +29,7 @@ export default function Announcement() {
   return (
     <div className="bg">
       {Announcement ? Announcement.map((item) => {
-        console.log(item)
+        // console.log(item)
         return (
           <div key={item.id}>
             <div className="card3">

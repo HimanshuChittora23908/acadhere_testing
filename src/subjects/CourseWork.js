@@ -27,7 +27,7 @@ export default function CourseWork() {
   return (
     <div className="bg">
       {CourseWork ? CourseWork.map((item, index) => {
-        console.log(item)
+        // console.log(item)
         return (
           <div key={item.id}>
             <div className="card3">

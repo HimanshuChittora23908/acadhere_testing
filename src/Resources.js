@@ -124,7 +124,7 @@ export default function Resources() {
                 <h5 className="date"><img src={Clock} className="Clock"></img> {(`${item.Post_Time}`).slice(0, 10)}, {new Date(`${item.Post_Time}`).toTimeString().slice(0, 8)}</h5>
                 <h3 className="name_contest">{item.Message}</h3>
                 <h5 className="card3-subTitle">{item.Subject_Code}</h5>
-                <span className="flip_button"><a href={item.url}></a></span>
+                <span className="flip_button"><a href={item.Url}></a></span>
               </div>
             </div>
           ) : <div style={{ display: 'flex', background: "transparent", width: '80vw', justifyContent: "center", alignItems: 'center' }}>
