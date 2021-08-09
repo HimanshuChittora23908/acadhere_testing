@@ -39,7 +39,7 @@ export default function Home() {
     </div>
     <div className="team_main">
     <p className="team">Our Team</p>
-    <p className="team_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+    <p className="team_content">A team plays a major role in deciding the future of any project and luckily we formed a perfect team of 5 friends in which each of us contributed independently in different domains. We have a balanced team consisting of a frontend developer, backend developer, android developer, content writer and a tester. Apart from this every member in our team remains keen to solve each other's doubts, which increases the efficiency of other teammates also. </p>
     <div className="team_foot"><a href="/acadhere/team" className="team_link">
     <p className="team_tagline">Have a look</p>
     <img src={arrow_right} alt="" className="arrow_r" />
@@ -49,7 +49,7 @@ export default function Home() {
     </div>
     <div className="about_bg">
       <p className="about">About</p>
-      <p className="about_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+      <p className="about_content">We are the team of five people from IIIT Kota know as Team Aztecs. This was the project we made to simplify the work of students that are studying hard to achieve their goal but their time and money are getting wasted by using various apps and websites for different purposes.</p>
       <img src={about_quote} alt="" className="about_quote" />
       <div className="about_foot"><a href="/acadhere/about" className="team_link">
         <p className="about_tagline">About Us</p>
@@ -60,7 +60,7 @@ export default function Home() {
     <div className="contest_bg">
       <div>
         <p className="contest">Contests</p>
-        <p className="contest_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+        <p className="contest_content">Are you among those who miss to checkout Contest on different sites. AcadHERE brings you a solution for this by providing all contests and hackathons happening around the globe by major hosting websites at one place. Making it easier for you to access. <br />Now you will not miss any chance to grow and showcase your talent.</p>
         <div className="contest_foot">
         <a href="/acadhere/contest" className="team_link">
         <p className="contest_tagline">Check Out</p>
@@ -74,17 +74,17 @@ export default function Home() {
     </div>
     <div className="notes_bg">
       <p className="notes">Notice Board</p>
-      <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+      <p className="notes_content">Using Whatsapp to see what CR has posted, looking out for mails by teachers, searching for classroom posts, these things are hectic and pretty old fashioned. For this AcadHERE provides a dedicated section named notice board, so that you never miss a announcement that is important to you.</p>
       <a className="bn31" href="/acadhere/noticeboard"><span className="bn31span">Stay Updated</span></a>
     </div>
     <div className="notes_bg">
       <p className="notes">Resources <img src={notes_book} alt="" className="notes_book" /></p>
-      <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+      <p className="notes_content">Want to Study Hard but not getting videos, notes and books? AcadHERE also provides you with video lectures of live classes, notes of good students so that you can also score good marks and most important a whole lot of books, so your knowledge can keep growing and growing. By this we are not letting you make an excuse that I didn't have resources to study or I missed something in class.</p>
         <a className="bn31" href="/acadhere/resources"><span className="bn31span">Boost Grades</span></a>
     </div>
     <div className="notes_bg">
       <p className="notes"><img src={classroom} className="classroom_logo" /> Google Classroom</p>
-      <p className="notes_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae integer dignissim vel nisl. Faucibus ornare ultricies id eros dui. Volutpat dignissim neque, laoreet nunc lorem sit dolor. Aliquam, sit amet eu massa eget. Integer ultricies consequat convallis enim et massa nisi, proin. Feugiat faucibus morbi facilisis cras risus. At cursus eget in mi adipiscing. Eget dui, ultrices aliquet vitae aliquet et aliquet ac, duis. Gravida velit vitae nisi vestibulum amet nec nisl, sit.</p>
+      <p className="notes_content">At AcadHERE we believe that classroom things are not organized properly and UI also is pretty old fashioned with no clear things shown to user. So we decided to give a new look and arranged it for convenience of the students. </p>
       <a className="bn31" href="/acadhere/classroom"><span className="bn31span">See Courses</span></a>
     </div>
     <ScrollUpButton />
