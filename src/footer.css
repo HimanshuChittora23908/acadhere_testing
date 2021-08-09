@@ -10,24 +10,6 @@
     margin-right: 5px;
 }
 
-.mail_maintainer{
-    text-decoration: none;
-    color: white ;
-}
-
-.mail_maintainer:hover{
-    text-decoration: none;
-    color: orange;
-    animation-name: bigfont;
-    animation-duration: 1s;
-}
-
-@keyframes bigfont{
-    0% {font-size: 16px;}
-    50% {font-size: 18px;}
-    100%{font-size: 16px;}
-}
-
 .maintainer{
     margin-top: -15px;
 }
