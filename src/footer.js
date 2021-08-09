@@ -41,7 +41,7 @@ export default function Footer() {
             Products
           </h6>
           <p>
-            <a href="./notes" className="text-reset">Notes</a>
+            <a href="./resources" className="text-reset">Resources</a>
           </p>
           <p>
             <a href="./hackathon" className="text-reset">Hackathon</a>
@@ -74,13 +74,12 @@ export default function Footer() {
           <h6 className="text-uppercase fw-bold mb-4">
             Contact
           </h6>
-          <p><i className="fa fa-home me-3"></i> Jaipur, Pin: 302017, Rajasthan, India</p>
+          <p><i className="fa fa-home me-3"></i> Jaipur, Rajasthan, India, 302017</p>
           <p>
             <i className="fa fa-envelope me-3"></i>
-            himanshuhome908@gmail.com
+            2020kucp1023@iiitkota.ac.in
           </p>
-          <p><i className="fa fa-phone me-3"></i> XXXXXXXXXX</p>
-          <p><i className="fa fa-print me-3"></i> XXXXXXXXXX</p>
+          <p><i className="fa fa-phone me-3"></i> 9549305890, 8999272173, 9315424447, 8279443413, 9699814916 </p>
         </div>
       </div>
     </div>
