@@ -24,7 +24,7 @@ export default function Admin() {
 
         axios.post('https://backend-clg-app.herokuapp.com/admin/login', article)
             .then(response => {
-                response.data === "ok!" ? setuser(true) : seterror(true)
+                response.status === "ok!" ? setuser(true) : seterror(true)
             })
             .catch((e) => seterror(true));
     }
@@ -235,7 +235,11 @@ export default function Admin() {
         }
     }
 
-    if (!user)
+    axios.get("https://backend-clg-app.herokuapp.com/admin/login").then(response => {
+        if(response.status === "200"){
+             
+    }
+        if(response.status === "401"){
         return (<div className="userbox">
             <form action="" className="userForm">
                 <input className="userItem" value={username} onChange={(e) => setusername(e.target.value)} type="text" placeholder="Username" /><br />
@@ -244,7 +248,8 @@ export default function Admin() {
                 {error ? <h3>Enter Right Credentials</h3> : null}
             </form>
         </div>)
-
+    }
+})
 
     return (
         <div className="container_admin">
