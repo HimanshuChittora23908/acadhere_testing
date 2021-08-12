@@ -9,18 +9,23 @@ export default function Resources() {
   const [VideosMaterial, setVideosMaterial] = useState(null)
   const [NotesMaterial, setNotesMaterial] = useState(null)
   const [BooksMaterial, setBooksMaterial] = useState(null)
+  const [ExtraMaterial, setExtraMaterial] = useState(null)
   const [video, setVideo] = useState(false)
   const [notes, setNotes] = useState(false)
   const [book, setBook] = useState(false)
+  const [extra, setExtra] = useState(false)
 
   const [q, setQ] = useState("");
+  const [q2, setQ2] = useState("");
 
   const [searchParam] = useState(["Message", "Subject_Code"]);
+  const [searchParam2] = useState(["Message", "Subject_Code"]);
 
   useEffect(() => {
     Videos_list();
     Notes_list();
     Books_list();
+    Extra_list();
   }, [])
 
   const Videos_list = () => {
@@ -41,6 +46,13 @@ export default function Resources() {
     axios.get(`https://backend-clg-app.herokuapp.com/resources/ebooks/`)
       .then((data) => {
         setBooksMaterial(data.data)
+      })
+  }
+
+  const Extra_list = () => {
+    axios.get(`https://backend-clg-app.herokuapp.com/resources/courses/`)
+      .then((data) => {
+        setExtraMaterial(data.data)
       })
   }
 
@@ -136,22 +148,81 @@ export default function Resources() {
     )
   }
 
+
+  function Extra() {
+    function search(items) {
+      return items.filter((item) => {
+        return searchParam2.some((newItem) => {
+          return (
+            item[newItem]
+              .toString()
+              .toLowerCase()
+              .indexOf(q2.toLowerCase()) > -1
+          );
+        });
+      });
+    }
+    return (
+      <>
+        <div className="search-wrapper">
+          <label htmlFor="search-form" className="search-form">
+            <input
+              type="search"
+              name="search-form"
+              id="search-form"
+              className="search-input"
+              placeholder="Search with Book Name or Course Code"
+              value={q2}
+              onChange={(e) => setQ2(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="card_contest_complete">
+          {ExtraMaterial ? search(ExtraMaterial).map((item, ind) =>
+            <div key={ind}>
+              <div className="card_contest">
+                <div className="card_contest-body"></div>
+                <h5 className="date"><img src={Clock} className="Clock"></img> {(`${item.Post_Time}`).slice(0, 10)}, {new Date(`${item.Post_Time}`).toTimeString().slice(0, 8)}</h5>
+                <h3 className="name_contest">{item.Message}</h3>
+                <h5 className="card3-subTitle">{item.Subject_Code}</h5>
+                <span className="flip_button"><a href={item.Url}></a></span>
+              </div>
+            </div>
+          ) : <div style={{ display: 'flex', background: "transparent", width: '80vw', justifyContent: "center", alignItems: 'center' }}>
+            <img style={{ width: '20vw', height: "20vw" }} src={logo} alt="Logo" />
+          </div>}
+        </div>
+        <ScrollUpButton />
+      </>
+    )
+  }
+
   function Videos_True() {
     setVideo(true);
     setNotes(false);
     setBook(false);
+    setExtra(false);
   }
 
   function Notes_True() {
     setVideo(false);
     setNotes(true);
     setBook(false);
+    setExtra(false);
   }
 
   function Books_True() {
     setVideo(false);
     setNotes(false);
     setBook(true);
+    setExtra(false);
+  }
+
+  function Extra_True() {
+    setVideo(false);
+    setNotes(false);
+    setBook(false);
+    setExtra(true);
   }
 
   return (
@@ -162,12 +233,14 @@ export default function Resources() {
             <button onClick={() => Videos_True()} className="custom-btn-nav btn-nav">Videos</button>
             <button onClick={() => Notes_True()} className="custom-btn-nav btn-nav">Notes</button>
             <button onClick={() => Books_True()} className="custom-btn-nav btn-nav">E-Books</button>
+            <button onClick={() => Extra_True()} className="custom-btn-nav btn-nav">Extra</button>
           </div>
         </div>
         <div>
           {video ? Videos() : null}
           {notes ? Notes() : null}
           {book ? Books() : null}
+          {extra ? Extra() : null}
         </div>
       </div>
     </>

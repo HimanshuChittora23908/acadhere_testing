@@ -237,7 +237,7 @@ export default function Admin() {
 
     axios.get("https://backend-clg-app.herokuapp.com/admin/login").then(response => {
         if(response.status === "200"){
-            renderForm();
+            renderForm()
     }
         if(response.status === "401"){
         return (<div className="userbox">
