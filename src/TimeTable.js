@@ -6,6 +6,9 @@ import axios from 'axios'
 import logo from './images/Loader.svg';
 
 export default function TimeTable() {
+  var d = new Date();
+  var n = d.getDay()
+
   const [A1Material, setA1Material] = useState(null)
   const [A2Material, setA2Material] = useState(null)
   const [A3Material, setA3Material] = useState(null)
@@ -29,42 +32,42 @@ export default function TimeTable() {
   }, [])
 
   const A1_List = () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A1&day=1`)
+    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A1&day=${n}`)
       .then((data) => {
         setA1Material(data.data)
       })
   }
 
   const A2_List = () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A2&day=1`)
+    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A2&day=${n}`)
       .then((data) => {
         setA2Material(data.data)
       })
   }
 
   const A3_List = () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A3&day=1`)
+    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A3&day=${n}`)
       .then((data) => {
         setA3Material(data.data)
       })
   }
 
   const A4_List = () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A4&day=1`)
+    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=A4&day=${n}`)
       .then((data) => {
         setA4Material(data.data)
       })
   }
 
   const B1_List = () => {
-    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=B1&day=1`)
+    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=B1&day=${n}`)
       .then((data) => {
         setB1Material(data.data)
       })
   }
 
   const B2_List = () => {   
-    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=B2&day=1`)
+    axios.get(`https://backend-clg-app.herokuapp.com/timetable?lb=B2&day=${n}`)
       .then((data) => {
         setB2Material(data.data)
       })

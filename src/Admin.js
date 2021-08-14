@@ -9,6 +9,7 @@ export default function Admin() {
     const [error, seterror] = useState(false)
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
+    const [heading, setheading] = useState("")
     const [message, setmessage] = useState("")
     const [url, seturl] = useState("")
     const [code, setcode] = useState("")
@@ -97,8 +98,19 @@ export default function Admin() {
                             <option value="Casual">Casual</option>
                         </select><br />
                         <textarea
+                            value={heading}
+                            onChange={(e) => setheading(e.currentTarget.value)}
+                            name = "heading"
+                            id=""
+                            placeholder="Heading"
+                            type="text"
+                            cols="50"
+                            rows="2"
+                        /><br />
+                        <textarea
                             value={message}
-                            onChange={(e) => setmessage(e.target.value)} name="message"
+                            onChange={(e) => setmessage(e.target.value)} 
+                            name="message"
                             id=""
                             placeholder="Message"
                             cols="50"
