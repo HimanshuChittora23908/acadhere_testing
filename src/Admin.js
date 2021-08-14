@@ -36,6 +36,7 @@ export default function Admin() {
             "Url": url,
             "Subject_Code": code,
             "Message": message,
+            "Heading": heading,
         };
         axios.post('https://backend-clg-app.herokuapp.com/admin/notice_board/', item).then(response => console.log(response));
     }
@@ -80,6 +81,7 @@ export default function Admin() {
         setmessage('')
         seturl('')
         setcode('')
+        setheading('')
     }
 
     const renderForm = () => {
@@ -103,7 +105,6 @@ export default function Admin() {
                             name = "heading"
                             id=""
                             placeholder="Heading"
-                            type="text"
                             cols="50"
                             rows="2"
                         /><br />
