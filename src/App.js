@@ -17,6 +17,7 @@ import Hackathon from "./Hackathon";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 import Admin from "./Admin";
+import TimeTable from "./TimeTable";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/acadhere/home" exact component={Home} />
           <Route path="/acadhere/about" exact component={About} />
           <Route path="/acadhere/team" exact component={Team} />
+          <Route path="/acadhere/timetable" exact component={TimeTable} />
           <Route path="/acadhere/contest" exact component={Contest} />
           <Route path="/acadhere/hackathon" exact component={Hackathon} />
           <Route path="/acadhere/noticeboard" exact component={NoticeBoard} />

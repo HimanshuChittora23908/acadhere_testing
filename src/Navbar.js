@@ -18,6 +18,7 @@ export default function Navbar() {
         <div className="rightside_navbar">
           <NavLink activeClassName='menu_active' exact className="right_buttons" to="./about">About</NavLink>
           <NavLink activeClassName='menu_active' exact className="right_buttons" to="./team">Team</NavLink>
+          <NavLink activeClassName='menu_active' exact className="right_buttons" to="./timetable">Time Table</NavLink>
           <NavLink activeClassName='menu_active' exact className="right_buttons" to="./contest">Coding Contests</NavLink>
           <NavLink activeClassName="menu_active" exact className="right_buttons" to="./hackathon">Hackathons</NavLink>
           <NavLink activeClassName='menu_active' exact className="right_buttons" to="./noticeboard">Notice Board</NavLink>
@@ -45,6 +46,7 @@ export default function Navbar() {
                 <li className="nav-item active"><a className="nav-link" href="./home">Home</a></li>
                 <li className="nav-item active"><a className="nav-link" href="./about">About</a></li>
                 <li className="nav-item active"><a className="nav-link" href="./team">Team</a></li>
+                <li className="nav-item active"><a className="nav-link" href="./timetable">Time Table</a></li>
                 <li className="nav-item active"><a className="nav-link" href="./contest">Coding Contests</a></li>
                 <li className="nav-item active"><a className="nav-link" href="./hackathon">Hackathons</a></li>
                 <li className="nav-item active"><a className="nav-link" href="./noticeboard">Notice Board</a></li>
