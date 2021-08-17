@@ -131,8 +131,7 @@ export default function Admin() {
                         <input
                             value={url}
                             onChange={(e) => seturl(e.target.value)}
-                            type="date"
-                            placeholder="Date"
+                            type="Link if any"
                         /><br />
                         <input type="submit" onClick={putNotice} value="Submit" /><br /><br />
                     </form>
