@@ -25,7 +25,7 @@ export default function Admin() {
 
         axios.post('https://backend-clg-app.herokuapp.com/admin/login', article)
             .then(response => {
-                response.status === "ok!" ? setuser(true) : seterror(true)
+                response.status === 200 ? setuser(true) : seterror(true)
             })
             .catch((e) => seterror(true));
     }
