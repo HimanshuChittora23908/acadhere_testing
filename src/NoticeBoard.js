@@ -60,6 +60,7 @@ const Contest = () => {
     }
   }
 
+  if(localStorage.getItem('user12')) {
   return (
     <div className="bg_contest">
       <div className="card_contest_complete">
@@ -83,5 +84,14 @@ const Contest = () => {
       <ScrollUpButton />
     </div>
   )
+}
+else{
+  return(
+    <>
+    <br />
+    <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+  </>
+  )
+}
 }
 export default Contest;

@@ -243,6 +243,16 @@
   color: purple;
 }
 
+.linktoClassroom {
+  text-decoration: none;
+  color: black;
+}
+
+.linktoClassroom:hover {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 600px) {
   .neumorphic {
     box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.5),

@@ -73,7 +73,9 @@ export default function TimeTable() {
       })
   }
 
+
   function A1() {
+    if(localStorage.getItem('user12')) {
     return (
       <>
         <div className="card_contest_complete">
@@ -95,8 +97,18 @@ export default function TimeTable() {
       </>
     )
   }
+  else{
+    return(
+      <>
+      <br />
+      <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+    </>
+    )
+  }
+}
 
   function A2() {
+    if(localStorage.getItem('user12')) {
     return (
       <>
         <div className="card_contest_complete">
@@ -116,10 +128,19 @@ export default function TimeTable() {
         </div>
         <ScrollUpButton />
       </>
-    )
+    )}
+    else{
+      return(
+        <>
+        <br />
+        <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+      </>
+      )
+    }
   }
 
   function A3() {
+    if(localStorage.getItem('user12')) {
     return (
       <>
         <div className="card_contest_complete">
@@ -140,8 +161,18 @@ export default function TimeTable() {
         <ScrollUpButton />
       </>
     )}
+    else{
+      return(
+        <>
+        <br />
+        <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+      </>
+      )
+    }
+  }
 
     function A4() {
+      if(localStorage.getItem('user12')) {
       return (
         <>
           <div className="card_contest_complete">
@@ -161,9 +192,18 @@ export default function TimeTable() {
           </div>
           <ScrollUpButton />
         </>
-      )}
+        )}
+      else{
+        return(
+          <>
+          <br />
+          <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+        </>
+        )
+      }}
 
       function B1() {
+        if(localStorage.getItem('user12')) {
         return (
           <>
             <div className="card_contest_complete">
@@ -184,8 +224,17 @@ export default function TimeTable() {
             <ScrollUpButton />
           </>
         )}
+        else{
+          return(
+            <>
+            <br />
+            <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+          </>
+          )
+        }}
 
         function B2() {
+          if(localStorage.getItem('user12')) {
           return (
             <>
               <div className="card_contest_complete">
@@ -206,6 +255,14 @@ export default function TimeTable() {
               <ScrollUpButton />
             </>
           )}
+          else{
+            return(
+              <>
+              <br />
+              <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+            </>
+            )
+          }}
 
   function A1_True() {
     setA1(true);

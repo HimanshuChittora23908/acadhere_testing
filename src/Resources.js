@@ -4,6 +4,7 @@ import Clock from "../src/images/clock.webp";
 import ScrollUpButton from "react-scroll-up-button";
 import axios from 'axios'
 import logo from './images/Loader.svg';
+import "./Classroom.css";
 
 export default function Resources() {
   const [VideosMaterial, setVideosMaterial] = useState(null)
@@ -57,7 +58,8 @@ export default function Resources() {
   }
 
   function Videos() {
-    return (
+    if(localStorage.getItem('user12')) {
+  return (
       <>
         <div className="card_contest_complete">
           {VideosMaterial ? VideosMaterial.map((item, ind) =>
@@ -75,7 +77,16 @@ export default function Resources() {
         </div>
         <ScrollUpButton />
       </>
-    )
+    )}
+    else{
+      return(
+        <>
+        <br />
+        <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+      </>
+      )
+    }
+    
   }
 
   function Notes() {

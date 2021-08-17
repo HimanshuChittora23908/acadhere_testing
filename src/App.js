@@ -38,9 +38,9 @@ export default function App() {
           <Route path={"/acadhere/announcement/" + id} component={Announcement} />
           <Route path={"/acadhere/coursework/" + id} component={CourseWork} />
           <Route path={"/acadhere/materials/" + id} component={CourseWorkMaterials} />
-          <Route path={"/acadhere/contactUs"} component={ContactUs} />
-          <Route path={"/acadhere/faq"} component={FAQ} />
-          <Route path={"/acadhere/admin"} component={Admin} />
+          <Route path={"/acadhere/contactUs"} exact component={ContactUs} />
+          <Route path={"/acadhere/faq"} exact component={FAQ} />
+          <Route path={"/acadhere/admin"} exact component={Admin} />
           <Redirect to="/acadhere/" />
         </Switch>
         <Footer />
