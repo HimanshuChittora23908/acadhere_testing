@@ -181,6 +181,10 @@
   font-size: 1vw;
 }
 
+.pre_msg{
+  white-space: pre-line;
+}
+
 @media (max-width: 600px){
   .bg_contest{
     padding: 0.1vw 10vw 2vw 10vw;

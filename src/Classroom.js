@@ -14,11 +14,11 @@ export default function Classroom() {
   const [token, setToken] = useState(null);
 
   window.gapi.load("client:auth2", function () {
-    window.gapi.auth2.init({ client_id: "1051900366163-uug3fp44cmthn7d2o9pmtprtjs9o53mo.apps.googleusercontent.com" });
+    window.gapi.auth2.init({ client_id: process.env.REACT_APP_CLIENT_ID });
   });
 
   function loadClient() {
-    window.gapi.client.setApiKey("AIzaSyCVj_naD42lS6dvS93bes74UfP8IKGeU3A");
+    window.gapi.client.setApiKey(process.env.REACT_APP_API_KEY);
     return window.gapi.client.load("https://classroom.googleapis.com/$discovery/rest?version=v1")
       .then(function () {},
         function (err) {});
@@ -57,8 +57,6 @@ export default function Classroom() {
       setToken(localStorage.getItem('user12'))
   }, [])
 
-  // setToken(null)
-
   useEffect(() => {
     function test() {
       
@@ -67,7 +65,6 @@ export default function Classroom() {
     }
     if (localStorage.getItem('user12'))
       test();
-    //  console.log(localStorage.getItem('user12'));
   }, [token])
 
   return (

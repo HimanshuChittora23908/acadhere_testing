@@ -3,7 +3,7 @@
 ## Introduction
 > AcadHERE is a user-friendly interface for college students which will reduce their efforts in accessing their assignments, important notices, study material, etc from multiple platforms.
 
-![Homepage](https://user-images.githubusercontent.com/74523865/129522896-945a074d-3d3f-463c-aba2-39d021b402d1.png)
+<img width="100%" height="100%" src="./src/images/mockup.webp">
 
 ## Exploring the website
 

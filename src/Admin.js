@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './Admin.css'
 import axios from 'axios'
 import { filterData } from './filterData'
-import { gapi } from 'gapi-script'
 
 export default function Admin() {
     const [user, setuser] = useState(false)
@@ -12,7 +11,6 @@ export default function Admin() {
     const [heading, setheading] = useState("")
     const [message, setmessage] = useState("")
     const [url, seturl] = useState("")
-    const [other, setother] = useState("")
     const [code, setcode] = useState("")
     const [id, setid] = useState(1)
 
@@ -45,8 +43,6 @@ export default function Admin() {
     const putNotice = (event) => {
         event.preventDefault();
         const item = {
-            "Other": other,
-            "Link": url,
             "Status": code,
             "Message": message,
             "Heading": heading,
@@ -93,10 +89,9 @@ export default function Admin() {
 
     const reset = () => {
         setmessage('')
-        seturl('')
+        {seturl ? seturl('') : null}
         setcode('')
         setheading('')
-        setother('')
     }
 
     const renderForm = () => {
@@ -132,20 +127,6 @@ export default function Admin() {
                             cols="50"
                             rows="5" />
                         <br />
-                        <input
-                            value={url}
-                            onChange={(e) => seturl(e.target.value)}
-                            placeholder="Link"
-                            id = ""
-                            name="url"
-                        /><br />
-                        <input
-                            value={other}
-                            onChange={(e) => setother(e.target.value)}
-                            placeholder="Other"
-                            id=""
-                            name="other"
-                        /><br />
                         <input type="submit" onClick={putNotice} value="Submit" /><br /><br />
                     </form>
                 </div>
