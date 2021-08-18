@@ -89,7 +89,7 @@ export default function Admin() {
 
     const reset = () => {
         setmessage('')
-        {seturl ? seturl('') : null}
+        seturl('')
         setcode('')
         setheading('')
     }
