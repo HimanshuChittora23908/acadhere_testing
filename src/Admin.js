@@ -12,6 +12,7 @@ export default function Admin() {
     const [heading, setheading] = useState("")
     const [message, setmessage] = useState("")
     const [url, seturl] = useState("")
+    const [other, setother] = useState("")
     const [code, setcode] = useState("")
     const [id, setid] = useState(1)
 
@@ -44,18 +45,20 @@ export default function Admin() {
     const putNotice = (event) => {
         event.preventDefault();
         const item = {
-            "Other": url,
+            "Other": other,
+            "Link": url,
             "Status": code,
             "Message": message,
             "Heading": heading,
         };
         axios.post('https://backend-clg-app.herokuapp.com/admin/notice_board/', item).then(response => console.log(response));
+        reset()
     }
 
     const putNotes = (event) => {
         event.preventDefault();
         const item = {
-            "Url": url,
+            "url": url,
             "Subject_Code": code,
             "Message": message,
             "Resources_Type": "Notes",
@@ -67,7 +70,7 @@ export default function Admin() {
     const putVideos = (event) => {
         event.preventDefault();
         const item = {
-            "Url": url,
+            "url": url,
             "Subject_Code": code,
             "Message": message,
             "Resources_Type": "Video",
@@ -79,7 +82,7 @@ export default function Admin() {
     const putBooks = (event) => {
         event.preventDefault()
         const item = {
-            "Url": url,
+            "url": url,
             "Subject_Code": code,
             "Message": message,
             "Resources_Type": "Ebook",
@@ -93,6 +96,7 @@ export default function Admin() {
         seturl('')
         setcode('')
         setheading('')
+        setother('')
     }
 
     const renderForm = () => {
@@ -131,8 +135,16 @@ export default function Admin() {
                         <input
                             value={url}
                             onChange={(e) => seturl(e.target.value)}
-                            type="text"
                             placeholder="Link"
+                            id = ""
+                            name="url"
+                        /><br />
+                        <input
+                            value={other}
+                            onChange={(e) => setother(e.target.value)}
+                            placeholder="Other"
+                            id=""
+                            name="other"
                         /><br />
                         <input type="submit" onClick={putNotice} value="Submit" /><br /><br />
                     </form>

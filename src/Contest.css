@@ -18,9 +18,9 @@
 .flip_button{
   position: relative;
   display: inline-flex;
-  width: 150px;
-  height: 50px;
-  perspective: 1000px;
+  width: 9vw;
+  height: 3vw;
+  perspective: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -28,7 +28,7 @@
   font-size: 1.2vw;
   letter-spacing: 1px;
   transform-style: preserve-3d;
-  transform: translateZ(-25px);
+  transform: translateZ(-1.5vw);
   transition: transform .25s;
   font-family: 'Montserrat', sans-serif;
 }
@@ -36,8 +36,8 @@
 .flip_button a:after{
   position: absolute;
   content: "VISIT";
-  height: 50px;
-  width: 150px;
+  height: 3vw;
+  width: 9vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,14 +49,14 @@
   color: white;
   background-color: #20bf55;
   background-image: linear-gradient(315deg, #20bf55 0%, #01baef 80%);
-  transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(1.5vw);
 }
 .flip_button a:after{
   color: #000;
-  transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(1.5vw);
 }
 .flip_button a:hover{
-  transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-1.5vw) rotateX(-90deg);
 }
 
 .card_contest{
