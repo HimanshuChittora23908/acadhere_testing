@@ -77,7 +77,7 @@ const Contest = () => {
             <div key={ind}>
               <div className="card_contest">
                 <div className="card_contest-body"></div>
-                <h5 className="date"><img src={Clock} className="Clock"></img> {(`${item.start_time}`).slice(0, 10)}, {new Date(`${item.start_time}`).toTimeString().slice(0, 8)}</h5>
+                <h5 className="date"><img src={Clock} className="Clock"></img> &nbsp;{(`${item.start_time}`).slice(0, 10)}, {new Date(`${item.start_time}`).toTimeString().slice(0, 8)}</h5>
                 <h3 className="name_contest">{item.event_name}</h3>
                 {item.duration < 86400 ? <h5 className="time_contest"><img src={Hourglass} className="Hourglass"></img> {new Date(`${item.duration}` * 1000).toISOString().substr(11, 8)}</h5> : <h5 className="time_contest"><img src={Hourglass} className="Hourglass" />{secondsToDhms(`${item.duration}`)}</h5>}
                 <h6 className="contest_website"><a href={"https://" + `${item.resource_website}`} className="contest_url">{item.resource_website}</a></h6>

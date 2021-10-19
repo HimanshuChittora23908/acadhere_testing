@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap");
 
-
-.bg_contest{
-    padding: 0.1vw 10vw 2vw 10vw;
-    background-image: linear-gradient(280deg, #20ded3 0%, #f6c412 75%);
-    text-align: center;
+.bg_contest {
+  padding: 1vw 10vw 4vw 10vw;
+  background-image: linear-gradient(280deg, #20ded3 0%, #f6c412 75%);
+  text-align: center;
 }
 
-.card_contest_complete{
+.card_contest_complete {
   display: grid;
   grid-template-columns: 1fr 1fr;
-    column-gap: 5vw;
-    padding-bottom: 2vw;
+  column-gap: 5vw;
+  padding-bottom: 2vw;
 }
 
-.flip_button{
+.flip_button {
   position: relative;
   display: inline-flex;
   width: 9vw;
@@ -24,16 +23,16 @@
   margin-left: auto;
   margin-right: auto;
 }
-.flip_button a{
+.flip_button a {
   font-size: 1.2vw;
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-1.5vw);
-  transition: transform .25s;
-  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
 }
 .flip_button a:before,
-.flip_button a:after{
+.flip_button a:after {
   position: absolute;
   content: "VISIT";
   height: 3vw;
@@ -45,59 +44,57 @@
   box-sizing: border-box;
   border-radius: 0.3vw;
 }
-.flip_button a:before{
+.flip_button a:before {
   color: white;
   background-color: #20bf55;
   background-image: linear-gradient(315deg, #20bf55 0%, #01baef 80%);
   transform: rotateY(0deg) translateZ(1.5vw);
 }
-.flip_button a:after{
+.flip_button a:after {
   color: #000;
   transform: rotateX(90deg) translateZ(1.5vw);
 }
-.flip_button a:hover{
+.flip_button a:hover {
   transform: translateZ(-1.5vw) rotateX(-90deg);
 }
 
-.card_contest{
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur( 0px );
-  -webkit-backdrop-filter: blur( 0px );
+.card_contest {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 5px 2.5px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 3vw 0 2vw 0;
-  padding: 1vw;
+  padding: 1.5vw 1vw;
 }
 
-.Clock{
+.Clock {
   width: 1.5vw;
   margin-top: -0.3vw;
 }
 
-.Hourglass{
+.Hourglass {
   width: 1.5vw;
   margin-top: -0.3vw;
 }
 
-.contest_website{
+.contest_website {
   color: green;
   font-size: 1vw;
 }
 
-.contest_url{
+.contest_url {
   text-decoration: none;
   color: rgb(78, 78, 78);
 }
 
-.contest_url:hover{
+.contest_url:hover {
   text-decoration: none;
   color: green;
 }
 
 .custom-btn-nav {
   border: 0.1vw solid rgb(0, 56, 0);
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: "Baloo Chettan 2", cursive;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -119,32 +116,32 @@
 .btn-nav:hover {
   background: transparent;
   color: #000;
-   box-shadow: none;
+  box-shadow: none;
 }
 .btn-nav:before,
-.btn-nav:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:4px;
-  width:0;
+.btn-nav:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4px;
+  width: 0;
   background: #000;
-  transition:400ms ease all;
+  transition: 400ms ease all;
 }
-.btn-nav:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
+.btn-nav:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
 .btn-nav:hover:before,
-.btn-nav:hover:after{
-  width:100%;
-  transition:800ms ease all;
+.btn-nav:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
-.pagination{
+.pagination {
   display: flex;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -152,122 +149,141 @@
   gap: 33.5vw;
 }
 
-.date{
+.date {
   text-align: center;
   margin-right: 8vw;
   margin-left: 8vw;
   border-radius: 1vw;
-  padding: 0.25vw;
+  padding: 0.4vw 0.25vw;
   border-radius: 20px;
   background: white;
   font-size: 1.3vw;
 }
 
-.Status{
+.date2 {
+  text-align: center;
+  margin-bottom: 0.5vw;
+  border-radius: 1vw;
+  padding: 0.4vw 1.5vw;
+  border-radius: 20px;
+  background: white;
+  font-size: 1.3vw;
+}
+
+.date_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Status {
   color: red;
   font-size: 1vw;
 }
 
-.name_contest{
+.name_contest {
   font-size: 1.8vw;
 }
 
-.time_contest{
+.time_contest {
   font-size: 1.3vw;
   color: purple;
 }
 
-.message{
+.message {
   font-size: 1vw;
 }
 
-.pre_msg{
+.pre_msg {
   white-space: pre-line;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  text-align: left;
 }
 
-@media (max-width: 600px){
-  .bg_contest{
+@media (max-width: 600px) {
+  .bg_contest {
     padding: 0.1vw 10vw 2vw 10vw;
-}
+  }
 
-.card_contest_complete{
-  grid-template-columns: 1fr;
-}
+  .card_contest_complete {
+    grid-template-columns: 1fr;
+  }
 
-.flip_button{
-  width: 75px;
-  height: 25px;
-}
-.flip_button a{
-  transform: translateZ(-12.5px);
-  font-size: 2.25vw;
-}
-.flip_button a:before,
-.flip_button a:after{
-  height: 25px;
-  width: 75px;
-  border: 0.5vw solid black;
-  border-radius: 1vw;
-}
+  .flip_button {
+    width: 75px;
+    height: 25px;
+  }
+  .flip_button a {
+    transform: translateZ(-12.5px);
+    font-size: 2.25vw;
+  }
+  .flip_button a:before,
+  .flip_button a:after {
+    height: 25px;
+    width: 75px;
+    border: 0.5vw solid black;
+    border-radius: 1vw;
+  }
 
-.flip_button a:before{
-  transform: rotateY(0deg) translateZ(12.5px);
-}
-.flip_button a:after{
-  color: #000;
-  transform: rotateX(90deg) translateZ(12.5px);
-}
-.flip_button a:hover{
-  transform: translateZ(-12.5px) rotateX(-90deg);
-}
+  .flip_button a:before {
+    transform: rotateY(0deg) translateZ(12.5px);
+  }
+  .flip_button a:after {
+    color: #000;
+    transform: rotateX(90deg) translateZ(12.5px);
+  }
+  .flip_button a:hover {
+    transform: translateZ(-12.5px) rotateX(-90deg);
+  }
 
-.Clock{
-  width: 4vw;
-  margin-top: -1vw;
-}
+  .Clock {
+    width: 4vw;
+    margin-top: -1vw;
+  }
 
-.Hourglass{
-  width: 4vw;
-  margin-top: -1vw;
-}
+  .Hourglass {
+    width: 4vw;
+    margin-top: -1vw;
+  }
 
-.contest_website{
-  font-size: 2.5vw;
-}
+  .contest_website {
+    font-size: 2.5vw;
+  }
 
-.btn-nav {
-  background-color: #00b712;
-  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 80%);
-  padding: 0;
-  border: none;
-  width: 16vw;
-  height: 5vw;
-  font-size: 2.5vw;
-}
+  .btn-nav {
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 80%);
+    padding: 0;
+    border: none;
+    width: 16vw;
+    height: 5vw;
+    font-size: 2.5vw;
+  }
 
-.btn-nav:before,
-.btn-nav:after{
-  height:2px;
-}
+  .btn-nav:before,
+  .btn-nav:after {
+    height: 2px;
+  }
 
-.date{
-  font-size: 4vw;
-}
+  .date {
+    font-size: 4vw;
+  }
 
-.name_contest{
-  font-size: 5vw;
-}
+  .name_contest {
+    font-size: 5vw;
+  }
 
-.time_contest{
-  font-size: 4vw;
-  color: purple;
-}
+  .time_contest {
+    font-size: 4vw;
+    color: purple;
+  }
 
-.message{
-  font-size: 3vw;
-}
+  .message {
+    font-size: 3vw;
+  }
 
-.Status{
-  font-size: 2.5vw;
-}
+  .Status {
+    font-size: 2.5vw;
+  }
 }
