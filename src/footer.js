@@ -12,7 +12,7 @@ export default function Footer() {
     <div className="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
     </div>
-    <div>
+    <div className="logos">
       <a href="https://www.facebook.com/himanshu.chittora.56/" className="me-4 text-reset">
         <i className="fa fa-facebook"></i>
       </a>

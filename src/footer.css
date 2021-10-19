@@ -1,25 +1,38 @@
-.fa{
-    margin-right: 20px;
+.fa {
+  margin-right: 20px;
 }
 
-.gem{
-    margin-right: 20px;
+.gem {
+  margin-right: 20px;
 }
 
-.me-3{
-    margin-right: 5px;
+.me-3 {
+  margin-right: 5px;
 }
 
-.maintainer{
-    margin-top: -15px;
+.logos {
+  margin: 1vw;
+  font-size: 1.25vw;
+  font-weight: 600;
 }
 
-.bg_footer{
-    background-color: #19a186;
+.me-5 {
+  padding: 1vw;
+  font-size: 1.25vw;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 600px){
-    p{
-        font-size: 3.5vw;
-    }
+.maintainer {
+  margin-top: -15px;
+}
+
+.bg_footer {
+  background-color: #19a186;
+  padding: 0 0 2vw 0;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 3.5vw;
+  }
 }
