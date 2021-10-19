@@ -29,9 +29,9 @@ export default function Classroom() {
       .signIn({ scope: "https://www.googleapis.com/auth/classroom.courses.readonly https://www.googleapis.com/auth/classroom.coursework.me.readonly https://www.googleapis.com/auth/classroom.announcements.readonly https://www.googleapis.com/auth/classroom.student-submissions.me.readonly https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly" })
       .then(res => {
         if (res) {
-          // console.log(res.Zb);
-          setToken(res.Zb.access_token)
-          localStorage.setItem('user12', res.Zb.access_token);
+          // console.log(res.$b);
+          setToken(res.$b.access_token)
+          localStorage.setItem('user12', res.$b.access_token);
         }
       })
       .catch(err => console.error(err));
