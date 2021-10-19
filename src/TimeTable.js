@@ -318,6 +318,7 @@ export default function TimeTable() {
     setB2(true);
   }
 
+  if(localStorage.getItem('user12')) {
   return (
     <>
       <div className="bg_contest">
@@ -343,3 +344,13 @@ export default function TimeTable() {
     </>
   )
 }
+else{
+  return(
+    <>
+    <br />
+    <button className="hover_button_classroom"><a href="/acadhere/classroom" className="linktoClassroom"><span></span><span></span><span></span><span></span>Go to Classroom to Login</a></button>
+  </>
+  )
+}
+}
+
