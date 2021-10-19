@@ -73,8 +73,8 @@ const Contest = () => {
               <h6 className="Status">{item.Status}</h6>
               <h3 className="name_contest">{item.Heading}</h3>
               <pre className="pre_msg"><p><AutoLinkText text={item.Message} className="message" /></p></pre>
-              {item.Link ? <h6 className="contest_website"><a href={"https://" + `${item.Link}`} className="contest_url">{item.Link}</a></h6> : null}
-              {item.Other ? <h6 className="contest_website"><a href={"https://" + `${item.Other}`} className="contest_url">{item.Other}</a></h6> : null}
+              {item.Link ? <h6 className="contest_website"><a href={item.Link} className="contest_url">{item.Link}</a></h6> : null}
+              {item.Other ? <h6 className="contest_website"><a href={item.Other} className="contest_url">{item.Other}</a></h6> : null}
             </div>
           </div>
           
