@@ -30,9 +30,10 @@ export default function Classroom() {
       .then(res => {
         if (res) {
           // console.log(res);
-          // console.log(res[1]);
-          setToken(res.Zb.access_token)
-          localStorage.setItem('user12', res.Zb.access_token);
+          var x = Object.keys(res)[1];
+          // console.log(Object.keys(res)[1]);
+          setToken(res[x].access_token);
+          localStorage.setItem('user12', res[x].access_token);
         }
       })
       .catch(err => console.error(err));
