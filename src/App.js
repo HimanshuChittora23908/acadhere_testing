@@ -18,6 +18,7 @@ import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 import Admin from "./Admin";
 import TimeTable from "./TimeTable";
+// added a comment
 
 export default function App() {
   return (
