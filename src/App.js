@@ -18,6 +18,7 @@ import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 import Admin from "./Admin";
 import TimeTable from "./TimeTable";
+
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
