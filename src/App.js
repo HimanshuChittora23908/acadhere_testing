@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Team from "./Team";
@@ -13,15 +13,25 @@ import Announcement from "./subjects/Announcement";
 import CourseWork from "./subjects/CourseWork";
 import { id } from "./subjects/Announcement";
 import CourseWorkMaterials from "./subjects/CourseWorkMaterials";
-import Hackathon from "./Hackathon";
+// import Hackathon from "./Hackathon";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 import Admin from "./Admin";
 import TimeTable from "./TimeTable";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+
+export const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 export default function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <div className="App">
         <Navbar />
         <Switch>
@@ -31,13 +41,19 @@ export default function App() {
           <Route path="/acadhere/team" exact component={Team} />
           <Route path="/acadhere/timetable" exact component={TimeTable} />
           <Route path="/acadhere/contest" exact component={Contest} />
-          <Route path="/acadhere/hackathon" exact component={Hackathon} />
+          {/* <Route path="/acadhere/hackathon" exact component={Hackathon} /> */}
           <Route path="/acadhere/noticeboard" exact component={NoticeBoard} />
           <Route path="/acadhere/resources" exact component={Resources} />
           <Route path="/acadhere/classroom" exact component={Classroom} />
-          <Route path={"/acadhere/announcement/" + id} component={Announcement} />
+          <Route
+            path={"/acadhere/announcement/" + id}
+            component={Announcement}
+          />
           <Route path={"/acadhere/coursework/" + id} component={CourseWork} />
-          <Route path={"/acadhere/materials/" + id} component={CourseWorkMaterials} />
+          <Route
+            path={"/acadhere/materials/" + id}
+            component={CourseWorkMaterials}
+          />
           <Route path={"/acadhere/contactUs"} exact component={ContactUs} />
           <Route path={"/acadhere/faq"} exact component={FAQ} />
           <Route path={"/acadhere/admin"} exact component={Admin} />
@@ -45,6 +61,7 @@ export default function App() {
         </Switch>
         <Footer />
       </div>
-    </>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }
