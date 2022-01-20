@@ -23,8 +23,8 @@ export default function Classroom() {
     return window.gapi.client
       .load("https://classroom.googleapis.com/$discovery/rest?version=v1")
       .then(
-        function () {},
-        function (err) {}
+        function () { },
+        function (err) { }
       );
   }
 
@@ -78,7 +78,7 @@ export default function Classroom() {
     token: token,
   });
 
-  console.log(classroomListQueryData);
+  // console.log(classroomListQueryData);
 
   useEffect(() => {
     function test() {
@@ -87,7 +87,7 @@ export default function Classroom() {
         .get(webApiUrl, { headers: { Authorization: `Bearer ${token}` } })
         .then((data) => {
           setCourses(data.data.courses);
-          console.log(data);
+          // console.log(data);
         });
     }
     if (localStorage.getItem("user12")) test();

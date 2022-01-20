@@ -51,11 +51,9 @@ export async function getNoticeBoardList(params) {
 
 export async function getClassroomList(params) {
   try {
-    const res = (
-      await fetch(apiEndPoints.getClassroomList, {
-        headers: { Authorization: `Bearer ${params.token}` },
-      }).then((res) => res.json())
-    ).data.courses;
+    const res = await fetch(apiEndPoints.getClassroomList, {
+      headers: { Authorization: `Bearer ${params.token}` },
+    }).then((res) => res.json()).data.courses;
     return res;
   } catch (error) {
     console.log(error);
